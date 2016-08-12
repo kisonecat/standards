@@ -1,0 +1,477 @@
+#  Copyright 2016 Robert A. Beezer, David W. Farmer
+#
+#  This file is part of CuratedCourses.
+#
+#  Licensed
+#    Creative Commons BY-SA
+#    Creative Commons BY-SA-NC
+
+#  Linear Algebra topic list
+#  Definitions, theorems, concepts and applications
+#
+#    description of a definition implicitly begins "definition of a"
+#    equivalences might appear as both a theorem and definition
+#      d.XX refers to a definition
+#      t.YY refers to a theorem
+#      c.ZZ refers to a concept
+#      a.WW refers to an application
+#
+#    vector spaces
+#      - "coordinate" is R^n, C^n, F^n
+#      - "abstract" is any other space
+#
+#  Style Guide
+#    * singular, as possible
+#    * all lowercase
+#    * no hyphens, spaces, or underscores
+#
+#  N.B.
+#  (a) this file is not strictly YAML
+#  (b) triple-dash *does* precede each id/description pair
+#  (c) there needs to be more "subdivision"
+#  (d) there needs to be more theorems and concepts
+#  (e) more *common* applications would be welcome
+
+
+division: Solving Linear Systems
+
+---
+id: d.lineqn
+description: linear equation
+---
+id: d.linsys
+description: system of linear equations
+---
+id: d.solnlinsys
+description: solution to a system of linear equations
+---
+id: d.eqnop
+description: equation operations on a linear system
+---
+id: d.rowop
+description: row operations on a matrix
+---
+id: d.rowequiv
+description: row equivalent matrices
+---
+id: d.rref
+description: reduced row echelon form of a matrix
+---
+id: t.rref
+description: reduced row echelon form of a matrix exists
+---
+id: t.rrefunique
+description: reduced row echelon form of a matrix is unique
+---
+id: d.pivotcol
+description: pivot column
+---
+id: d.consistentsys
+description: consistent linear system
+---
+id: t.rcls
+description: recognizing consistent linear systems (in terms of d.rref)
+---
+id: t.zoi
+description: linear systems have zero, one, infinitely many solutions
+---
+id: d.homoglinsys
+description: homogeneous linear system of equations
+---
+id t.solnsparticularhomogeneous
+description: particular solution plus a homogeneous solution
+---
+id: t.solnspreimage
+description: solutions are pre-image of linear transformation
+---
+id: d.illconditionedsystem
+description: ill-conditioned linear system
+---
+
+division: Matrix Algebra
+
+subdivision: Matrix types
+
+---
+id: d.matrix
+description: matrix
+---
+id: d.augmat
+description: augmented matrix of a linear system
+---
+id: d.coeffmat
+description: coefficient matrix
+
+subdivision: Matrix operations
+
+---
+id: d.matvecprod
+description: matrix-vector product
+---
+id: d.matreplinsys
+description: matrix representation of a linear system
+---
+id: d.matmult
+description: matrix multiplication
+---
+id: d.matinv
+description: matrix inverse
+---
+id: d.nullspaceright
+description: null space (right)
+---
+id: d.nullspaceleft
+description: null space (left)
+---
+id: d.rowspace
+description: row space
+---
+id: d.colspace
+description: column space
+---
+id: d.matrank
+description: rank of a matrix
+---
+id: d.matnullity
+description: nullity of a matrix
+---
+id: d.mateigenvalues
+description: eigenvalue of a matrix
+---
+id: d.mateigenvectors
+description: eigenvector of a matrix
+---
+id: d.mateigenspaces
+description: eigenspace of a matrix
+---
+id: d.similarmatrices
+description: similar matrices
+---
+id: d.matdiagonalization
+description: matrix diagonalization
+---
+id: d.mattranspose
+description: transpose of a matrix
+---
+id: d.mattriangular
+description: triangular matrix
+---
+id: d.matsymmetric
+description: symmetric matrix
+---
+id: d.mathermitian
+description: Hermitian matrix
+
+division: Vector Spaces
+
+id: d.vectorcoordinate
+description: vector, coordinate space
+---
+id: d.vectorabstract
+description: vector, abstract space
+---
+id: d.vectoraddcoordinate
+description: vector addition, coordinate space
+---
+id: d.vectoraddabstract
+description: vector addition, abstract space
+---
+id: d.vectorscalarmultcoordinate
+description: vector scalar multiplication, coordinate space
+---
+id: d.vectorscalarmultabstract
+description: vector scalar multiplication, abstract space
+---
+id: d.vectorspaceaxiomscoordinate
+description: axioms of a vector space, coordinate space
+---
+id: d.vectorspaceaxioms
+description: axioms of a vector space, abstract space
+---
+id: d.subspacecoordinate
+description: subspace, coordinate space
+---
+id: d.subspaceabstract
+description: subspace, abstract space
+---
+id: d.lincombvectorcoordinate
+description: linear combination, coordinate space
+---
+id: d.lincombvectorabstract
+description: linear combination, abstract space
+---
+id: d.spancoordinate
+description: span of a set of vectors, coordinate space
+---
+id: d.spanabstract
+description: span of a set of vectors, abstract space
+---
+id: d.linindepcoordinate
+description: if a linear combination of a set of vectors is zero, then every coefficient is zero, coordinate space
+---
+id: d.lindepcoordinate
+description: one of the vectors in a set can be written as a linear combination of the other vectors, coordinate space
+---
+id: t.linindepcoordinate
+description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, coordinate space
+---
+id: t.lindepcoordinate
+description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, coordinate space
+---
+id: d.linindepabstract
+description: if a linear combination of a set of vectors is zero, then every coefficient is zero, abstract space
+---
+id: d.lindepabstract
+description: one of the vectors in a set can be written as a linear combination of the other vectors, abstract space
+---
+id: t.linindepabstract
+description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, abstract space
+---
+id: t.lindepabstract
+description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, abstract space
+---
+id: d.basiscoordinate
+description: basis, coordinate space
+---
+id: d.basisabstract
+description: basis, abstract space
+---
+id: d.dimensioncoordinate
+description: dimension, coordinate space
+---
+id: d.dimensionabstract
+description: dimension, abstract space
+---
+id: d.coordinatecoordinate
+description: coordinate, coordinate space
+---
+id: d.coordinateabstract
+description: coordinate, abstract space
+---
+id: d.vectorrepresentationcoordinate
+description: vector representation, coordinate space
+---
+id: d.vectorrepresentationabstract
+description: vector representation, abstract space
+
+division: Linear Transformations
+
+---
+id: d.lineartranscoordinate
+description: linearity of linear transformation, coordinate spaces
+---
+id: d.lineartransabstract
+description: linearity of linear transformation, abstract spaces
+---
+id: c.matvexmultlintrans
+description: matrix-vector multiplication as a linear transformation
+---
+id: c.lintransgeom
+description: geometric property of a linear transformation
+---
+id: t.lintranszz
+description: linear transformation sends zero to zero
+---
+id: t.rotationmat
+description: matrix describing a rotation of the plane
+---
+id: d.preimagecoordinate
+description: pre-image of linear transformation, coordinate spaces
+---
+id: d.preimage
+description: pre-image of linear transformation, abstract spaces
+---
+id:d.ontocoordinate
+description: onto linear transformation, coordinate spaces
+---
+id: d.ontoabstract
+description: onto linear transformation, abstract spaces
+---
+id: t.ontocolspan
+description: a mapping is onto iff the columns of its matrix span the codomain
+---
+id: d.onetoonecoordinate
+description: one-to-one linear transformation, coordinate spaces
+---
+id: d.onetooneabstract
+description: one-to-one linear transformation, abstract spaces
+---
+id: d.lintransrank
+description: rank of a linear transformation
+---
+id: d.lintransnullity
+description: nullity of a linear transformation
+---
+id: t.onetoonekerz
+description: a mapping is one-to-one iff its kernel is 0
+---
+id: t.onetoonelinindepcol
+description: a mapping is one-to-one iff the columns of its matrix are linearly independent
+---
+id: d.rangecoordinate
+description: range of linear transformation, coordinate spaces
+---
+id: d.rangeabstract
+description: range of linear transformation, abstract spaces
+---
+id: d.kernelcoordinate
+description: kernel of linear transformation, coordinate spaces
+---
+id: d.kernelabstract
+description: kernel of linear transformation, abstract spaces
+---
+id: d.lintransinvertiblecoordinate
+description: invertible linear transformation, coordinate spaces
+---
+id: t.matrixoflintransabstract
+description: invertible linear transformation, abstract spaces
+---
+id: t.matrixoflintrans
+description: a linear transformation is given by a matrix
+---
+id: d.matrixrepresentationcoordinate
+description: matrix representation of a linear transformation, coordinate spaces
+---
+id: d.matrixrepresentationabstract
+description: matrix representation of a linear transformation, abstract spaces
+---
+id: d.changeofbasiscoordinate
+description: change of basis, coordinate spaces
+---
+id: d.changeofbasisabstract
+description: change of basis, abstract spaces
+---
+id: d.matrepresentationcompositioncoordinate
+description: matrix representation of a composition of linear transformations, coordinate spaces
+---
+id: d.matrepresentationcomposition
+description: matrix representation of a composition of linear transformations, abstract spaces
+---
+id: d.lintranseigenvaluescoordinate
+description: eigenvalue of a linear transformation, coordinate spaces
+---
+id: d.lintranseigenvaluesabstract
+description: eigenvalue of a linear transformation, abstract spaces
+---
+id: d.invariantsubspace
+description: invariant subspace under linear transformation
+---
+id: d.lintransnilpotent
+description: nilpotent linear transformation
+
+division: Orthogonality, Inner Product Spaces
+
+---
+id: d.innerproductreal
+description: inner product, real entries
+---
+id: d.innerproductcomplex
+description: inner product, complex entries
+---
+id: d.innerproductabstract
+description: inner product, abstract
+---
+id: d.norm
+description: norm, length, distance
+---
+id: d.projectionline
+description: projection onto a line
+---
+id: d.projectionplane
+description: projection onto a plane
+---
+id: d.projectionsubspace
+description: projection onto a subspace
+---
+id: d.orthogonalvectors
+description: orthogonal vectors, pair
+---
+id: d.orthogonalset
+description: orthogonal set
+---
+id: d.orthogonalmatrix
+description: orthogonal matrix
+---
+id: d.unitarymatrix
+description: unitary matrix
+---
+id: d.orthogonalprojection
+description: orthogonal projection
+---
+id: d.gram-schmidt
+description: Gram-Schmidt process
+---
+id: d.leastsquares
+description: least squares fit
+---
+id: d.generalizedinverse
+description: generalized inverse
+
+division: Decompositions, Canonical Forms
+
+---
+id: d.svd
+description: singular value decomposition (SVD)
+---
+id: d.lu
+description: LU decomposition
+---
+id: d.choleskyy
+description: Cholesky decomposition
+---
+id: d.qr
+description: QR decomposition
+---
+id: d.schur
+description: Schur triangulation
+---
+id: d.hessenberg
+description: Hessenberg form
+---
+id: d.jordan
+description: Jordan form
+---
+id: d.rational
+description: Rational form
+
+division: Other
+
+---
+id: d.determinant
+description: determinant
+---
+id: d.crossproduct
+description: cross product
+---
+id: t.determinantvolume
+description: determinants and volume
+---
+id: d.quadraticform
+description: quadratic form, orthonormal diagonalization, principal axes
+---
+id: d.matpositivedefinite
+description: positive-definite matrix
+
+division: Applications
+
+---
+id: a.differentialequation
+description: differential equation
+---
+id: a.markovchain
+description: Markov chain
+---
+id: a.bandmatrix
+description: band matrix
+---
+id: a.errorcorrectingcode
+description: error-correcting code
+---
+id: a.inputoutput
+description: Leontief input-output analysis
+---
+id: a.voting
+description: voting and social choice
+---
+id: a.cubicspline
+description: cubic spline
