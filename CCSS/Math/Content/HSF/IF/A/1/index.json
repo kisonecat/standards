@@ -1,0 +1,6 @@
+{
+  "id": "CCSS.Math.Content.HSF.IF.A.1",
+  "cluster": "Understand the concept of a function and use function notation.",
+  "description": "Understand that a function from one set (called the domain) to another set (called the range) assigns to each element of the domain exactly one element of the range. If  is a function and  is an element of its domain, then () denotes the output of  corresponding to the input . The graph of  is the graph of the equation  = ().",
+  "license": "(c) Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved."
+}

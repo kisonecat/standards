@@ -1,0 +1,6 @@
+{
+  "id": "CCSS.Math.Content.HSA.APR.B.2",
+  "cluster": "Understand the relationship between zeros and factors of polynomials.",
+  "description": "Know and apply the Remainder Theorem: For a polynomial () and a number , the remainder on division by  is (), so () = 0 if and only if () is a factor of ().",
+  "license": "(c) Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved."
+}

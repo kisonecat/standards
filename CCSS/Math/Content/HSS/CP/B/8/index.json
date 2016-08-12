@@ -1,0 +1,6 @@
+{
+  "id": "CCSS.Math.Content.HSS.CP.B.8",
+  "cluster": "Use the rules of probability to compute probabilities of compound events.",
+  "description": "(+) Apply the general Multiplication Rule in a uniform probability model, P(A and B) = P(A)P(B|A) = P(B)P(A|B), and interpret the answer in terms of the model.",
+  "license": "(c) Copyright 2010. National Governors Association Center for Best Practices and Council of Chief State School Officers. All rights reserved."
+}
