@@ -108,7 +108,7 @@ math.la.o
 Following math.la.o is one of the following letters, with the stated meaning:
 
 a  Apply
-c  Compute8
+c  Compute
 d  Define
 e  Explain
 i  Interpret
