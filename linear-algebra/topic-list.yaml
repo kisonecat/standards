@@ -214,7 +214,7 @@ id: t.vec.linindep.coord
 description: "Theorem: a set of vectors is linearly independent iff whenever a linear combination is zero, then every coefficient is zero, coordinate vector space."
 ---
 id: d.vec.lindep.coord
-description: "Definition linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space."
+description: "Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space."
 ---
 id: t.vec.lindep.coord
 description: "Theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space."
