@@ -1,0 +1,56 @@
+
+division: Linear equations
+
+---
+id: d.lineqn
+description: "Definition of linear equation."
+---
+id: d.linsys
+description: "Definition of system of linear equations."
+---
+id: d.linsys.soln
+description: "Definition of solution to a system of linear equations."
+---
+id: d.lineqn.op
+description: "Definition of equation operation on a linear system."
+---
+id: d.mat.row_op
+description: "Definition of row operation on a matrix."
+---
+id: d.mat.row_equiv
+description: "Definition of row equivalent matrices."
+---
+id: d.mat.rref
+description: "Definition of reduced row echelon form of a matrix."
+---
+id: t.mat.rref
+description: "The reduced row echelon form of a matrix exists."
+---
+id: t.mat.rref_unique
+description: "The reduced row echelon form of a matrix is unique."
+---
+id: d.mat.pivot_col
+description: "Definition of pivot column."
+---
+id: d.linsys.consistent
+description: "Definition of consistent linear system."
+---
+id: t.rref.when_consistent
+description: "The rref form of a system can be used to determine if it is consistent."
+---
+id: t.linsys.zoi
+description: "Linear systems have zero, one, or infinitely many solutions."
+---
+id: d.linsys.homog
+description: "Definition of homogeneous linear system of equations."
+---
+id: t.linsys.nonhomog.particular_plus_homog
+description: "The solutions to a nonhomogeneous system of equations are given by a particular solution plus the solutions to the homogeneous system."
+---
+id: t.linsys.homog.soln_preimage
+description: "The solutions of a homogeneous system are the pre-image (of 0) of a linear transformation."
+---
+id: d.linsys.ill_conditioned
+description: "Definition of ill-conditioned linear system."
+---
+
