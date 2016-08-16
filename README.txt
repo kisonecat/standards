@@ -9,7 +9,7 @@ course in linear algebra.  Example topics:
 math.la.d.mat.orthogonal
    Definition of orthogonal matrix.
 
-math.la.t.lin_sys.nonhomog.particular_plus_homog
+math.la.t.linsys.nonhomog.particular_plus_homog
    The solutions to a nonhomogeneous system of equations are given by a
    particular solution plus the solutions to the homogeneous system.
 
@@ -56,8 +56,8 @@ eqn  equation
 homog  homogeneous
 inv  inverse
 lin  linear
-lin_sys  linear_system
-lin_trans  linear_transformation
+linsys  linear system
+lintrans  linear transformation
 mat  matrix
 mult  multiplication
 nonhomog  nonhomogeneous
@@ -65,15 +65,15 @@ subsp  subspace
 sys  system
 trans  transpose
 vec  vector
-vec_sp  vector_space
+vsp  vector space
 
 
 The topic identifiers mention objects before operations or properties, thus
 sys.homog  not  homog.sys
 mat.inv  not  inv.mat
 
-But lin_sys is acceptable, because linear systems are commonly cited objects,
-and similarly for lin_trans and vec_sp.
+But linsys is acceptable, because linear systems are commonly cited objects,
+and similarly for lintrans.
 
 If an item can be expressed in either a coordinate setting or an abstract
 vector space setting, then both versions should occur, with "coord" or "abs",
@@ -108,18 +108,32 @@ math.la.o
 Following math.la.o is one of the following letters, with the stated meaning:
 
 a  Apply
-c  Compute
+b  Describe
+c  Compute (or Calculate)
 d  Define
 e  Explain
+f  Formulate
+g  Recognize
 i  Interpret
-n  Describe (n = 'narrative')
+l  List
+m  Determine
+n  Understand
+o  Perform
 p  Prove
+q  Qualitatively describe
 r  Relate
 s  Solve
+t  Translate
 u  Use
+v  Provide
+w  Write
+y  Identify
+z  Analyze
+
+(May wish to add these:  Discuss, State, Understand, Demonstrate, Find)
 
 The remaining parts of an outcome identifier follow the same pattern as the topic identifiers.
 Implicit in the naming of outcome identifiers is that all outcomes are of the form "verb noun".
 
-
+The description of an outcome must start with the corresponding word above.
 
