@@ -27,10 +27,10 @@ id: d.linsys.soln
 description: solution to a system of linear equations
 ---
 id: d.lineqn.op
-description: equation operations on a linear system
+description: equation operation on a linear system
 ---
 id: d.mat.row_op
-description: row operations on a matrix
+description: row operation on a matrix
 ---
 id: d.mat.row_equiv
 description: row equivalent matrices
@@ -59,7 +59,7 @@ description: linear systems have zero, one, or infinitely many solutions
 id: d.linsys.homog
 description: homogeneous linear system of equations
 ---
-id t.linsys.nonhomog.particular_plus_homog
+id: t.linsys.nonhomog.particular_plus_homog
 description: The solutions to a nonhomogeneous system of equations are given by a particular solution plus the solutions to the homogeneous system.
 ---
 id: t.linsys.homog.soln_preimage
@@ -131,7 +131,7 @@ id: d.mat.nullity
 description: nullity of a matrix
 ---
 id: d.mat.eig
-description: eigenvalue of a matrix
+description: eigenvalue(s) of a matrix
 ---
 id: d.mat.eigvec
 description: eigenvector(s) of a matrix
@@ -169,7 +169,7 @@ description: Hermitian matrix
 id: d.mat.orthogonal
 description: orthogonal matrix
 ---
-id: d.map.unitary
+id: d.mat.unitary
 description: unitary matrix
 ---
 id: d.mat.positive_definite
@@ -193,7 +193,7 @@ description: vector scalar multiplication, coordinate vector space
 id: d.vsp.axioms.coord
 description: axioms of a vector space, coordinate vector space
 ---
-id: d.vsp.subspace.coord  # omit vsp?
+id: d.vsp.subspace.coord  # omit vsp?  Rob says 'yes' but David likes the hierarchy
 description: subspace, coordinate vector space
 ---
 id: d.vec.lincomb.coord
@@ -242,7 +242,7 @@ description: vector scalar multiplication, abstract vector space
 id: d.vsp.axioms.abs
 description: axioms of a vector space, abstract vector space
 ---
-id: d.vsp.subspace.abs  # omit vsp?
+id: d.vsp.subspace.abs  # omit vsp?  (see other example above)
 description: subspace, abstract vector space
 ---
 id: d.vec.lincomb.abs
@@ -276,10 +276,29 @@ id: d.vsp.vector_repn.abs
 description: vector representation of a vector space, abstract vector space
 ---
 
+subdivision: Examples of vector spaces
+
+---
+id: e.vsp.rn
+description: $\R^n$ is a vector space
+---
+id: e.vsp.cn
+description: $\C^n$ is a vector space
+---
+id: e.vsp.fn
+description: $\F^n$ is a vector space
+---
+id: e.vsp.polynomial
+description: the space of polynomials is a vector space
+---
+id: e.vsp.polynomial.leq_n
+description: the space of polynomials of degree at most \(n\) is a vector space
+
+
 division: Linear Transformations
 
 ---
-id: c.mat.vec.mult.lintrans   # is this a concept or a theorem?
+id: t.mat.vec.mult.lintrans
 description: matrix-vector multiplication as a linear transformation
 ---
 id: c.lintrans.geometric
@@ -292,7 +311,7 @@ id: t.mat.rotation
 description: matrix describing a rotation of the plane
 ---
 id: t.lintrans.onto.col_span
-description: a mapping is onto iff the columns of its matrix span the codomain
+description: a linear transformation is onto iff the columns of its matrix span the codomain
 ---
 id: d.lintrans.rank
 description: rank of a linear transformation
@@ -301,10 +320,10 @@ id: d.lintrans.nullity
 description: nullity of a linear transformation
 ---
 id: t.lintrans.onetoone.ker_z
-description: a mapping is one-to-one iff its kernel is 0
+description: a linear transformation is one-to-one iff its kernel is 0
 ---
 id: t.lintrans.onetoone.linindep_col
-description: a mapping is one-to-one iff the columns of its matrix are linearly independent
+description: a linear transformation is one-to-one iff the columns of its matrix are linearly independent
 ---
 id: t.lintrans.mat
 description: a linear transformation is given by a matrix
@@ -325,7 +344,7 @@ description: linear transformation, coordinate vector space
 id: d.lintrans.preimage.coord
 description: pre-image of linear transformation, coordinate vector space
 ---
-id:d.lintrans.onto.coord
+id: d.lintrans.onto.coord
 description: onto linear transformation, coordinate vector space
 ---
 id: d.lintrans.onetoone.coord
@@ -362,7 +381,7 @@ description: linear transformation, abstract vector space
 id: d.lintrans.preimage.abs
 description: pre-image of linear transformation, abstract vector space
 ---
-id:d.lintrans.onto.abs
+id: d.lintrans.onto.abs
 description: onto linear transformation, abstract vector space
 ---
 id: d.lintrans.onetoone.abs
@@ -458,7 +477,7 @@ id: d.mat.jordan
 description: Jordan form
 ---
 id: d.mat.rational
-description: Rational form
+description: rational form
 
 division: Other
 
