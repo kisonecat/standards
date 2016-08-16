@@ -4,7 +4,12 @@ The directory
 linear-algebra/topics
 
 contains a reasonably complete list of topic for an introductory
-course in linear algebra.  Example topics:
+course in linear algebra.  
+
+The purpose of the list is for tagging educational resources in order to
+facilitate the discovery of useful material.
+
+Example topics:
 
 math.la.d.mat.orthogonal
    Definition of orthogonal matrix.
@@ -12,7 +17,6 @@ math.la.d.mat.orthogonal
 math.la.t.linsys.nonhomog.particular_plus_homog
    The solutions to a nonhomogeneous system of equations are given by a
    particular solution plus the solutions to the homogeneous system.
-
 
 Comments:
 
@@ -36,8 +40,8 @@ the topic identifier.  For example:
 math.la.t.ranknullity
     Rank-nullity theorem.
 
-No reference is made to R^n or C^n, instead, we specify concepts as either
-being expressed in "coordinates" or "abstract".
+No reference is made to R^n or C^n.  Instead, we specify concepts as either
+being expressed in a "coordinate" vector space or an "abstract" vector space.
 
 Topic identifiers omit the "s" for a plural, even when the items being
 described are plural.  For example:
@@ -46,27 +50,40 @@ math.la.d.mat.eig
 
 Available abbreviations are:
 
-abs  abstract
+abs  abstract vector space
+add  addition
+charpoly  characteristic polynomial
+coeff  coefficient
 col  column
-coord  coordinate(s)
+coord  coordinate vector space
 det  determinant
 dim  dimension
 eig  eigenvalue(s)
+eigvec  eigenvector(s)
+eigsp  eigenspace(s)
 eqn  equation
+equiv  equivalent
 homog  homogeneous
 inv  inverse
 lin  linear
+lincomb  linear combination
+lindep  linearly dependent
+lineqn  linear equation
+linindep  linearly independent
 linsys  linear system
 lintrans  linear transformation
 mat  matrix
 mult  multiplication
 nonhomog  nonhomogeneous
+op  operation
+prod  product
+repn  representation
+soln  solution
 subsp  subspace
 sys  system
-trans  transpose
 vec  vector
 vsp  vector space
-
+z  zero
 
 The topic identifiers mention objects before operations or properties, thus
 sys.homog  not  homog.sys
@@ -82,7 +99,7 @@ respectively, being the last entries in the identifiers.
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should
 be sufficiently expansive that the instructor of a typical linear algebra course
-an easily discern the meaning.  The writing style should be appropriate for a
+can easily discern the meaning.  The writing style should be appropriate for a
 footnote in a scholarly publication.
 
 ----------
@@ -130,7 +147,9 @@ w  Write
 y  Identify
 z  Analyze
 
-(May wish to add these:  Discuss, State, Understand, Demonstrate, Find)
+(May wish to add these:  Discuss, State, Understand, Demonstrate, Find,
+but only 4 letters remain.  "Understand" is problematic, because it is
+not directly testable.)
 
 The remaining parts of an outcome identifier follow the same pattern as the topic identifiers.
 Implicit in the naming of outcome identifiers is that all outcomes are of the form "verb noun".
