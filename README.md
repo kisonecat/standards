@@ -1,7 +1,7 @@
 
-The directory
+The file
 
-    linear-algebra/topics
+    linear-algebra/topic-list.yaml
 
 contains a reasonably complete list of topics for an introductory
 course in linear algebra.  
@@ -18,14 +18,15 @@ The goal is not to give a Bourbaki-style formulation of linear algebra,
 so topics are only stated with sufficient precision to allow unambiguous
 tagging of videos, exercises, quizzes, sections of books, etc.
 
-Similarly, the directory
+Similarly, the file
 
-    linear-algebra/outcomes
+    linear-algebra/outcome-list.yaml
 
 contains a reasonably complete list of outcomes for an introductory
 course in linear algebra.
 
 The naming schemes for topic and outcomes are given in
 
-linear-algebra/topicscheme.txt
-linear-algebra/outcomescheme.txt
+    linear-algebra/topicscheme.txt
+
+    linear-algebra/outcomescheme.txt
