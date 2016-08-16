@@ -4,15 +4,14 @@
 #
 #  Licensed
 #    Creative Commons BY-SA
-#    Creative Commons BY-SA-NC
+#    Creative Commons BY-NC-SA
 
 #  Linear Algebra topic list
 #  Definitions, theorems, concepts and applications
 #
-# See [elsewhere] for a discussion of the topic identifiers and 
+# See linear-algebra/topicscheme.txt for a discussion of the topic identifiers 
 #
 # all of the ids below should be prepended by math.la
-# all of the descriptions of definitions below should be prepended by "Definition of a(n) "
 
 division: Linear equations
 
@@ -132,6 +131,9 @@ description: "Definition of rank of a matrix."
 ---
 id: d.mat.nullity
 description: "Definition of nullity of a matrix."
+---
+id: t.mat.ranknullity
+description: "Rank-nullity theorem."
 ---
 id: d.mat.eig
 description: "Definition of eigenvalue(s) of a matrix."
