@@ -4,15 +4,19 @@ The directory
 linear-algebra/topics
 
 contains a reasonably complete list of topic for an introductory
-course in linear algebra.  Example topics:
+course in linear algebra.  
+
+The purpose of the list is for tagging educational resources in order to
+facilitate the discovery of useful material.
+
+Example topics:
 
 math.la.d.mat.orthogonal
    Definition of orthogonal matrix.
 
-math.la.t.lin_sys.nonhomog.particular_plus_homog
+math.la.t.linsys.nonhomog.particular_plus_homog
    The solutions to a nonhomogeneous system of equations are given by a
    particular solution plus the solutions to the homogeneous system.
-
 
 Comments:
 
@@ -36,8 +40,8 @@ the topic identifier.  For example:
 math.la.t.ranknullity
     Rank-nullity theorem.
 
-No reference is made to R^n or C^n, instead, we specify concepts as either
-being expressed in "coordinates" or "abstract".
+No reference is made to R^n or C^n.  Instead, we specify concepts as either
+being expressed in a "coordinate" vector space or an "abstract" vector space.
 
 Topic identifiers omit the "s" for a plural, even when the items being
 described are plural.  For example:
@@ -46,34 +50,47 @@ math.la.d.mat.eig
 
 Available abbreviations are:
 
-abs  abstract
+abs  abstract vector space
+add  addition
+charpoly  characteristic polynomial
+coeff  coefficient
 col  column
-coord  coordinate(s)
+coord  coordinate vector space
 det  determinant
 dim  dimension
 eig  eigenvalue(s)
+eigvec  eigenvector(s)
+eigsp  eigenspace(s)
 eqn  equation
+equiv  equivalent
 homog  homogeneous
 inv  inverse
 lin  linear
-lin_sys  linear_system
-lin_trans  linear_transformation
+lincomb  linear combination
+lindep  linearly dependent
+lineqn  linear equation
+linindep  linearly independent
+linsys  linear system
+lintrans  linear transformation
 mat  matrix
 mult  multiplication
 nonhomog  nonhomogeneous
+op  operation
+prod  product
+repn  representation
+soln  solution
 subsp  subspace
 sys  system
-trans  transpose
 vec  vector
-vec_sp  vector_space
-
+vsp  vector space
+z  zero
 
 The topic identifiers mention objects before operations or properties, thus
 sys.homog  not  homog.sys
 mat.inv  not  inv.mat
 
-But lin_sys is acceptable, because linear systems are commonly cited objects,
-and similarly for lin_trans and vec_sp.
+But linsys is acceptable, because linear systems are commonly cited objects,
+and similarly for lintrans.
 
 If an item can be expressed in either a coordinate setting or an abstract
 vector space setting, then both versions should occur, with "coord" or "abs",
@@ -82,7 +99,7 @@ respectively, being the last entries in the identifiers.
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should
 be sufficiently expansive that the instructor of a typical linear algebra course
-an easily discern the meaning.  The writing style should be appropriate for a
+can easily discern the meaning.  The writing style should be appropriate for a
 footnote in a scholarly publication.
 
 ----------
@@ -108,18 +125,34 @@ math.la.o
 Following math.la.o is one of the following letters, with the stated meaning:
 
 a  Apply
-c  Compute
+b  Describe
+c  Compute (or Calculate)
 d  Define
 e  Explain
+f  Formulate
+g  Recognize
 i  Interpret
-n  Describe (n = 'narrative')
+l  List
+m  Determine
+n  Understand
+o  Perform
 p  Prove
+q  Qualitatively describe
 r  Relate
 s  Solve
+t  Translate
 u  Use
+v  Provide
+w  Write
+y  Identify
+z  Analyze
+
+(May wish to add these:  Discuss, State, Understand, Demonstrate, Find,
+but only 4 letters remain.  "Understand" is problematic, because it is
+not directly testable.)
 
 The remaining parts of an outcome identifier follow the same pattern as the topic identifiers.
 Implicit in the naming of outcome identifiers is that all outcomes are of the form "verb noun".
 
-
+The description of an outcome must start with the corresponding word above.
 

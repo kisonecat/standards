@@ -1,4 +1,4 @@
-#  Copyright 2016 Robert A. Beezer, David W. Farmer
+#  Copyright 2016 Robert A. Beezer, David W. Farmer, James Fowler
 #
 #  This file is part of CuratedCourses.
 #
@@ -9,31 +9,12 @@
 #  Linear Algebra topic list
 #  Definitions, theorems, concepts and applications
 #
-#    description of a definition implicitly begins "definition of a"
-#    equivalences might appear as both a theorem and definition
-#      d.XX refers to a definition
-#      t.YY refers to a theorem
-#      c.ZZ refers to a concept
-#      a.WW refers to an application
+# See [elsewhere] for a discussion of the topic identifiers and 
 #
-#    vector spaces
-#      - "coordinate" is R^n, C^n, F^n
-#      - "abstract" is any other space
-#
-#  Style Guide
-#    * singular, as possible
-#    * all lowercase
-#    * no hyphens, spaces, or underscores
-#
-#  N.B.
-#  (a) this file is not strictly YAML
-#  (b) triple-dash *does* precede each id/description pair
-#  (c) there needs to be more "subdivision"
-#  (d) there needs to be more theorems and concepts
-#  (e) more *common* applications would be welcome
+# all of the ids below should be prepended by math.la
+# all of the descriptions of definitions below should be prepended by "Definition of a(n) "
 
-
-division: Solving Linear Systems
+division: Linear equations
 
 ---
 id: d.lineqn
@@ -42,415 +23,451 @@ description: linear equation
 id: d.linsys
 description: system of linear equations
 ---
-id: d.solnlinsys
+id: d.linsys.soln
 description: solution to a system of linear equations
 ---
-id: d.eqnop
+id: d.lineqn.op
 description: equation operations on a linear system
 ---
-id: d.rowop
+id: d.mat.row_op
 description: row operations on a matrix
 ---
-id: d.rowequiv
+id: d.mat.row_equiv
 description: row equivalent matrices
 ---
-id: d.rref
+id: d.mat.rref
 description: reduced row echelon form of a matrix
 ---
-id: t.rref
+id: t.mat.rref
 description: reduced row echelon form of a matrix exists
 ---
-id: t.rrefunique
+id: t.mat.rref_unique
 description: reduced row echelon form of a matrix is unique
 ---
-id: d.pivotcol
+id: d.mat.pivot_col
 description: pivot column
 ---
-id: d.consistentsys
+id: d.linsys.consistent
 description: consistent linear system
 ---
-id: t.rcls
-description: recognizing consistent linear systems (in terms of d.rref)
+id: t.rref.when_consistent
+description: using the rref form of a system to determine if it is consistent
 ---
-id: t.zoi
-description: linear systems have zero, one, infinitely many solutions
+id: t.linsys.zoi
+description: linear systems have zero, one, or infinitely many solutions
 ---
-id: d.homoglinsys
+id: d.linsys.homog
 description: homogeneous linear system of equations
 ---
-id t.solnsparticularhomogeneous
-description: particular solution plus a homogeneous solution
+id t.linsys.nonhomog.particular_plus_homog
+description: The solutions to a nonhomogeneous system of equations are given by a particular solution plus the solutions to the homogeneous system.
 ---
-id: t.solnspreimage
-description: solutions are pre-image of linear transformation
+id: t.linsys.homog.soln_preimage
+description: solutions of a homogeneous system are the pre-image (of 0) of a linear transformation
 ---
-id: d.illconditionedsystem
+id: d.linsys.ill_conditioned
 description: ill-conditioned linear system
 ---
 
 division: Matrix Algebra
 
-subdivision: Matrix types
-
 ---
-id: d.matrix
+id: d.mat
 description: matrix
 ---
-id: d.augmat
+id: d.mat.augmented
 description: augmented matrix of a linear system
 ---
-id: d.coeffmat
+id: d.mat.coeff
 description: coefficient matrix
 
 subdivision: Matrix operations
 
 ---
-id: d.matvecprod
+id: d.mat.vec.prod
 description: matrix-vector product
 ---
-id: d.matreplinsys
+id: d.linsys.mat.repn
 description: matrix representation of a linear system
 ---
-id: d.matmult
+id: d.mat.mult
 description: matrix multiplication
 ---
-id: d.matinv
+id: d.mat.inv
 description: matrix inverse
 ---
-id: d.nullspaceright
-description: null space (right)
+id: d.mat.null_space.right
+description: matrix null space (right)
 ---
-id: d.nullspaceleft
-description: null space (left)
+id: d.mat.null_space.left
+description: matrix null space (left)
 ---
-id: d.rowspace
-description: row space
+id: d.mat.row_space
+description: row space of a matrix
 ---
-id: d.colspace
-description: column space
+id: d.mat.col_space
+description: column space of a matrix
 ---
-id: d.matrank
-description: rank of a matrix
----
-id: d.matnullity
-description: nullity of a matrix
----
-id: d.mateigenvalues
-description: eigenvalue of a matrix
----
-id: d.mateigenvectors
-description: eigenvector of a matrix
----
-id: d.mateigenspaces
-description: eigenspace of a matrix
----
-id: d.similarmatrices
-description: similar matrices
----
-id: d.matdiagonalization
+id: d.mat.diagonalization
 description: matrix diagonalization
 ---
-id: d.mattranspose
+id: d.mat.transpose
 description: transpose of a matrix
 ---
-id: d.mattriangular
-description: triangular matrix
+id: d.mat.det
+description: determinant of a matrix
 ---
-id: d.matsymmetric
+id: t.mat.det.volume
+description: determinants and volume
+---
+
+subdivision: Matrix properties
+
+---
+id: d.mat.rank
+description: rank of a matrix
+---
+id: d.mat.nullity
+description: nullity of a matrix
+---
+id: d.mat.eig
+description: eigenvalue of a matrix
+---
+id: d.mat.eigvec
+description: eigenvector(s) of a matrix
+---
+id: d.mat.eigsp
+description: eigenspace(s) of a matrix
+---
+id: d.mat.charpoly
+description: characteristic polynomial of a matrix
+---
+id: d.mat.minpoly
+description: minimal polynomial of a matrix
+---
+id: d.mat.charpoly,eig
+description: the eigenvalues are the roots of the characteristic polynomial of a matrix
+---
+id: d.mat.similar
+description: similar matrices
+---
+id: d.mat.diagonal
+description: diagonal matrix
+---
+id: d.mat.block_diagonal
+description: block diagonal matrix
+---
+id: d.mat.triangular
+description: triangular matrix (upper and lower)
+---
+id: d.mat.symmetric
 description: symmetric matrix
 ---
-id: d.mathermitian
+id: d.mat.hermitian
 description: Hermitian matrix
+---
+id: d.mat.orthogonal
+description: orthogonal matrix
+---
+id: d.map.unitary
+description: unitary matrix
+---
+id: d.mat.positive_definite
+description: positive-definite matrix
+---
 
 division: Vector Spaces
 
-id: d.vectorcoordinate
-description: vector, coordinate space
+subdivision: Coordinate vector space
+
 ---
-id: d.vectorabstract
-description: vector, abstract space
+id: d.vec.coord
+description: vector, coordinate vector space
 ---
-id: d.vectoraddcoordinate
-description: vector addition, coordinate space
+id: d.vec.add.coord
+description: vector addition, coordinate vector space
 ---
-id: d.vectoraddabstract
-description: vector addition, abstract space
+id: d.vec.scalar.mult.coord
+description: vector scalar multiplication, coordinate vector space
 ---
-id: d.vectorscalarmultcoordinate
-description: vector scalar multiplication, coordinate space
+id: d.vsp.axioms.coord
+description: axioms of a vector space, coordinate vector space
 ---
-id: d.vectorscalarmultabstract
-description: vector scalar multiplication, abstract space
+id: d.vsp.subspace.coord  # omit vsp?
+description: subspace, coordinate vector space
 ---
-id: d.vectorspaceaxiomscoordinate
-description: axioms of a vector space, coordinate space
+id: d.vec.lincomb.coord
+description: linear combination of vectors, coordinate vector space
 ---
-id: d.vectorspaceaxioms
-description: axioms of a vector space, abstract space
+id: d.vec.span.coord
+description: span of a set of vectors, coordinate vector space
 ---
-id: d.subspacecoordinate
-description: subspace, coordinate space
+id: d.vec.linindep.coord
+description: if a linear combination of a set of vectors is zero, then every coefficient is zero, coordinate vector space
 ---
-id: d.subspaceabstract
-description: subspace, abstract space
+id: t.vec.linindep.coord
+description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, coordinate vector space
 ---
-id: d.lincombvectorcoordinate
-description: linear combination, coordinate space
+id: d.vec.lindep.coord
+description: one of the vectors in a set can be written as a linear combination of the other vectors, coordinate vector space
 ---
-id: d.lincombvectorabstract
-description: linear combination, abstract space
+id: t.vec.lindep.coord
+description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space
 ---
-id: d.spancoordinate
-description: span of a set of vectors, coordinate space
+id: d.vsp.basis.coord
+description: basis of a vector space, coordinate vector space
 ---
-id: d.spanabstract
-description: span of a set of vectors, abstract space
+id: d.vsp.dim.coord
+description: dimension of a vector space, coordinate vector space
 ---
-id: d.linindepcoordinate
-description: if a linear combination of a set of vectors is zero, then every coefficient is zero, coordinate space
+id: d.vsp.coordinate.coord
+description: coordinate of a vector space, coordinate vector space
 ---
-id: d.lindepcoordinate
-description: one of the vectors in a set can be written as a linear combination of the other vectors, coordinate space
+id: d.vsp.vector_repn.coord
+description: vector representation of a vector space, coordinate vector space
 ---
-id: t.linindepcoordinate
-description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, coordinate space
+
+subdivision: Abstract vector space
+
 ---
-id: t.lindepcoordinate
-description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, coordinate space
+id: d.vec.abs
+description: vector, abstract vector space
 ---
-id: d.linindepabstract
-description: if a linear combination of a set of vectors is zero, then every coefficient is zero, abstract space
+id: d.vec.add.abs
+description: vector addition, abstract vector space
 ---
-id: d.lindepabstract
-description: one of the vectors in a set can be written as a linear combination of the other vectors, abstract space
+id: d.vec.scalar.mult.abs
+description: vector scalar multiplication, abstract vector space
 ---
-id: t.linindepabstract
-description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, abstract space
+id: d.vsp.axioms.abs
+description: axioms of a vector space, abstract vector space
 ---
-id: t.lindepabstract
-description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, abstract space
+id: d.vsp.subspace.abs  # omit vsp?
+description: subspace, abstract vector space
 ---
-id: d.basiscoordinate
-description: basis, coordinate space
+id: d.vec.lincomb.abs
+description: linear combination of vectors, abstract vector space
 ---
-id: d.basisabstract
-description: basis, abstract space
+id: d.vec.span.abs
+description: span of a set of vectors, abstract vector space
 ---
-id: d.dimensioncoordinate
-description: dimension, coordinate space
+id: d.vec.linindep.abs
+description: if a linear combination of a set of vectors is zero, then every coefficient is zero, abstract vector space
 ---
-id: d.dimensionabstract
-description: dimension, abstract space
+id: t.vec.linindep.abs
+description: linearly independent set iff whenever a linear combination is zero, then every coefficient is zero, abstract vector space
 ---
-id: d.coordinatecoordinate
-description: coordinate, coordinate space
+id: d.vec.lindep.abs
+description: one of the vectors in a set can be written as a linear combination of the other vectors, abstract vector space
 ---
-id: d.coordinateabstract
-description: coordinate, abstract space
+id: t.vec.lindep.abs
+description: linearly dependent set iff one of the vectors can be written as a linear combination of the other vectors, abstract vector space
 ---
-id: d.vectorrepresentationcoordinate
-description: vector representation, coordinate space
+id: d.vsp.basis.abs
+description: basis of a vector space, abstract vector space
 ---
-id: d.vectorrepresentationabstract
-description: vector representation, abstract space
+id: d.vsp.dim.abs
+description: dimension of a vector space, abstract vector space
+---
+id: d.vsp.coordinate.abs
+description: coordinate of a vector space, abstract vector space
+---
+id: d.vsp.vector_repn.abs
+description: vector representation of a vector space, abstract vector space
+---
 
 division: Linear Transformations
 
 ---
-id: d.lineartranscoordinate
-description: linearity of linear transformation, coordinate spaces
----
-id: d.lineartransabstract
-description: linearity of linear transformation, abstract spaces
----
-id: c.matvexmultlintrans
+id: c.mat.vec.mult.lintrans   # is this a concept or a theorem?
 description: matrix-vector multiplication as a linear transformation
 ---
-id: c.lintransgeom
-description: geometric property of a linear transformation
+id: c.lintrans.geometric
+description: geometric properties of linear transformations
 ---
-id: t.lintranszz
+id: t.lintrans.z_z
 description: linear transformation sends zero to zero
 ---
-id: t.rotationmat
+id: t.mat.rotation
 description: matrix describing a rotation of the plane
 ---
-id: d.preimagecoordinate
-description: pre-image of linear transformation, coordinate spaces
----
-id: d.preimage
-description: pre-image of linear transformation, abstract spaces
----
-id:d.ontocoordinate
-description: onto linear transformation, coordinate spaces
----
-id: d.ontoabstract
-description: onto linear transformation, abstract spaces
----
-id: t.ontocolspan
+id: t.lintrans.onto.col_span
 description: a mapping is onto iff the columns of its matrix span the codomain
 ---
-id: d.onetoonecoordinate
-description: one-to-one linear transformation, coordinate spaces
----
-id: d.onetooneabstract
-description: one-to-one linear transformation, abstract spaces
----
-id: d.lintransrank
+id: d.lintrans.rank
 description: rank of a linear transformation
 ---
-id: d.lintransnullity
+id: d.lintrans.nullity
 description: nullity of a linear transformation
 ---
-id: t.onetoonekerz
+id: t.lintrans.onetoone.ker_z
 description: a mapping is one-to-one iff its kernel is 0
 ---
-id: t.onetoonelinindepcol
+id: t.lintrans.onetoone.linindep_col
 description: a mapping is one-to-one iff the columns of its matrix are linearly independent
 ---
-id: d.rangecoordinate
-description: range of linear transformation, coordinate spaces
----
-id: d.rangeabstract
-description: range of linear transformation, abstract spaces
----
-id: d.kernelcoordinate
-description: kernel of linear transformation, coordinate spaces
----
-id: d.kernelabstract
-description: kernel of linear transformation, abstract spaces
----
-id: d.lintransinvertiblecoordinate
-description: invertible linear transformation, coordinate spaces
----
-id: t.matrixoflintransabstract
-description: invertible linear transformation, abstract spaces
----
-id: t.matrixoflintrans
+id: t.lintrans.mat
 description: a linear transformation is given by a matrix
 ---
-id: d.matrixrepresentationcoordinate
-description: matrix representation of a linear transformation, coordinate spaces
----
-id: d.matrixrepresentationabstract
-description: matrix representation of a linear transformation, abstract spaces
----
-id: d.changeofbasiscoordinate
-description: change of basis, coordinate spaces
----
-id: d.changeofbasisabstract
-description: change of basis, abstract spaces
----
-id: d.matrepresentationcompositioncoordinate
-description: matrix representation of a composition of linear transformations, coordinate spaces
----
-id: d.matrepresentationcomposition
-description: matrix representation of a composition of linear transformations, abstract spaces
----
-id: d.lintranseigenvaluescoordinate
-description: eigenvalue of a linear transformation, coordinate spaces
----
-id: d.lintranseigenvaluesabstract
-description: eigenvalue of a linear transformation, abstract spaces
----
-id: d.invariantsubspace
+id: d.lintrans.invariant_subspace
 description: invariant subspace under linear transformation
 ---
-id: d.lintransnilpotent
+id: d.lintrans.nilpotent
 description: nilpotent linear transformation
+---
+
+subdivision: Coordinate vector space
+
+---
+id: d.lintrans.coord
+description: linear transformation, coordinate vector space
+---
+id: d.lintrans.preimage.coord
+description: pre-image of linear transformation, coordinate vector space
+---
+id:d.lintrans.onto.coord
+description: onto linear transformation, coordinate vector space
+---
+id: d.lintrans.onetoone.coord
+description: one-to-one linear transformation, coordinate vector space
+---
+id: d.lintrans.range.coord
+description: range of linear transformation, coordinate vector space
+---
+id: d.lintrans.kernel.coord
+description: kernel of linear transformation, coordinate vector space
+---
+id: d.lintrans.invertible.coord
+description: invertible linear transformation, coordinate vector space
+---
+id: d.lintrans.change_of_basis.coord
+description: change of basis, coordinate vector space
+---
+id: d.lintrans.mat.repn.coord
+description: matrix representation of a linear transformation, coordinate vector space
+---
+id: d.lintrans.mat_repn.composition.coord
+description: matrix representation of a composition of linear transformations, coordinate vector space
+---
+id: d.lintrans.eig.coord
+description: eigenvalue of a linear transformation, coordinate vector space
+---
+
+subdivision: Abstract vector space
+
+---
+id: d.lintrans.abs
+description: linear transformation, abstract vector space
+---
+id: d.lintrans.preimage.abs
+description: pre-image of linear transformation, abstract vector space
+---
+id:d.lintrans.onto.abs
+description: onto linear transformation, abstract vector space
+---
+id: d.lintrans.onetoone.abs
+description: one-to-one linear transformation, abstract vector space
+---
+id: d.lintrans.range.abs
+description: range of linear transformation, abstract vector space
+---
+id: d.lintrans.kernel.abs
+description: kernel of linear transformation, abstract vector space
+---
+id: d.lintrans.invertible.abs
+description: invertible linear transformation, abstract vector space
+---
+id: d.lintrans.change_of_basis.abs
+description: change of basis, abstract vector space
+---
+id: d.lintrans.mat.repn.abs
+description: matrix representation of a linear transformation, abstract vector space
+---
+id: d.lintrans.mat_repn.composition.abs
+description: matrix representation of a composition of linear transformations, abstract vector space
+---
+id: d.lintrans.eig.abs
+description: eigenvalue of a linear transformation, abstract vector space
+---
 
 division: Orthogonality, Inner Product Spaces
 
 ---
-id: d.innerproductreal
+id: d.innerproduct.real
 description: inner product, real entries
 ---
-id: d.innerproductcomplex
+id: d.innerproduct.complex
 description: inner product, complex entries
 ---
-id: d.innerproductabstract
+id: d.innerproduct.abs
 description: inner product, abstract
 ---
 id: d.norm
 description: norm, length, distance
 ---
-id: d.projectionline
+id: d.projection.line
 description: projection onto a line
 ---
-id: d.projectionplane
+id: d.projection.plane
 description: projection onto a plane
 ---
-id: d.projectionsubspace
+id: d.projection.subspace
 description: projection onto a subspace
 ---
-id: d.orthogonalvectors
+id: d.vec.orthogonal
 description: orthogonal vectors, pair
 ---
-id: d.orthogonalset
-description: orthogonal set
----
-id: d.orthogonalmatrix
-description: orthogonal matrix
----
-id: d.unitarymatrix
-description: unitary matrix
+id: d.vec.orthogonal_set
+description: orthogonal set of vectors
 ---
 id: d.orthogonalprojection
 description: orthogonal projection
 ---
-id: d.gram-schmidt
+id: d.gramschmidt
 description: Gram-Schmidt process
 ---
 id: d.leastsquares
 description: least squares fit
 ---
-id: d.generalizedinverse
-description: generalized inverse
+id: d.mat.inv.generalized
+description: generalized inverse of a matrix
+---
 
-division: Decompositions, Canonical Forms
+division: Decompositions, Canonical forms of matrices
 
 ---
-id: d.svd
+id: d.mat.svd
 description: singular value decomposition (SVD)
 ---
-id: d.lu
+id: d.mat.lu
 description: LU decomposition
 ---
-id: d.choleskyy
+id: d.mat.cholesky
 description: Cholesky decomposition
 ---
-id: d.qr
+id: d.mat.qr
 description: QR decomposition
 ---
-id: d.schur
+id: d.mat.schur
 description: Schur triangulation
 ---
-id: d.hessenberg
+id: d.mat.hessenberg
 description: Hessenberg form
 ---
-id: d.jordan
+id: d.mat.jordan
 description: Jordan form
 ---
-id: d.rational
+id: d.mat.rational
 description: Rational form
 
 division: Other
 
----
-id: d.determinant
-description: determinant
----
 id: d.crossproduct
 description: cross product
----
-id: t.determinantvolume
-description: determinants and volume
 ---
 id: d.quadraticform
 description: quadratic form, orthonormal diagonalization, principal axes
 ---
-id: d.matpositivedefinite
-description: positive-definite matrix
 
 division: Applications
 
@@ -475,3 +492,4 @@ description: voting and social choice
 ---
 id: a.cubicspline
 description: cubic spline
+---
