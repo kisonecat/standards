@@ -256,16 +256,16 @@ description: "Definition of linear combination of vectors, abstract vector space
 id: d.vec.span.abs
 description: "Definition of span of a set of vectors, abstract vector space"
 ---
-id: d.vec.linindep.coord
+id: d.vec.linindep.abs
 description: "Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, abstract vector space."
 ---
-id: t.vec.linindep.coord
+id: t.vec.linindep.abs
 description: "Theorem: a set of vectors is linearly independent iff whenever a linear combination is zero, then every coefficient is zero, abstract vector space."
 ---
-id: d.vec.lindep.coord
+id: d.vec.lindep.abs
 description: "Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, abstract vector space."
 ---
-id: t.vec.lindep.coord
+id: t.vec.lindep.abs
 description: "Theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, abstract vector space."
 ---
 id: d.vsp.basis.abs
