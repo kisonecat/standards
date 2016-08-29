@@ -118,37 +118,6 @@ e Evaluation
    v  Provide
 
 
-
-for  is one of the following letters, with the stated meaning:
-m
-
-a  Apply
-b  Describe
-c  Compute (or Calculate)
-d  Define
-e  Explain
-f  Formulate
-g  Recognize
-h  Discuss
-i  Interpret
-j  Demonstrate
-k  Find
-l  List
-m  Determine
-n  Understand
-o  Perform
-p  Prove
-q  Qualitatively describe
-r  Relate
-s  Solve
-t  Translate
-u  Use
-v  Provide
-w  Write
-x  State
-y  Identify
-z  Analyze
-
 Note that the same verb can appear under more than one category,
 The remaining parts of an outcome identifier follow the same pattern as the topic identifiers.
 Implicit in the naming of outcome identifiers is that all outcomes are of the form "verb noun".
