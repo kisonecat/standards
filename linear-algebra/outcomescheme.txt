@@ -6,12 +6,12 @@ linear-algebra/outcomes
 contains a reasonably complete list of outcomes for an introductory
 course in linear algebra.  Example outcomes:
 
-id: math.la.o.d.mat.inv
+id: math.la.o.kd.mat.inv
 description: "Define the inverse of a matrix."
-id: math.la.o.c.mat.inv
+id: math.la.o.pc.mat.inv
 description: "Compute the inverse of a matrix."
-id: math.la.o.b.mat.inv.det
-description: "Describe the relationship between the determinant of a matrix and the determinant of its inverse."
+id: math.la.o.nz.mat.inv.det
+description: "Derive the relationship between the determinant of a matrix and the determinant of its inverse."
 
 All linear algebra outcomes begin with
 
@@ -34,7 +34,10 @@ p  Application
 
 n  Analysis
    Separate a complex idea into its constituent parts.
-   Derive an abstract relation.
+
+s  Synthesis
+   Derive an abstract relation.  Generalize a concept or combine
+   multiple concepts.
 
 e  Evaluation
    Solve a problem where the methods required, or the nature of the
@@ -84,16 +87,27 @@ p  Application
    m  Determine
 
 n  Analysis
-   a  analyze
-   d  discuss
+   a  Analyze
+   d  Discuss
    f  Formulate
    p  Prove
    r  Relate
    s  Solve
    v  Provide
+   e  Describe
+   z  Derive
+
+s  Synthesis
+   a  Analyze
+   d  Describe
+   p  Prove
+   s  Solve
+   v  Provide
+   z  Derive
 
 e  Evaluation
-   a  analyze
+   a  Analyze
+   d  Describe
    p  Prove
    s  Solve
    v  Provide
