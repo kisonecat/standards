@@ -30,23 +30,24 @@ c  Comprehension
    Use a specified theorem or formula in a less restricted setting
 
 p  Application
-   Apply an abstract/general method in a particular setting.
+   Apply an abstract/general method in a particular setting
+   Solve routine word problems
 
 n  Analysis
-   Separate a complex idea into its constituent parts.
+   Separate a complex idea into its constituent parts
 
 s  Synthesis
    Derive an abstract relation.  Generalize a concept or combine
-   multiple concepts.
+   multiple concepts
 
 e  Evaluation
    Solve a problem where the methods required, or the nature of the
-   solution, must be developed during the process of finding a solution.
+   solution, must be developed during the process of finding a solution
 
 The possibilities for the second letter following math.la.o. is a function
 of the first letter, as given below.
 
-k  Knowledge
+k Knowledge
    c  Compute (or Calculate)
    d  Define
    i  Identify
@@ -56,7 +57,7 @@ k  Knowledge
    u  Use
    w  Write
 
-c  Comprehension
+c Comprehension
    a  Apply
    c  Compute (or Calculate)
    d  Describe
@@ -65,19 +66,23 @@ c  Comprehension
    i  Identify
    p  Perform
    q  Qualitatively describe
+   r  Recognize
    s  Solve
    t  Translate
    u  Use
    n  Understand
    h  Discuss
    j  Demonstrate
+   z  Interpret
 
 
-p  Application
+p Application
    c  Compute (or Calculate)
+   d  Describe
    e  Explain
    f  Formulate
    i  Identify
+   p  Perform
    q  Qualitatively describe
    r  Relate
    s  Solve
@@ -86,7 +91,7 @@ p  Application
    n  Interpret
    m  Determine
 
-n  Analysis
+n Analysis
    a  Analyze
    d  Discuss
    f  Formulate
@@ -97,7 +102,7 @@ n  Analysis
    e  Describe
    z  Derive
 
-s  Synthesis
+s Synthesis
    a  Analyze
    d  Describe
    p  Prove
@@ -105,7 +110,7 @@ s  Synthesis
    v  Provide
    z  Derive
 
-e  Evaluation
+e Evaluation
    a  Analyze
    d  Describe
    p  Prove
