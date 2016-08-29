@@ -17,7 +17,91 @@ All linear algebra outcomes begin with
 
 math.la.o
 
-Following math.la.o is one of the following letters, with the stated meaning:
+Following math.la.o. is a pair of letters, where the first letter is one of the
+followint 6 choices, closely modeled on Bloom's taxonomy of objectives for
+knowledge-based goals:
+
+k  Knowledge
+   State a definition, theorem, or formula.
+   Use a specified theorem or formula in a restricted setting.
+
+c  Comprehension
+   Explain or paraphrase a definition or theorem.
+   Use a specified theorem or formula in a less restricted setting
+
+p  Application
+   Apply an abstract/general method in a particular setting.
+
+n  Analysis
+   Separate a complex idea into its constituent parts.
+   Derive an abstract relation.
+
+e  Evaluation
+   Solve a problem where the methods required, or the nature of the
+   solution, must be developed during the process of finding a solution.
+
+The possibilities for the second letter following math.la.o. is a function
+of the first letter, as given below.
+
+k  Knowledge
+   c  Compute (or Calculate)
+   d  Define
+   i  Identify
+   l  List
+   r  Recognize
+   s  State
+   u  Use
+   w  Write
+
+c  Comprehension
+   a  Apply
+   c  Compute (or Calculate)
+   d  Describe
+   e  Explain
+   f  Find
+   i  Identify
+   p  Perform
+   q  Qualitatively describe
+   s  Solve
+   t  Translate
+   u  Use
+   n  Understand
+   h  Discuss
+   j  Demonstrate
+
+
+p  Application
+   c  Compute (or Calculate)
+   e  Explain
+   f  Formulate
+   i  Identify
+   q  Qualitatively describe
+   r  Relate
+   s  Solve
+   t  Translate
+   u  Use
+   n  Interpret
+   m  Determine
+
+n  Analysis
+   a  analyze
+   d  discuss
+   f  Formulate
+   p  Prove
+   r  Relate
+   s  Solve
+   v  Provide
+
+e  Evaluation
+   a  analyze
+   p  Prove
+   s  Solve
+   v  Provide
+
+
+
+for  is one of the following letters, with the stated meaning:
+m
 
 a  Apply
 b  Describe
@@ -46,6 +130,7 @@ x  State
 y  Identify
 z  Analyze
 
+Note that the same verb can appear under more than one category,
 The remaining parts of an outcome identifier follow the same pattern as the topic identifiers.
 Implicit in the naming of outcome identifiers is that all outcomes are of the form "verb noun".
 
