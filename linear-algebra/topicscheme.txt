@@ -59,12 +59,14 @@ nonhomog  nonhomogeneous
 op  operation
 prod  product
 repn  representation
+rref  reduced row-echelon form
 soln  solution
 subsp  subspace
 sys  system
 vec  vector
 vsp  vector space
 z  zero
+zoi  zero, one, or infinitely many
 
 The topic identifiers mention objects before operations or properties, thus
 sys.homog  not  homog.sys
