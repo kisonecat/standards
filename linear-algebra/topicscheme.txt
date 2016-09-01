@@ -20,23 +20,29 @@ the topic identifier.  For example:
 id: math.la.t.mat.ranknullity
 description: "Rank-nullity theorem."
 
-No reference is made to R^n, C^n, or F^n, except as examples.  Instead,
-we specify concepts as either being expressed in a "coordinate" vector
-space or an "abstract" vector space.
+Avoid making references to R^n, C^n, or F^n, except as examples or
+when absolutely necessary.  Instead, specify concepts as either being
+expressed in a "coordinate setting" or an "abstract setting".
 
 Topic identifiers omit the "s" for a plural, even when the items being
 described are plural.  For example:
 id: math.la.d.mat.eig
 description: "Definition of eigenvalue(s) of a matrix."
 
+Do not put 'quotes' around terms.  For example:
+id: d.linsys.consistent
+description: "Definition of consistent linear system"
+Not  "Definition of 'consistent linear system'"
+
 Available abbreviations are:
 
-abs  abstract vector space
+abs  abstract setting
 add  addition
+canon  canonical (or normal) form
 charpoly  characteristic polynomial
 coeff  coefficient
 col  column
-coord  coordinate vector space
+coord  coordinate setting
 det  determinant
 dim  dimension
 eig  eigenvalue(s)
@@ -55,10 +61,12 @@ linsys  linear system
 lintrans  linear transformation
 mat  matrix
 mult  multiplication
+mxn  m-by-n        # m and n can be digits
 nonhomog  nonhomogeneous
 op  operation
 prod  product
 repn  representation
+RnCn  R^n or C^n
 rref  reduced row-echelon form
 soln  solution
 subsp  subspace
@@ -73,7 +81,7 @@ sys.homog  not  homog.sys
 mat.inv  not  inv.mat
 
 If an item can be expressed in either a coordinate setting or an abstract
-vector space setting, then both versions are available, with "coord" or "abs",
+setting, then both versions are available, with "coord" or "abs",
 respectively, being the last entries in the identifiers.
 
 Topic descriptions should start with a capital letter and end with a period

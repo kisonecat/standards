@@ -1,36 +1,32 @@
-Linear Algebra
-Learning Outcomes
-Matrices
 
-kd.mat.identity
-Define the identity matrix
+============================
+Vectors in coordinate spaces
+============================
 
-kd.mat.inverse
-Define the inverse of a matrix
-
-cz.linsys.soln.geometric
-Interpret existence and uniqueness of solutions geometrically
-
-kl.cn.vec.RnCn
+kl.vec.RnCn
 List properties of vectors in R^n (or C^n)
+
+cf.vec.add.RnCn
+Find the sum of vectors in R^n (or C^n)
 
 cn.vec.RnCn.geometric
 Understand geometric representations of vectors in R^n (or C^n)
 
-cn.vec.RnCn.addmult.geometric
-Understand addition and scalar multiplication of vectors in R^n (or C^n), geometrically
+cn.vec.addmult.geometric.coord
+Understand addition and scalar multiplication of vectors, geometrically, coordinate setting
 
 cn.vec.RnCn.dotproduct.geometric
 Understand dot product of vectors in R^n (or C^n), geometrically
 
-cs.linsys.solve.gauss_jordan
-Solve systems of linear equations using Gauss-Jordan elimination to reduce to echelon form
+========
+Matrices
+========
 
-cp.mat.rref
-Perform Gauss-Jordan elimination to put a matrix in reduced row-echelon form
+kd.mat
+Define matrix
 
-cs.linsys.soln.mat.inv
-Solve systems of linear equations using the inverse of the coefficient matrix when possible
+cq.mat.features
+Qualitative describe features of a matrix, e.g., square, diagonal, upper triangular, etc.
 
 cp.mat.add
 Perform matrix addition
@@ -38,66 +34,41 @@ Perform matrix addition
 cp.mat.scalar.mult
 Perform scalar multiplication of a matrix
 
-cf.mat.mult
-Find the product of two matrices
+kd.mat.vec.mult
+Define matrix-vector multiplication
 
 cp.mat.vec.mult
 Perform matrix-vector multiplication
 
-cf.mat.transpose
-Find the transpose of a matrix
-
-
-Recognize and use equivalent forms to identify matrices and solve linear systems 
-
-
-ch.mat.mult.associative
-Discuss the associativity of matrix multiplication
-
-ch.mat.mult.noncommutative
-Discuss the noncommutativity of matrix multiplication
-
-
-Compute with and recognize properties of particular matrices
- 
-Formulate, solve, apply, and interpret properties of linear systems 
-
-
-cp.mat.row.op
-Perform row operations on a matrix
-
-nu.linsys.homog.mat.inv.rref
-Recognize and use equivalent statements regarding invertible matrices, pivot positions, and solutions of homogeneous systems
-
-pr.linsys.mat.augmented
-Relate an augmented matrix to a system of linear equations
-
-pr.mat.linsys
-Relate a matrix to a homogeneous system of linear equations
-
-cr.mat.mult
-Recognize when two matrices can be multiplied
-
-cq.mat.features
-Qualitative describe features of a matrix, e.g., diagonal, upper or lower triangular
-
-kd.linsys.consistent
-Define what it means for a linear system to be consistent or inconsistent
-
-pm.linsys.zoi
-Determine when a system of linear equations has no, one, or many solutions
-
-ki.linsys.homog
-Identify a linear system as homogeneous or nonhomogeneous
+kd.mat.identity
+Define the identity matrix
 
 ki.mat.special
 Identify special matrices like the zero matrix and the identity matrix
 
-ps.linsys.mat
-Solve linear systems of equations using the language of matrices
+cr.mat.mult
+Recognize when two matrices can be multiplied
 
-pt.word_problems.linsys
-Translate word problems into linear equations
+cf.mat.mult
+Find the product of two matrices
+
+cf.mat.mult.2x2
+Find the product of two 2-by-2 matrices
+
+cf.mat.mult.3x3
+Find the product of two 3-by-3 matrices
+
+cd.mat.mult.associative
+Discuss the associativity of matrix multiplication
+
+cd.mat.mult.noncommutative
+Discuss the noncommutativity of matrix multiplication
+
+pe.mat.mult.cancellation
+Explain, by example, why AB = AC for matrices does not imply B = C
+
+cp.mat.row.op
+Perform row operations on a matrix
 
 kr.mat.echelon
 Recognize echelon forms 
@@ -105,21 +76,201 @@ Recognize echelon forms
 cp.mat.gaussian_elimination
 Perform Gaussian elimination
 
+kd.mat.rref
+Define reduced row-echelon form of a matrix
 
-pr.mat.lintrans.geometric
-Relate various matrix transformations to geometric illustrations
+ki.mat.rref
+Identify whether a matrix is in reduced row-echelon form
+
+cp.mat.rref
+Perform Gauss-Jordan elimination to put a matrix in reduced row-echelon form
+
+kd.mat.inv
+Define the inverse of a matrix
+
+kl.mat.inv
+List conditions equivalent for a matrix to be invertible
+
+ks.mat.inv.2x2.formula
+State the general formula for the inverse of a 2-by-2 matrix
+
+kf.mat.inv.2x2.formula
+Find the inverse of a 2-by-2 matrix by using a memorized formula
+
+cf.mat.inv.2x2.row_op
+Find the inverse of a 2-by-2 matrix by using row operations
+
+cf.mat.inv.3x3.row_op
+Find the inverse of a 3-by-3 matrix by using row operations
+
+cf.mat.inv.3x3.det
+Find the inverse of a 3-by-3 matrix by using determinants
+
+cf.mat.transpose
+Find the transpose of a matrix
+
+kd.mat.elementary
+Define elementary matrix
+
+cf.mat.prod.elementary
+Find a representation of a matrix as a product of elementary matrices
+
+kf.mat.adjoint
+Define adjoint of a matrix
+
+cu.mat.adjoint.inv
+Use the adjoint of a matrix to find the inverse of the matrix
+
+kd.mat.similar
+Define similar matrices
+
+cu.mat.similar
+Use properties of similar matrices
+
+cr.mat.symmetric
+Recognize symmetric matrices
+
+cr.mat.orthogonal
+Recognize orthogonal matrices
+
+kd.mat.lu
+Describe the LU decomposition of a matrix
 
 pc.mat.lu
 Compute the LU decomposition of a matrix
 
+kd.mat.qr
+Define the QR factorization of a matrix;
 
+pc.mat.qr
+Compute the QR factorization of a matrix;
+
+kd.mat.jordan.canon
+Describe the Jordan canonical form of matrix
+
+cd.mat.jordan.canon
+Describe the uses of the Jordan canonical form of matrix
+
+pc.mat.jordan.canon
+Compute the Jordan canonical form of matrix
+
+kd.mat.smith.canon
+Define the Smith normal form of matrix
+
+cd.mat.smith.canon
+Describe the uses of the Smith normal form of matrix
+
+pc.mat.smith.canon
+Compute the Smith normal form of matrix
+
+kd.mat.rational.canon
+Define the rational canonical form of matrix
+
+cd.mat.rational.canon
+Describe the uses of the rational canonical form of matrix
+
+pc.mat.rational.canon
+Compute the rational canonical form of matrix
+
+===========================
+Linear systems
+===========================
+
+kd.lin.eqn
+Define linear equation
+
+kd.linsys
+Define system of linear equations
+
+ki.linsys
+Identify a set of equations as being a system of linear equations
+
+cd.linsys.geometric
+Describe the geometric interpretation of a system of linear equations
+
+kd.linsys.consistent
+Define what it means for a linear system to be consistent or inconsistent
+
+kd.linsys.homog
+Define what it means for a linear system to be homogeneous or nonhomogeneous
+
+ki.linsys.homog
+Identify a linear system as homogeneous or nonhomogeneous
+
+# should we eliminate 2 out of the next 3 ?
+cs.linsys.soln
+Solve a system of linear equations
+
+cs.linsys.soln.general
+Find the general solution to a consistent system of linear equations
+
+cf.linsys.soln.parametric
+Find a parametric representation of a solution set of a system of linear equations
+
+cs.linsys.soln.triangular
+Solve a triangular linear system by back-substitution
+
+ch.linsys.soln.geometric
+Interpret existence and uniqueness of solutions geometrically
+
+===========================
+Linear systems and matrices
+===========================
+
+ct.linsys.mat
+Translate a system of linear equation into matrix-vector form
+
+pr.linsys.mat.augmented
+Relate an augmented matrix to a system of linear equations
+
+cs.linsys.solve.gauss_jordan
+Solve systems of linear equations using Gauss-Jordan elimination to reduce to echelon form
+
+cs.linsys.soln.mat.inv
+Solve systems of linear equations using the inverse of the coefficient matrix
+
+cs.linsys.soln.cramer.2x2
+Solve a 2-by-2 system of linear equations using Cramer's rule
+
+cs.linsys.soln.cramer.3x3
+Solve a 3-by-3 system of linear equations using Cramer's rule
+
+nu.linsys.homog.mat.inv.rref
+Recognize and use equivalent statements regarding invertible matrices, pivot positions, and solutions of homogeneous systems
+
+pr.mat.linsys
+Relate a matrix to a homogeneous system of linear equations
+
+pm.linsys.zoi
+Determine when a system of linear equations has zero, one, or infinitely many solutions
+
+ps.linsys.mat
+Solve linear systems of equations using the language of matrices
+
+pt.word_problems.linsys
+Translate word problems into linear equations
+
+pr.mat.lintrans.geometric
+Relate various matrix transformations to geometric illustrations
+
+============
 Determinants
+============
 
 kd.mat.det
 Define the determinant of a matrix
 
-pn.mat.det.volume
+cd.mat.det
+Describe properties of the determinant
+
+ph.mat.det.volume
 Interpret the determinant of a matrix as a volume
+
+ce.mat.det.geometric
+Explain what the determinant measures geometrically
+
+pc.area.det
+Compute areas of parallelograms and volumes of parallelepipeds using determinants
 
 cd.mat.det.row.op
 Describe how performing row operations affects the determinant
@@ -130,12 +281,13 @@ Analyze the determinant of a product of matrices algebraically
 na.mat.prod.det.geometric
 Analyze the determinant of a product of matrices geometrically
 
-cc.permutation.sign
-Determine the sign of a permutation
+cf.permutation.sign
+Find the sign of a permutation
 
 cc.mat.det.2x2
 Compute the determinant of a two-by-two matrix 
 
+# may need to split, according to method used?
 cc.mat.det.3x3
 Compute the determinant of a three-by-three matrix
 
@@ -148,11 +300,11 @@ Compute the determinant of an upper triangular matrix
 pc.mat.det.via_cofactors
 Compute the determinant of a matrix via cofactor expansion
 
-cd.mat.det
-Describe properties of the determinant
+cf.mat.minor
+Find the minors of a matrix
 
-cw.mat.det.geometric
-Explain what the determinant measures geometrically
+cf.mat.cofactor
+Find the cofactors of a matrix
 
 pr.mat.det.3x3.cross
 Relate the determinant of three-by-three matrices to the cross product
@@ -160,7 +312,10 @@ Relate the determinant of three-by-three matrices to the cross product
 cd.mat.det.transpose
 Describe how the determinant of a matrix and its transpose are related
 
-cd.mat.det.inverse
+ks.mat.det.inv
+State how the determinant of a matrix indicates whether the matrix is invertible
+
+cd.mat.det.inv
 Describe how the determinant of a matrix and its inverse are related
 
 pc.mat.inv.via.det
@@ -170,73 +325,39 @@ cd.mat.prod.det
 Describe how the determinant of a product of matrices relates to the determinant of the individual matrices
 
 
-Vector spaces
-linear independence
-basis and dimension
+=================================
+Vector spaces, coordinate setting
+=================================
 
-kd.vsp.abs
-Provide an axiomatic description of an abstract vector space
+ks.vsp.RnCn
+State the vector space properites of R^n (or C^n)
 
-cu.vsp.axioms.abs
-Use axioms for abstract vector spaces (over the real or complex fields) to discuss examples (and non-examples) of abstract vector spaces such as subspaces of the space of all polynomials
+kc.vsp.vec.add.coord
+Compute the sum of vectors, coordinate setting
 
-ch.vsp.basis.abs
-Discuss the existence of a basis of an abstract vector space
+kd.vsp.subsp.coord
+Define subspace, coordinate setting
 
-# should the next few have abs and coord versions?
-pd.vsp.vec.coordinates
-Describe coordinates of a vector relative to a given basis
+kl.vsp.subsp.RnCn
+List examples of subspaces of R^n (or C^n)
 
-cr.vsp.subsp
-Recognize and use basic properties of subspaces and vector spaces
+cr.vsp.subsp.coord
+Recognize and use basic properties of subspaces, coordinate setting
 
-kd.vsp.subsp
-Define subspace of a vector space
+pm.vsp.subsp.RnCn
+Determine whether or not particular subsets of R^n (or C^n) are subspaces 
 
-kl.vsp.subsp
-List examples of subspaces of a vector space
+kd.vsp.span.coord
+Define the span of a set of vectors, coordinate setting
 
-pm.vsp.subsp
-Determine whether or not particular subsets of a vector space are subspaces 
+cd.vsp.span.coord
+Discuss spanning sets of vectors, coordinate setting
 
-pm.vsp.basis.coord
-Determine a basis and the dimension of a finite-dimensional space, coordinate vector space
+pm.vsp.vec.span.coord
+Determine whether a vector is in the span of a set of vectors, coordinate setting
 
-pm.vsp.basis.abs
-Determine a basis and the dimension of a finite-dimensional space, abstract vector space
-
-ch.vsp.span.RnCn
-Discuss spanning sets for vectors in R^n (or C^n)
-
-ch.vsp.linindep.RnCn
-Discuss linear independence for vectors in R^n (or C^n)
-
-kd.vsp.dim
-Define the dimension of a vector space
-
-sp.vsp.dim.well_defined
-Prove all bases have the same number of elements
-
-# break this into separate theorems
-Prove elementary theorems concerning rank of a matrix
-
-ks.mat.ranknullity
-State the rank-nullity theorem for matrices
-
-ks.lintrans.ranknullity
-State the rank-nullity theorem for linear transformations
-
-sp.mat.ranknullity
-Prove the rank-nullity theorem for matrices
-
-sp.lintrans.ranknullity
-Prove the rank-nullity theorem for linear transformations
-
-kd.lintrans.rank
-Define the rank of a linear transformation
-
-kd.mat.rank
-Define the rank of a matrix
+pm.vsp.span.RnCn
+Determine whether a given set of vectors spans R^n (or C^n)
 
 kd.mat.rowspace
 Define row space and column space of a matrix
@@ -244,92 +365,353 @@ Define row space and column space of a matrix
 cd.mat.rowspace_colspace
 Describe a relationship between the row space and column space of a matrix
 
+kd.vsp.linindep.coord
+Define linear independence for vectors, coordinate setting
 
-Linear transformations
+cd.vsp.linindep.coord
+Discuss linear independence for vectors, coordinate setting
 
-ch.lintrans.mat.basis
-For a linear transformation between vector spaces, discuss its matrix relative to given bases
+pm.vsp.linindep.RnCn
+Determine whether a given set of vectors is linearly independent in R^n (or C^n)
 
-pc.lintrans.mat.basis
-Calculate the matrix representation for the linear transformation with respect to a basis
+kd.vsp.basis.coord
+Define basis of a subspace, coordinate setting
 
-pe.lintrans.mat.basis_change
-Explain how those matrix of a linear transformation changes when the bases are changed
+ks.vsp.basis.standard.RnCn
+State the standard basis of R^n (or C^n)
 
-ci.lintrans.mat.basis_invariant
-Identify properties of a matrix which the same for all matrices representing the same linear transformation
+pm.vsp.basis.RnCn
+Determine whether a given set of vectors is a basis for R^n (or C^n)
 
-cz.mat.lintrans
-Interpret a matrix as a linear transformation from R^n (or C^n) to R^m (or C^m)
+pf.vsp.basis.coord
+Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
-cn.lintrans.mat
-Understand the relationship between a linear transformation and its matrix representation
+pf.vsp.basis.transition.coord
+Find the transition matrix from one basis to another basis, coordinate setting
 
-cd.lintrans.2d.geometric
-Describe geometrically significant linear transformations of the plane to itself
+cf.mat.basis.row_space
+Find a basis for the row/column space of a matrix
 
-cz.mat.prod.lintrans
-Interpret a matrix product as a composition of linear transformations
+pf.vsp.basis.coord
+Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
-cz.mat.inv.lintrans
-Interpret the inverse matrix as representing the inverse linear transformation
+sp.vsp.dim.well_defined.abs
+Prove all bases have the same number of elements, coordinate setting
 
-ce.mat.lintrans
-Explain the difference between a matrix as a table of numbers and a linear transformation as a function
+pd.vsp.vec.coordinate.coord
+Describe coordinates of a vector relative to a given basis, coordinate setting
+
+
+===============================
+Vector spaces, abstract setting
+===============================
+
+kd.vsp.abs
+Define vector space, abstract setting
+
+cd.vsp.examples.abs
+Discuss examples (and non-examples) of vector spaces such as subspaces of the space of all polynomials
+
+cr.vsp.examples.abs
+Recognize whether a given set with two operations is a vector space
+
+cd.vsp.basis.abs
+Discuss the existence of a basis of an abstract vector space
+
+pd.vsp.vec.coordinate.abs
+Describe coordinates of a vector relative to a given basis, abstract setting
+
+cr.vsp.subsp.abs
+Recognize and use basic properties of subspaces and vector spaces, abstract setting
+
+kd.vsp.subsp.abs
+Define subspace of a vector space, abstract setting
+
+kl.vsp.subsp.abs
+List examples of subspaces of a vector space, abstract setting
+
+pm.vsp.subsp.abs
+Determine whether or not particular subsets of a vector space are subspaces, abstract setting 
+
+kd.vsp.span.abs
+Define the span of a set of vectors, abstract setting
+
+cd.vsp.span.abs
+Discuss spanning sets of vectors, abstract setting
+
+pm.vsp.vec.span.abs
+Determine whether a vector is in the span of a set of vectors, abstract setting
+
+kd.vsp.basis.abs
+Define basis of a vector space/subspace, abstract setting
+
+pf.vsp.basis.abs
+Find a basis and the dimension of a finite-dimensional space, abstract setting
+
+pf.vsp.vec.basis.abs
+Find the coordinates of a vector with respect to a basis, abstract setting
+
+pf.vsp.basis.transition.abs
+Find the transition matrix from one basis to another basis, abstract setting
+
+kd.vsp.dim.abs
+Define the dimension of a vector space, abstract setting
+
+sp.vsp.dim.well_defined.abs
+Prove all bases have the same number of elements, abstract setting
+
+===========================================
+Linear transformations, general terminology
+===========================================
 
 kd.lintrans.injective
 Define "injective function"
+
 kd.lintrans.onetoone
 Define "one-to-one function"
 
 kd.lintrans.surjective
 Define "surjective function"
+
 kd.lintrans.onto
 Define "onto function"
 
 kd.lintrans.bijective
 Define "bijective function"
 
-ci.lintrans.injective
-Identify when a linear transformation is injective
-ci.lintrans.onetoone
-Identify when a linear transformation is one-to-one
+==========================================
+Linear transformations, coordinate setting (matrices as linear transformations)
+==========================================
 
-ci.lintrans.surjective
-Identify when a linear transformation is surjective
-ci.lintrans.onto
-Identify when a linear transformation is onto
+ch.mat.lintrans.RnCn
+Interpret a matrix as a linear transformation from R^n (or C^n) to R^m (or C^m)
 
-ci.lintrans.bijective
-Identify when a linear transformation is bijective
+ce.mat.lintrans
+Explain the difference between a matrix as a table of numbers and a linear transformation as a function
 
-pm.lintrans.injective_surjective
-Decide whether a linear transformation is injective or surjective and how these questions are related to matrices
-pm.lintrans.onetoone_onto
-Decide whether a linear transformation is one-to-one or onto and how these questions are related to matrices
+cd.lintrans.2d.geometric
+Describe geometrically significant linear transformations of the plane to itself
 
-kd.lintrans.image
-Define the image of a linear transformation
+kd.lintrans.image.coord
+Define the image of a linear transformation, coordinate setting
 
-sp.lintrans.image.subsp
-Prove that the image of a linear transformation is a subspace
+sp.lintrans.image.subsp.coord
+Prove that the image of a linear transformation is a subspace, coordinate setting
 
-kd.lintrans.kernel
-Define the kernel of a linear transformation
+kd.lintrans.kernel.coord
+Define the kernel of a linear transformation, coordinate setting
 
-sp.lintrans.kernel.subsp
-Prove that the kernel of a linear transformation is a subspace
+sp.lintrans.kernel.subsp.coord
+Prove that the kernel of a linear transformation is a subspace, coordinate setting
 
-nd.lintrans.kernel_image.mat
-Discuss the kernel and image of a linear transformation in terms of nullity and rank of the matrix
+kd.mat.rank
+Define the rank of a matrix
 
+kd.mat.nullspace
+Define the nullspace of a matrix
+
+kd.mat.nullity
+Define the nullity of a matrix
+
+cf.mat.nullspace.basis
+Find a basis for the null space of a matrix
+
+# break this into separate theorems
+Prove elementary theorems concerning rank of a matrix
+
+ks.mat.ranknullity
+State the rank-nullity theorem for matrices
+
+sp.mat.ranknullity
+Prove the rank-nullity theorem for matrices
+
+cf.lintrans.rank.coord
+Find the rank of a linear transformation, coordinate setting
+
+cf.lintrans.nullity.coord
+Find the nullity of a linear transformation, coordinate setting
+
+pf.lintrans.kernel.basis.coord
+Find a basis for the kernel of a linear transformation, coordinate setting 
+
+pf.lintrans.range.basis.coord
+Find a basis for the range of a linear transformation, coordinate setting
+
+cd.lintrans.mat.basis.coord
+Discuss the matrix of a linear transformation relative to given bases, coordinate setting
+
+pc.lintrans.mat.basis.coord
+Calculate the matrix representation for the linear transformation with respect to a basis, coordinate setting
+
+pc.lintrans.mat.basis.diagonal.coord
+Find a basis such that the matrix representation of a linear transformation is diagonal, coordinate setting
+
+pe.lintrans.mat.basis_change.coord
+Explain how the matrix of a linear transformation changes when the bases are changed, coordinate setting
+
+ci.lintrans.mat.basis_invariant.coord
+Identify properties of a matrix which are the same for all matrices representing the same linear transformation, coordinate setting
+
+ch.mat.prod.lintrans.coord
+Interpret a matrix product as a composition of linear transformations, coordinate setting
+
+ch.mat.inv.lintrans.coord
+Interpret the inverse matrix as representing the inverse linear transformation, coordinate setting
+
+pe.lintrans.mat.basis_change.coord
+Explain how the matrix of a linear transformation changes when the bases are changed, coordinate setting
+
+ci.lintrans.injective.coord
+Identify when a linear transformation is injective, coordinate setting
+
+ci.lintrans.onetoone.coord
+Identify when a linear transformation is one-to-one, coordinate setting
+
+ci.lintrans.surjective.coord
+Identify when a linear transformation is surjective, coordinate setting
+
+ci.lintrans.onto.coord
+Identify when a linear transformation is onto, coordinate setting
+
+ci.lintrans.bijective.coord
+Identify when a linear transformation is bijective, and when it is, find the inverse, coordinate setting
+
+pm.lintrans.injective_surjective.coord
+Decide whether a linear transformation is injective or surjective and how these questions are related to matrices, coordinate setting
+
+pm.lintrans.onetoone_onto.coord
+Decide whether a linear transformation is one-to-one or onto and how these questions are related to matrices, coordinate setting
+
+nd.lintrans.kernel_image.mat.coord
+Discuss the kernel and image of a linear transformation in terms of nullity and rank of a matrix, coordinate setting
+
+========================================
+Linear transformations, abstract setting
+========================================
+
+kd.lintrans.image.abs
+Define the image of a linear transformation, abstract setting
+
+sp.lintrans.image.subsp.abs
+Prove that the image of a linear transformation is a subspace, abstract setting
+
+kd.lintrans.kernel.abs
+Define the kernel of a linear transformation, abstract setting
+
+sp.lintrans.kernel.subsp.abs
+Prove that the kernel of a linear transformation is a subspace, abstract setting
+
+kd.lintrans.rank.abs
+Define the rank of a linear transformation, abstract setting
+
+kd.lintrans.nullity.abs
+Define the nullity of a linear transformation, abstract setting
+
+ks.lintrans.ranknullity.abs
+State the rank-nullity theorem for linear transformations, abstract setting
+
+sp.lintrans.ranknullity.abs
+Prove the rank-nullity theorem for linear transformations, abstract setting
+
+nd.lintrans.kernel_image.mat.abs
+Discuss the kernel and image of a linear transformation in terms of nullity and rank of a matrix, abstract setting
+
+cf.lintrans.rank.abs
+Find the rank of a linear transformation, abstract setting
+
+cf.lintrans.nullity.abs
+Find the nullity of a linear transformation, abstract setting
+
+pf.lintrans.kernel.basis.abs
+Find a basis for the kernel of a linear transformation, abstract setting
+
+pf.lintrans.range.basis.abs
+Find a basis for the range of a linear transformation, abstract setting
+
+cd.lintrans.mat.basis.abs
+Discuss the matrix of a linear transformation between vector spaces, relative to given bases, abstract setting
+
+pc.lintrans.mat.basis.abs
+Calculate the matrix representation for the linear transformation with respect to a basis, abstract setting
+
+pc.lintrans.mat.basis.diagonal.abs
+Find a basis such that the matrix representation of a linear transformation is diagonal, abstract setting
+
+pe.lintrans.mat.basis_change.abs
+Explain how the matrix of a linear transformation changes when the bases are changed, abstract setting
+
+ci.lintrans.mat.basis_invariant.abs
+Identify properties of a matrix which the same for all matrices representing the same linear transformation, abstract setting
+
+cn.lintrans.mat.abs
+Understand the relationship between a linear transformation and its matrix representation, abstract setting
+
+ch.mat.prod.lintrans.abs
+Interpret a matrix product as a composition of linear transformations, abstract setting
+
+ch.mat.inv.lintrans.abs
+Interpret the inverse matrix as representing the inverse linear transformation, abstract setting
+
+ci.lintrans.injective.abs
+Identify when a linear transformation is injective, abstract setting
+
+ci.lintrans.onetoone.abs
+Identify when a linear transformation is one-to-one, abstract setting
+
+ci.lintrans.surjective.abs
+Identify when a linear transformation is surjective, abstract setting
+
+ci.lintrans.onto.abs
+Identify when a linear transformation is onto, abstract setting
+
+ci.lintrans.bijective.abs
+Identify when a linear transformation is bijective, and when it is, find the inverse, abstract setting
+
+pm.lintrans.injective_surjective.abs
+Decide whether a linear transformation is injective or surjective and how these questions are related to matrices, abstract setting
+
+pm.lintrans.onetoone_onto.abs
+Decide whether a linear transformation is one-to-one or onto and how these questions are related to matrices, abstract setting
+
+============================
 Eigenvalues and eigenvectors
+============================
+
+kd.mat.eig
+Define the eigenvalues and eigenvectors of a matrix
+
+cd.mat.eig.geometric
+Describe eigenvalues and eigenvectors geometrically
+
+ce.mat.eig.importance
+Explain the significance of eigenvectors and eigenvalues
+
+kr.mat.eigenvalue
+Recognize an eigenvector of a matrix
 
 cf.mat.eig
 Find the eigenvalues and eigenvectors of a matrix
 
-kd.mat.eig.geometric
-Define eigenvalues and eigenvectors geometrically
+cf.mat.eig.2x2
+Find the eigenvalues and eigenvectors of a 2-by-2 matrix
+
+cf.mat.eig.3x3
+Find the eigenvalues and eigenvectors of a 3-by-3 matrix
+
+kd.mat.charpoly
+Define the characteristic polynomial of a matrix
+
+cc.mat.charpoly
+Find the characteristic polynomial of a matrix
+
+kd.mat.trace
+Define trace of a matrix
+
+ks.mat.eig.trace
+State the relationship between the trace of a matrix and its eigenvalues
+
+ks.mat.eig.det
+State the relationship between the determininant of a matrix and its eigenvalues
 
 pu.mat.eig.charpoly
 Use characteristic polynomials to compute eigenvalues and eigenvectors
@@ -337,15 +719,26 @@ Use characteristic polynomials to compute eigenvalues and eigenvectors
 pu.mat.eig.diagonalize
 Use eigenspaces of matrices, when possible, to diagonalize a matrix
 
+pm.mat.eig.diagonalize
+Determine when a matrix can be diagonalized
+
 pp.mat.diagonalize
-Perform diagonalization of matrices
+Perform diagonalization of a matrix
 
-ce.mat.eig.importance
-Explain the significance of eigenvectors and eigenvalues
+ks.mat.spectral_theorem
+State the spectral theorem for symmetric matrices
 
+pu.mat.spectral_theorem
+Use the spectral theorem for symmetric matrices
 
-cc.mat.charpoly
-Find the characteristic polynomial of a matrix
+cd.mat.svd
+Describe the singular value decomposition of a matrix
+
+pu.mat.svd
+Use the singular value decomposition of a matrix
+
+pc.mat.exponential
+Calculate the exponential of a matrix
 
 pu.lintrans.eigvec.basis
 Use eigenvectors to represent a linear transformation with respect to a particularly nice basis
@@ -353,50 +746,170 @@ Use eigenvectors to represent a linear transformation with respect to a particul
 pe.mat.eig.2d.geometric
 Explain the geometric significance of real versus imaginary eigenvalues for two-by-two matrices
 
+cf.mat.symmetric eig
+Find the eigenvalues and eigenvectors of a symmetric matrix
 
-definitions, examples, and properties
+pp.mat.summetric.diagonalize
+Perform orthogonal diagonalization of a symmetric matrix
 
+==============================================
+Orthogonality and projection, coordinate setting
+==============================================
 
-computational methods
-Inner products
+kd.vsp.inner_product.coord
+Define the standard inner product, coordinate setting
 
-cn.vec.angle
-Understand how to determine the angle between vectors and the orthogonality of vectors.
+kc.vsp.inner_product.coord
+Compute the standard inner product of two vectors, coordinate setting
 
+kd.vsp.vec.orthogonal.coord
+Define orthogonal for vectors, coordinate setting
 
-norms
-orthogonality
-orthogonal bases
-Gram-Schmidt orthogonalization
+ci.vsp.vec.orthogonal.coord
+Identify whether a set of vectors is orthogonal/orthonormal, coordinate setting
 
+ci.vsp.vec.orthogonal.coord
+Identify whether two subspaces are orthogonal/orthonormal, coordinate setting
 
-# should be split?
-ch.vsp.basis.orthogonal
-Discuss orthogonal and orthonormal bases
+ci.vsp.vec.parallel.coord
+Identify whether two vectors are parallel, coordinate setting
 
-pu.vsp.basis.gramschmidt
-Use the Gram-Schmidt orthogonalization process to turn a basis into an orthogonal basis
+cn.vsp.vec.angle.coord
+Understand how to determine the angle between vectors and the orthogonality of vectors, coordinate setting
+
+kd.vsp.vec.norm.coord
+Define the standard norm, coordinate setting
+
+kc.vsp.vec.norm.coord
+Compute the standard norm of a vector, coordinate setting
+
+ks.vsp.vec.cauchyschwartz.coord
+State the Cauchy-Schwartz inequality, coordinate setting
+
+ks.vsp.vec.triangle.coord
+State the triangle inequality, coordinate setting
+
+cf.vsp.vec.unit.coord
+Find the unit vector in the same direction as a given vector, coordinate setting
+
+kd.vsp.basis.orthogonal.coord
+Define orthogonal/orthonormal basis, coordinate setting
+
+cd.vsp.basis.orthogonal.coord
+Discuss orthogonal and orthonormal bases, coordinate setting
+
+cf.vsp.subsp.basis.orthonormal
+Find an orthonormal basis for a subspace, coordinate setting
+
+cf.linsys.soln.basis.orthonormal
+Find an orthonormal basis for the solutions to a linear system
+
+kd.vsp.subspace.orthogonal_complement.coord
+Define the orthogonal complement of a subspace, coordinate setting
+
+cf.vsp.subspace.orthogonal_complement.coord
+Find the orthogonal complement of a subspace, coordinate setting
+
+kd.vsp.subspace.orthogonal_projection.coord
+Define the orthogonal projection onto a subspace, coordinate setting
+
+pc.vsp.subspace.vec.orthogonal_projection.coord
+Compute the orthogonal projection of a vector onto a subspace, given a basis for the subspace, coordinate setting
 
 ce.vsp.basis.gramschmidt
 Explain the Gram-Schmidt orthogonalization process
 
-kd.vsp.subspace.orthogonal_complement
-Define the orthogonal complement of a subspace
+pu.vsp.basis.gramschmidt
+Use the Gram-Schmidt orthogonalization process to turn a basis into an orthogonal basis
 
-kd.vsp.subspace.orthogonal_projection
-Define the orthogonal projection onto a subspace
+ce.vsp.subspace.orthogonal_projection.least_squares
+Explain how orthogonal projections relate to least square approximations
 
-pc.vsp.subspace.vec.orthogonal_projection
-Compute the orthogonal projection of a vector onto a subspace, given a basis for the subspace
+cf.vsp.least_squares.linear
+Find the least-squares linear fit to a set of pairs of numbers
+
+cf.vsp.least_squares.quadratic
+Find the least-squares quadratic fit to a set of pairs of numbers
+
+cf.linsys.inconsistent.least-squares
+Find the least-squares solution to an inconsistent linear system
 
 na.mat.orthogonal.geometric
 Discuss rigid motions and orthogonal matrices
 
-kd.vsp.inner_product
-Define inner product on a general space spaces 
-
-pd.vsp.inner_product.mat.orthogonal
+pd.vsp.inner_product.mat.symmetric
 Describe the relationship between inner products, symmetric matrices, and associated norms
 
-ce.vsp.subspace.orthogonal_projection.least_squares
-Explain how orthogonal projections relate to least square approximations
+cf.vsp.form.mat
+Find the matrix representing a given quadratic form
+
+pm.vsp.form.positive_definite
+Determine whether a given quadratic form is positive definite, negative definite, or indeterminate
+
+pm.vsp.form.inner_product
+Determine whether a given quadratic form defines an inner product
+
+kd.lintrans.adjoint
+Define the adjoint of a linear transformation, coordinate setting
+
+ci.lintrans.selfadjoint
+Identify whether an operator is self-adjoint
+
+============================================
+Orthogonality and projection, abstract setting
+============================================
+
+kd.vsp.inner_product.abs
+Define inner product, abstract setting
+
+kl.vsp.inner_product.abs
+List examples of inner products, abstract setting
+
+kd.vsp.vec.norm.abs
+Define norm, abstract setting
+
+kl.vsp.vec.norm.abs
+List examples of norms, abstract setting
+
+ce.vsp.vec.norm.inner_product.abs
+Explain the relationship between norms and inner products, abstract setting
+
+kd.vsp.vec.orthogonal.abs
+Define orthogonality of vectors, abstract setting
+
+cn.vsp.vec.angle.abs
+Understand how to determine the angle between vectors and the orthogonality of vectors, abstract setting
+
+kd.vsp.basis.orthogonal.abs
+Define orthogonal/orthonormal basis, abstract setting
+
+cd.vsp.basis.orthogonal.abs
+Discuss orthogonal and orthonormal bases, abstract setting
+
+kd.vsp.subspace.orthogonal_complement.abs
+Define the orthogonal complement of a subspace, abstract setting
+
+kd.vsp.subspace.orthogonal_projection.abs
+Define the orthogonal projection onto a subspace, abstract setting
+
+pc.vsp.subspace.vec.orthogonal_projection.abs
+Compute the orthogonal projection of a vector onto a subspace, given a basis for the subspace, abstract setting
+
+====================
+Computers/technology
+====================
+
+# Do we want to list various activities which can be done in Matlab/Mathematica/Maple/Sage ?
+# How specific should we be?
+# Probably it should be grouped by language, unless we decide not to mention and languages
+# and instead just focus on the activity.
+
+# examples:
+# iterative methods to compute eigenvalues
+
+============
+Applications
+============
+
+# Do we want a dozen or so general examples, or a potentially huge number of specific examples?
+
