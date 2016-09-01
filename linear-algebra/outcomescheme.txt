@@ -61,20 +61,18 @@ k Knowledge
 c Comprehension
    a  Apply
    c  Compute (or Calculate)
-   d  Describe
+   d  Describe (or Discuss)
    e  Explain
    f  Find
+   h  Interpret
    i  Identify
+   n  Understand
    p  Perform
    q  Qualitatively describe
    r  Recognize
    s  Solve
    t  Translate
    u  Use
-   n  Understand
-   h  Discuss
-   j  Demonstrate
-   z  Interpret
 
 
 p Application
@@ -82,25 +80,24 @@ p Application
    d  Describe
    e  Explain
    f  Formulate (or Find)
+   h  Interpret
    i  Identify
+   m  Determine
    p  Perform
    q  Qualitatively describe
    r  Relate
    s  Solve
    t  Translate
    u  Use
-   n  Interpret
-   m  Determine
 
 n Analysis
    a  Analyze
-   d  Discuss
+   d  Describe (or Discuss)
    f  Formulate
    p  Prove
    r  Relate
    s  Solve
    v  Provide
-   e  Describe
    z  Derive
 
 s Synthesis

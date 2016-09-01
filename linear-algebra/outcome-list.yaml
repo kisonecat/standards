@@ -58,10 +58,10 @@ Find the product of two 2-by-2 matrices
 cf.mat.mult.3x3
 Find the product of two 3-by-3 matrices
 
-ch.mat.mult.associative
+cd.mat.mult.associative
 Discuss the associativity of matrix multiplication
 
-ch.mat.mult.noncommutative
+cd.mat.mult.noncommutative
 Discuss the noncommutativity of matrix multiplication
 
 pe.mat.mult.cancellation
@@ -210,7 +210,7 @@ Find a parametric representation of a solution set of a system of linear equatio
 cs.linsys.soln.triangular
 Solve a triangular linear system by back-substitution
 
-cz.linsys.soln.geometric
+ch.linsys.soln.geometric
 Interpret existence and uniqueness of solutions geometrically
 
 ===========================
@@ -242,7 +242,7 @@ pr.mat.linsys
 Relate a matrix to a homogeneous system of linear equations
 
 pm.linsys.zoi
-Determine when a system of linear equations has no, one, or many solutions
+Determine when a system of linear equations has zero, one, or infinitely many solutions
 
 ps.linsys.mat
 Solve linear systems of equations using the language of matrices
@@ -263,7 +263,7 @@ Define the determinant of a matrix
 cd.mat.det
 Describe properties of the determinant
 
-pn.mat.det.volume
+ph.mat.det.volume
 Interpret the determinant of a matrix as a volume
 
 ce.mat.det.geometric
@@ -281,8 +281,8 @@ Analyze the determinant of a product of matrices algebraically
 na.mat.prod.det.geometric
 Analyze the determinant of a product of matrices geometrically
 
-cc.permutation.sign
-Determine the sign of a permutation
+cf.permutation.sign
+Find the sign of a permutation
 
 cc.mat.det.2x2
 Compute the determinant of a two-by-two matrix 
@@ -350,7 +350,7 @@ Determine whether or not particular subsets of R^n (or C^n) are subspaces
 kd.vsp.span.coord
 Define the span of a set of vectors, coordinate setting
 
-ch.vsp.span.coord
+cd.vsp.span.coord
 Discuss spanning sets of vectors, coordinate setting
 
 pm.vsp.vec.span.coord
@@ -368,7 +368,7 @@ Describe a relationship between the row space and column space of a matrix
 kd.vsp.linindep.coord
 Define linear independence for vectors, coordinate setting
 
-ch.vsp.linindep.coord
+cd.vsp.linindep.coord
 Discuss linear independence for vectors, coordinate setting
 
 pm.vsp.linindep.RnCn
@@ -383,17 +383,17 @@ State the standard basis of R^n (or C^n)
 pm.vsp.basis.RnCn
 Determine whether a given set of vectors is a basis for R^n (or C^n)
 
-pm.vsp.basis.coord
-Determine a basis and the dimension of a finite-dimensional space, coordinate setting
+pf.vsp.basis.coord
+Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
-pm.vsp.basis.transition.coord
-Determine the transition matrix from one basis to another basis, coordinate setting
+pf.vsp.basis.transition.coord
+Find the transition matrix from one basis to another basis, coordinate setting
 
 cf.mat.basis.row_space
 Find a basis for the row/column space of a matrix
 
-pm.vsp.basis.coord
-Determine a basis and the dimension of a finite-dimensional space, coordinate setting
+pf.vsp.basis.coord
+Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
 sp.vsp.dim.well_defined.abs
 Prove all bases have the same number of elements, coordinate setting
@@ -409,13 +409,13 @@ Vector spaces, abstract setting
 kd.vsp.abs
 Define vector space, abstract setting
 
-ch.vsp.examples.abs
+cd.vsp.examples.abs
 Discuss examples (and non-examples) of vector spaces such as subspaces of the space of all polynomials
 
 cr.vsp.examples.abs
 Recognize whether a given set with two operations is a vector space
 
-ch.vsp.basis.abs
+cd.vsp.basis.abs
 Discuss the existence of a basis of an abstract vector space
 
 pd.vsp.vec.coordinate.abs
@@ -436,7 +436,7 @@ Determine whether or not particular subsets of a vector space are subspaces, abs
 kd.vsp.span.abs
 Define the span of a set of vectors, abstract setting
 
-ch.vsp.span.abs
+cd.vsp.span.abs
 Discuss spanning sets of vectors, abstract setting
 
 pm.vsp.vec.span.abs
@@ -445,14 +445,14 @@ Determine whether a vector is in the span of a set of vectors, abstract setting
 kd.vsp.basis.abs
 Define basis of a vector space/subspace, abstract setting
 
-pm.vsp.basis.abs
-Determine a basis and the dimension of a finite-dimensional space, abstract setting
+pf.vsp.basis.abs
+Find a basis and the dimension of a finite-dimensional space, abstract setting
 
-pm.vsp.vec.basis.abs
-Determine the coordinates of a vector with respect to a basis, abstract setting
+pf.vsp.vec.basis.abs
+Find the coordinates of a vector with respect to a basis, abstract setting
 
-pm.vsp.basis.transition.abs
-Determine the transition matrix from one basis to another basis, abstract setting
+pf.vsp.basis.transition.abs
+Find the transition matrix from one basis to another basis, abstract setting
 
 kd.vsp.dim.abs
 Define the dimension of a vector space, abstract setting
@@ -483,7 +483,7 @@ Define "bijective function"
 Linear transformations, coordinate setting (matrices as linear transformations)
 ==========================================
 
-cz.mat.lintrans.RnCn
+ch.mat.lintrans.RnCn
 Interpret a matrix as a linear transformation from R^n (or C^n) to R^m (or C^m)
 
 ce.mat.lintrans
@@ -537,7 +537,7 @@ Find a basis for the kernel of a linear transformation, coordinate setting
 pf.lintrans.range.basis.coord
 Find a basis for the range of a linear transformation, coordinate setting
 
-ch.lintrans.mat.basis.coord
+cd.lintrans.mat.basis.coord
 Discuss the matrix of a linear transformation relative to given bases, coordinate setting
 
 pc.lintrans.mat.basis.coord
@@ -550,12 +550,12 @@ pe.lintrans.mat.basis_change.coord
 Explain how the matrix of a linear transformation changes when the bases are changed, coordinate setting
 
 ci.lintrans.mat.basis_invariant.coord
-Identify properties of a matrix which the same for all matrices representing the same linear transformation, coordinate setting
+Identify properties of a matrix which are the same for all matrices representing the same linear transformation, coordinate setting
 
-cz.mat.prod.lintrans.coord
+ch.mat.prod.lintrans.coord
 Interpret a matrix product as a composition of linear transformations, coordinate setting
 
-cz.mat.inv.lintrans.coord
+ch.mat.inv.lintrans.coord
 Interpret the inverse matrix as representing the inverse linear transformation, coordinate setting
 
 pe.lintrans.mat.basis_change.coord
@@ -628,8 +628,8 @@ Find a basis for the kernel of a linear transformation, abstract setting
 pf.lintrans.range.basis.abs
 Find a basis for the range of a linear transformation, abstract setting
 
-ch.lintrans.mat.basis.abs
-For a linear transformation between vector spaces, discuss its matrix relative to given bases, abstract setting
+cd.lintrans.mat.basis.abs
+Discuss the matrix of a linear transformation between vector spaces, relative to given bases, abstract setting
 
 pc.lintrans.mat.basis.abs
 Calculate the matrix representation for the linear transformation with respect to a basis, abstract setting
@@ -646,10 +646,10 @@ Identify properties of a matrix which the same for all matrices representing the
 cn.lintrans.mat.abs
 Understand the relationship between a linear transformation and its matrix representation, abstract setting
 
-cz.mat.prod.lintrans.abs
+ch.mat.prod.lintrans.abs
 Interpret a matrix product as a composition of linear transformations, abstract setting
 
-cz.mat.inv.lintrans.abs
+ch.mat.inv.lintrans.abs
 Interpret the inverse matrix as representing the inverse linear transformation, abstract setting
 
 ci.lintrans.injective.abs
@@ -795,7 +795,7 @@ Find the unit vector in the same direction as a given vector, coordinate setting
 kd.vsp.basis.orthogonal.coord
 Define orthogonal/orthonormal basis, coordinate setting
 
-ch.vsp.basis.orthogonal.coord
+cd.vsp.basis.orthogonal.coord
 Discuss orthogonal and orthonormal bases, coordinate setting
 
 cf.vsp.subsp.basis.orthonormal
@@ -883,7 +883,7 @@ Understand how to determine the angle between vectors and the orthogonality of v
 kd.vsp.basis.orthogonal.abs
 Define orthogonal/orthonormal basis, abstract setting
 
-ch.vsp.basis.orthogonal.abs
+cd.vsp.basis.orthogonal.abs
 Discuss orthogonal and orthonormal bases, abstract setting
 
 kd.vsp.subspace.orthogonal_complement.abs
