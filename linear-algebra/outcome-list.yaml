@@ -26,7 +26,7 @@ kd.mat
 Define matrix
 
 cq.mat.features
-Qualitative describe features of a matrix, e.g., square, diagonal, upper triangular, etc.
+Qualitatively describe features of a matrix, e.g., square, diagonal, upper triangular, etc.
 
 cp.mat.add
 Perform matrix addition
@@ -71,7 +71,7 @@ cp.mat.row.op
 Perform row operations on a matrix
 
 kr.mat.echelon
-Recognize echelon forms 
+Recognize echelon forms
 
 cp.mat.gaussian_elimination
 Perform Gaussian elimination
@@ -134,7 +134,7 @@ cr.mat.orthogonal
 Recognize orthogonal matrices
 
 kd.mat.lu
-Describe the LU decomposition of a matrix
+Define the LU decomposition of a matrix
 
 pc.mat.lu
 Compute the LU decomposition of a matrix
@@ -146,7 +146,7 @@ pc.mat.qr
 Compute the QR factorization of a matrix;
 
 kd.mat.jordan.canon
-Describe the Jordan canonical form of matrix
+Define the Jordan canonical form of matrix
 
 cd.mat.jordan.canon
 Describe the uses of the Jordan canonical form of matrix
@@ -345,7 +345,7 @@ cr.vsp.subsp.coord
 Recognize and use basic properties of subspaces, coordinate setting
 
 pm.vsp.subsp.RnCn
-Determine whether or not particular subsets of R^n (or C^n) are subspaces 
+Determine whether or not particular subsets of R^n (or C^n) are subspaces
 
 kd.vsp.span.coord
 Define the span of a set of vectors, coordinate setting
@@ -395,7 +395,7 @@ Find a basis for the row/column space of a matrix
 pf.vsp.basis.coord
 Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
-sp.vsp.dim.well_defined.abs
+sp.vsp.dim.well_defined.coord
 Prove all bases have the same number of elements, coordinate setting
 
 pd.vsp.vec.coordinate.coord
@@ -431,7 +431,7 @@ kl.vsp.subsp.abs
 List examples of subspaces of a vector space, abstract setting
 
 pm.vsp.subsp.abs
-Determine whether or not particular subsets of a vector space are subspaces, abstract setting 
+Determine whether or not particular subsets of a vector space are subspaces, abstract setting
 
 kd.vsp.span.abs
 Define the span of a set of vectors, abstract setting
@@ -532,7 +532,7 @@ cf.lintrans.nullity.coord
 Find the nullity of a linear transformation, coordinate setting
 
 pf.lintrans.kernel.basis.coord
-Find a basis for the kernel of a linear transformation, coordinate setting 
+Find a basis for the kernel of a linear transformation, coordinate setting
 
 pf.lintrans.range.basis.coord
 Find a basis for the range of a linear transformation, coordinate setting
@@ -749,7 +749,7 @@ Explain the geometric significance of real versus imaginary eigenvalues for two-
 cf.mat.symmetric eig
 Find the eigenvalues and eigenvectors of a symmetric matrix
 
-pp.mat.summetric.diagonalize
+pp.mat.symmetric.diagonalize
 Perform orthogonal diagonalization of a symmetric matrix
 
 ==============================================
