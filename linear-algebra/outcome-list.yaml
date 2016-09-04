@@ -127,11 +127,23 @@ Define similar matrices
 cu.mat.similar
 Use properties of similar matrices
 
+kd.mat.symmetric
+Define symmetric matrix
+
 cr.mat.symmetric
 Recognize symmetric matrices
 
+kd.mat.orthogonal
+Define orthogonal matrix
+
 cr.mat.orthogonal
 Recognize orthogonal matrices
+
+kd.mat.unitary
+Define unitary matrix
+
+cr.mat.unitary
+Recognize unitary matrices
 
 kd.mat.lu
 Describe the LU decomposition of a matrix
@@ -737,6 +749,9 @@ Describe the singular value decomposition of a matrix
 pu.mat.svd
 Use the singular value decomposition of a matrix
 
+nd.mat.unitary.eig
+Deasribe the restriction on the eigenvalues of a unitary matrix
+
 pc.mat.exponential
 Calculate the exponential of a matrix
 
@@ -797,6 +812,9 @@ Define orthogonal/orthonormal basis, coordinate setting
 
 cd.vsp.basis.orthogonal.coord
 Discuss orthogonal and orthonormal bases, coordinate setting
+
+ks.vsp.basis.mat.orthogonal.RnCn
+State the relationship between orthogonal (or unitary)  matrices and orthonormal bases for R^n (or C^n)
 
 cf.vsp.subsp.basis.orthonormal
 Find an orthonormal basis for a subspace, coordinate setting
