@@ -112,6 +112,9 @@ Find the transpose of a matrix
 kd.mat.elementary
 Define elementary matrix
 
+cd.mat.rowop.elementary
+Describe the relationship between elementary matrices and row operations
+
 cf.mat.prod.elementary
 Find a representation of a matrix as a product of elementary matrices
 
@@ -287,6 +290,9 @@ Compute areas of parallelograms and volumes of parallelepipeds using determinant
 cd.mat.det.row.op
 Describe how performing row operations affects the determinant
 
+cd.mat.det.elementary
+Describe how elementary matrices affect the determinant
+
 na.mat.prod.det
 Analyze the determinant of a product of matrices algebraically
 
@@ -372,7 +378,10 @@ pm.vsp.span.RnCn
 Determine whether a given set of vectors spans R^n (or C^n)
 
 kd.mat.rowspace
-Define row space and column space of a matrix
+Define row space of a matrix
+
+kd.mat.colspace
+Define column space of a matrix
 
 cd.mat.rowspace_colspace
 Describe a relationship between the row space and column space of a matrix
@@ -396,16 +405,16 @@ pm.vsp.basis.RnCn
 Determine whether a given set of vectors is a basis for R^n (or C^n)
 
 pf.vsp.basis.coord
-Find a basis and the dimension of a finite-dimensional space, coordinate setting
+Find a basis of a finite-dimensional space, coordinate setting
+
+pf.vsp.dim.coord
+Find the dimension of a finite-dimensional space, coordinate setting
 
 pf.vsp.basis.transition.coord
 Find the transition matrix from one basis to another basis, coordinate setting
 
 cf.mat.basis.row_space
 Find a basis for the row/column space of a matrix
-
-pf.vsp.basis.coord
-Find a basis and the dimension of a finite-dimensional space, coordinate setting
 
 sp.vsp.dim.well_defined.coord
 Prove all bases have the same number of elements, coordinate setting
@@ -458,7 +467,10 @@ kd.vsp.basis.abs
 Define basis of a vector space/subspace, abstract setting
 
 pf.vsp.basis.abs
-Find a basis and the dimension of a finite-dimensional space, abstract setting
+Find a basis of a finite-dimensional space, abstract setting
+
+pf.vsp.dim.abs
+Find the dimension of a finite-dimensional space, abstract setting
 
 pf.vsp.vec.basis.abs
 Find the coordinates of a vector with respect to a basis, abstract setting
@@ -528,9 +540,6 @@ Define the nullity of a matrix
 cf.mat.nullspace.basis
 Find a basis for the null space of a matrix
 
-# break this into separate theorems
-Prove elementary theorems concerning rank of a matrix
-
 ks.mat.ranknullity
 State the rank-nullity theorem for matrices
 
@@ -588,14 +597,23 @@ Identify when a linear transformation is onto, coordinate setting
 ci.lintrans.bijective.coord
 Identify when a linear transformation is bijective, and when it is, find the inverse, coordinate setting
 
-pm.lintrans.injective_surjective.coord
-Decide whether a linear transformation is injective or surjective and how these questions are related to matrices, coordinate setting
+pm.lintrans.injective.coord
+Decide whether a linear transformation is injective and how this question is related to matrices, coordinate setting
 
-pm.lintrans.onetoone_onto.coord
-Decide whether a linear transformation is one-to-one or onto and how these questions are related to matrices, coordinate setting
+pm.lintrans.surjective.coord
+Decide whether a linear transformation is surjective and how this question is related to matrices, coordinate setting
 
-nd.lintrans.kernel_image.mat.coord
-Discuss the kernel and image of a linear transformation in terms of nullity and rank of a matrix, coordinate setting
+pm.lintrans.onetoone.coord
+Decide whether a linear transformation is one-to-one and how this question is related to matrices, coordinate setting
+
+pm.lintrans.onto.coord
+Decide whether a linear transformation is onto and how this question is related to matrices, coordinate setting
+
+nd.lintrans.kernel.mat.coord
+Discuss the kernel of a linear transformation in terms of the nullity of a matrix, coordinate setting
+
+nd.lintrans.image.mat.coord
+Discuss the image of a linear transformation in terms of the rank of a matrix, coordinate setting
 
 ========================================
 Linear transformations, abstract setting
@@ -625,8 +643,11 @@ State the rank-nullity theorem for linear transformations, abstract setting
 sp.lintrans.ranknullity.abs
 Prove the rank-nullity theorem for linear transformations, abstract setting
 
-nd.lintrans.kernel_image.mat.abs
-Discuss the kernel and image of a linear transformation in terms of nullity and rank of a matrix, abstract setting
+nd.lintrans.kernel.mat.abs
+Discuss the kernel of a linear transformation in terms of the nullity of a matrix, abstract setting
+
+nd.lintrans.image.mat.abs
+Discuss the image of a linear transformation in terms of the rank of a matrix, abstract setting
 
 cf.lintrans.rank.abs
 Find the rank of a linear transformation, abstract setting
@@ -679,11 +700,17 @@ Identify when a linear transformation is onto, abstract setting
 ci.lintrans.bijective.abs
 Identify when a linear transformation is bijective, and when it is, find the inverse, abstract setting
 
-pm.lintrans.injective_surjective.abs
-Decide whether a linear transformation is injective or surjective and how these questions are related to matrices, abstract setting
+pm.lintrans.injective.abs
+Decide whether a linear transformation is injective and how this question is related to matrices, abstract setting
 
-pm.lintrans.onetoone_onto.abs
-Decide whether a linear transformation is one-to-one or onto and how these questions are related to matrices, abstract setting
+pm.lintrans.surjective.abs
+Decide whether a linear transformation is surjective and how this question is related to matrices, abstract setting
+
+pm.lintrans.onetoone.abs
+Decide whether a linear transformation is one-to-one and how this question is related to matrices, abstract setting
+
+pm.lintrans.onto.abs
+Decide whether a linear transformation is onto and how this question is related to matrices, abstract setting
 
 ============================
 Eigenvalues and eigenvectors
@@ -698,17 +725,29 @@ Describe eigenvalues and eigenvectors geometrically
 ce.mat.eig.importance
 Explain the significance of eigenvectors and eigenvalues
 
-kr.mat.eigenvalue
+kr.mat.eigenvector
 Recognize an eigenvector of a matrix
 
-cf.mat.eig
-Find the eigenvalues and eigenvectors of a matrix
+cf.mat.eigenvalue
+Find the eigenvalues of a matrix
 
-cf.mat.eig.2x2
-Find the eigenvalues and eigenvectors of a 2-by-2 matrix
+cf.mat.eigenvector
+Find the eigenvectors of a matrix
 
-cf.mat.eig.3x3
-Find the eigenvalues and eigenvectors of a 3-by-3 matrix
+cf.mat.eig.eigenvector
+Find the eigenvector of a matrix with a given eigenvalue
+
+cf.mat.eigenvalues.2x2
+Find the eigenvalues of a 2-by-2 matrix
+
+cf.mat.eigenvector.2x2
+Find the eigenvectors of a 2-by-2 matrix
+
+cf.mat.eigenvalues.3x3
+Find the eigenvalues of a 3-by-3 matrix
+
+cf.mat.eigenvectors.3x3
+Find the eigenvectors of a 3-by-3 matrix
 
 kd.mat.charpoly
 Define the characteristic polynomial of a matrix
@@ -726,7 +765,7 @@ ks.mat.eig.det
 State the relationship between the determininant of a matrix and its eigenvalues
 
 pu.mat.eig.charpoly
-Use characteristic polynomials to compute eigenvalues and eigenvectors
+Use characteristic polynomials to compute eigenvalues
 
 pu.mat.eig.diagonalize
 Use eigenspaces of matrices, when possible, to diagonalize a matrix
@@ -814,7 +853,10 @@ cd.vsp.basis.orthogonal.coord
 Discuss orthogonal and orthonormal bases, coordinate setting
 
 ks.vsp.basis.mat.orthogonal.RnCn
-State the relationship between orthogonal (or unitary)  matrices and orthonormal bases for R^n (or C^n)
+State the relationship between orthogonal matrices and orthonormal bases for R^n
+
+ks.vsp.basis.mat.unitary.RnCn
+State the relationship between unitary matrices and orthonormal bases for C^n
 
 cf.vsp.subsp.basis.orthonormal
 Find an orthonormal basis for a subspace, coordinate setting
