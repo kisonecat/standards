@@ -495,8 +495,11 @@ Definition of orthogonal projection
 d.gramschmidt
 Definition of the Gram-Schmidt process
 
-d.leastsquares  # is this a definition or an application?
+d.leastsquares
 Definition of least squares fit
+
+t.leastsquares
+Formula for computing the least squares fit
 
 d.mat.inv.generalized
 Definition of generalized inverse of a matrix
