@@ -266,13 +266,13 @@ Vector spaces: examples
 =======================
 
 e.vsp.rn
-\R^n is a vector space
+R^n is a vector space
 
 e.vsp.cn
-\C^n is a vector space
+C^n is a vector space
 
 e.vsp.fn
-\F^n is a vector space
+F^n is a vector space
 
 e.vsp.polynomial
 The set of all polynomials is a vector space
