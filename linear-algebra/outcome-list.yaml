@@ -1,4 +1,6 @@
 
+There is an implied "math.la" at the beginning of each identifier.
+
 ============================
 Vectors in coordinate spaces
 ============================
@@ -19,7 +21,7 @@ cn.vec.RnCn.dotproduct.geometric
 Understand dot product of vectors in R^n (or C^n), geometrically
 
 ========
-Matrices
+Matrices: basics and algebra
 ========
 
 kd.mat
@@ -129,6 +131,10 @@ Define similar matrices
 
 cu.mat.similar
 Use properties of similar matrices
+
+====================
+Matrices: canonical forms and factorizations
+====================
 
 kd.mat.symmetric
 Define symmetric matrix
@@ -430,9 +436,6 @@ Vector spaces, abstract setting
 kd.vsp.abs
 Define vector space, abstract setting
 
-cd.vsp.examples.abs
-Discuss examples (and non-examples) of vector spaces such as subspaces of the space of all polynomials
-
 cr.vsp.examples.abs
 Recognize whether a given set with two operations is a vector space
 
@@ -484,24 +487,31 @@ Define the dimension of a vector space, abstract setting
 sp.vsp.dim.well_defined.abs
 Prove all bases have the same number of elements, abstract setting
 
+===============================
+Vector spaces, examples
+===============================
+
+cd.vsp.examples.abs
+Discuss examples (and non-examples) of vector spaces such as subspaces of the space of all polynomials
+
 ===========================================
 Linear transformations, general terminology
 ===========================================
 
 kd.lintrans.injective
-Define "injective function"
+Define injective function
 
 kd.lintrans.onetoone
-Define "one-to-one function"
+Define one-to-one function
 
 kd.lintrans.surjective
-Define "surjective function"
+Define surjective function
 
 kd.lintrans.onto
-Define "onto function"
+Define onto function
 
 kd.lintrans.bijective
-Define "bijective function"
+Define bijective function
 
 ==========================================
 Linear transformations, coordinate setting (matrices as linear transformations)
