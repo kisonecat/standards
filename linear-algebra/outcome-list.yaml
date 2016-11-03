@@ -315,6 +315,9 @@ Compute the determinant of a two-by-two matrix
 cc.mat.det.3x3
 Compute the determinant of a three-by-three matrix
 
+cc.mat.det.cas
+Compute the determinant of matrix using a computer algebra system
+
 pc.mat.det.via_permutations
 Compute the determinant of a matrix via the formula involving permutations
 
