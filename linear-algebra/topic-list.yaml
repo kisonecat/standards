@@ -17,14 +17,29 @@
 Vectors in coordinate spaces
 ============================
 
+d.scalar
+Definition of scalar, coordinate vector space
+
 d.vec.coord
 Definition of vector, coordinate vector space
 
-d.vec.add.coord
-Definition of vector addition, coordinate vector space
+d.vec.col.coord
+Definition of column vector, coordinate vector space
+
+d.vec.equal.coord
+Definition of equality of vectors, coordinate vector space
+
+d.vec.[sum,add].coord
+Definition of vector [sum,addition], coordinate vector space
 
 d.vec.scalar.mult.coord
 Definition of vector-scalar multiplication, coordinate vector space
+
+t.vec.[sum,add].geometric.RnCn
+Vector [sum,addition] interpreted geometrically in R^n (or C^n)
+
+t.vec.axioms.RnCn
+The vector space properties of R^n (or C^n)
 
 ========
 Matrices: basics and algebra
@@ -33,8 +48,14 @@ Matrices: basics and algebra
 d.mat
 Definition of matrix
 
+d.mat.size
+Definition of size of a matrix
+
+d.mat.m_by_n
+Definition of m by n matrix
+
 d.mat.square
-Definition of a square matrix
+Definition of square matrix
 
 d.mat.row_op
 Definition of row operation on a matrix
@@ -42,17 +63,50 @@ Definition of row operation on a matrix
 d.mat.row_equiv
 Definition of row equivalent matrices
 
+d.mat.row.leading
+Definition of leading entry in a row of a matrix
+
+d.mat.row_echelon_form
+Definition of row echelon form of a matrix
+
+d.mat.echelon
+Definition of echelon matrix
+
+d.mat.echelon_of
+Definition of echelon form of a matrix
+
 d.mat.rref
+Definition of matrix in reduced row echelon form
+
+d.mat.rref_of
 Definition of reduced row echelon form of a matrix
+
+d.mat.reduced_echelon
+Definition of reduced echelon matrix
+
+d.mat.row_reduce
+Definition of row reduce a matrix
 
 t.mat.rref
 The reduced row echelon form of a matrix exists.
 
-t.mat.rref_unique
-The reduced row echelon form of a matrix is unique.
+t.mat.rref.exists
+Every matrix is row-equivalent to a matrix in reduced row echelon form.
+
+t.mat.rref.unique
+Row equivalent matrices in reduced row echelon form are equal.
+
+t.mat.rref.exists_and_is_unique
+Every matrix is row-equivalent to exactly one matrix in reduced row echelon form.
+
+d.mat.pivot
+Definition of pivot
 
 d.mat.pivot_col
 Definition of pivot column
+
+d.mat.pivot_position
+Definition of pivot position
 
 d.mat.vec.prod
 Definition of matrix-vector product
@@ -122,6 +176,9 @@ Linear systems
 d.lineqn
 Definition of linear equation
 
+d.lineqn.coeff
+Definition of coefficients of a linear equation
+
 d.lineqn.soln
 Definition of solution to a linear equation
 
@@ -131,8 +188,17 @@ Definition of system of linear equations
 d.linsys.soln
 Definition of solution to a system of linear equations
 
+d.linsys.soln_set
+Definition of solution set of a system of linear equations
+
+d.linsys.equiv
+Definition of equivalent systems of linear equations
+
 d.linsys.consistent
 Definition of consistent linear system
+
+d.linsys.inconsistent
+Definition of inconsistent linear system
 
 d.linsys.homog
 Definition of homogeneous linear system of equations
@@ -142,6 +208,15 @@ Definition of equation operation on a linear system
 
 t.linsys.zoi
 Linear systems have zero, one, or infinitely many solutions.
+
+p.linsys.zoi
+Proof that linear systems have zero, one, or infinitely many solutions.
+
+d.linsys.variable.[basic,dependent,leading]
+Definition of [basic,dependent,leading] variable in a linear system
+
+d.linsys.variable.[free,independent]
+Definition of [free,independent] variable in a linear system
 
 t.linsys.nonhomog.particular_plus_homog
 The solutions to a nonhomogeneous system of equations are given by a particular solution plus the solutions to the homogeneous system.
@@ -154,13 +229,31 @@ d.mat.augmented
 Definition of augmented matrix of a linear system
 
 d.mat.coeff
-Definition of coefficient matrix
+Definition of coefficient matrix of a linear system
 
 d.linsys.mat.repn
 Definition of matrix representation of a linear system
 
-t.rref.when_consistent
-The rref form of a system can be used to determine if it is consistent.
+d.mat.eqn
+Definition of matrix equation
+
+t.mat.eqn.linsys
+A matrix equation is equivalent to a linear system
+
+t.mat.eqn.lincomb
+The matrix equation Ax=b has a solution if and only if b is a linear conbination of the columns of A.
+
+t.mat.row_equiv.linsys
+Row equivalent matrices represent equivalent linear systems
+
+p.mat.row_equiv.linsys
+Proof that row equivalent matrices represent equivalent linear systems
+
+t.rref.consistent
+The reduced row echelon form can be used to determine if a linear system is consistent.
+
+t.linsys.vec
+A linear system is equivalent to a vector equation.
 
 ============
 Determinants
@@ -168,6 +261,9 @@ Determinants
 
 d.mat.det
 Definition of determinant of a matrix
+
+e.mat.det
+Example of determinant of a matrix
 
 t.mat.det.volume
 The relationship between determinants and volume
@@ -185,8 +281,14 @@ Definition of subspace, coordinate vector space
 d.vec.lincomb.coord
 Definition of linear combination of vectors, coordinate vector space
 
+d.vec.lincomb.weight.coord
+Definition of weights in a linear combination of vectors, coordinate vector space
+
 d.vec.span.coord
 Definition of span of a set of vectors, coordinate vector space
+
+c.vec.span.geometric.RnCn
+Geometric description of span of a set of vectors in R^n (or C^n)
 
 d.vec.linindep.coord
 Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
