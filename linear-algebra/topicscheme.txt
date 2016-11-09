@@ -8,6 +8,7 @@ a  application
 c  concept
 d  definition
 e  example
+p  proof
 t  theorem
 
 The remaining entries use abbreviations for common words, with words
@@ -40,7 +41,7 @@ abs  abstract setting
 add  addition
 canon  canonical (or normal) form
 charpoly  characteristic polynomial
-coeff  coefficient
+coeff  coefficient(s)
 col  column
 coord  coordinate setting
 det  determinant
