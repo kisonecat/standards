@@ -109,10 +109,22 @@ d.mat.pivot_position
 Definition of pivot position
 
 d.mat.vec.prod
-Definition of matrix-vector product
+Definition of matrix-vector product, as a linear combination of column vectors
+
+d.mat.vec.prod.coord
+Definition of matrix-vector product, each entry separately
+
+t.mat.vec.prod.assoc
+Matrix-vector product is associative
+
+t.mat.scalar.prod.commut
+Matrix-scalar product is commutative
 
 d.mat.mult
-Definition of matrix multiplication
+Definition of matrix multiplication, as a linear combination of column vectors
+
+d.mat.mult.coord
+Definition of matrix multiplication, each entry separately
 
 d.mat.inv
 Definition of matrix inverse
@@ -170,6 +182,62 @@ d.mat.rational
 Definition of rational form
 
 ===========================
+Matrices: the equivalence theorems
+===========================
+# A is an n_by_n matrix.  Each of the equivalences to  
+# "A is nonsingular" is a separate topic.  Attach that 
+# topic to the first (and only the first) appearance of
+# that equivalence in a theorem.
+
+t.equiv.mat.eqn
+The equation Ax=b has a solution for all b.
+
+t.equiv.mat.eqn.homog
+The equation Ax=0 has only the trivial solution.
+
+t.equiv.row.span
+The rows of A span R^n (or C^n).
+
+t.equiv.col.span
+The columns of A span R^n (or C^n).
+
+t.equiv.row.linindep
+The rows of A are linearly independent.
+
+t.equiv.col.linindep
+The columns of A are linearly independent.
+
+t.equiv.row.basis
+The rows of A are a basis for R^n (or C^n).
+
+t.equiv.col.basis
+The columns of A are a basis for R^n (or C^n).
+
+t.equiv.row.pivot
+There is a pivot position in every row of A.
+
+t.equiv.identity
+The matrix A row-reduces to the identity matrix.
+
+t.equiv.inverse
+The matrix A has an inverse.
+
+t.equiv.lintrans.inverse
+The linear transformation given by T(x)=Ax has an inverse.
+
+t.equiv.det
+The determinant of A is nonzero.
+
+t.equiv.rank
+The n-by-n matrix A has rank n.
+
+t.equiv.nullity
+The nullity of the matrix A is zero.
+
+t.equiv.eig
+The matrix A does not have zero as an eigenvalue.
+
+===========================
 Linear systems
 ===========================
 
@@ -191,6 +259,12 @@ Definition of solution to a system of linear equations
 d.linsys.soln_set
 Definition of solution set of a system of linear equations
 
+c.linsys.soln_set.vec
+Parametric vector form of the solution set of a system of linear equations
+
+d.linsys.op
+Definition of equation operation on a linear system
+
 d.linsys.equiv
 Definition of equivalent systems of linear equations
 
@@ -203,8 +277,11 @@ Definition of inconsistent linear system
 d.linsys.homog
 Definition of homogeneous linear system of equations
 
-d.lineqn.op
-Definition of equation operation on a linear system
+d.linsys.homog.[trivial|nontrivial]
+Definition of [trivial|nontrivial] solution to a homogeneous linear system of equations
+
+t.linsys.homog.nontrivial
+A homogeneous system has a nontrivial solution if and only if it has a free variable.
 
 t.linsys.zoi
 Linear systems have zero, one, or infinitely many solutions.
@@ -219,7 +296,7 @@ d.linsys.variable.[free,independent]
 Definition of [free,independent] variable in a linear system
 
 t.linsys.nonhomog.particular_plus_homog
-The solutions to a nonhomogeneous system of equations are given by a particular solution plus the solutions to the homogeneous system.
+The solutions to a nonhomogeneous system are given by a particular solution plus the solutions to the homogeneous system.
 
 ===================
 Linear systems and matrices
@@ -290,8 +367,11 @@ Definition of span of a set of vectors, coordinate vector space
 c.vec.span.geometric.RnCn
 Geometric description of span of a set of vectors in R^n (or C^n)
 
+d.vec.lindep.relation
+Definition of linear dependence relation
+
 d.vec.linindep.coord
-Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
+Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
 t.vec.linindep.coord
 Theorem: a set of vectors is linearly independent iff whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
@@ -301,6 +381,21 @@ Definition of linearly dependent set of vectors:  one of the vectors can be writ
 
 t.vec.lindep.coord
 Theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+p.vec.lindep.coord
+Proof of theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+
+t.vec.lindep.zero
+If a set of vectors contains the zero vector, then the set is linearly dependent.
+p.vec.lindep.zero
+Proof that if a set of vectors contains the zero vector, then the set is linearly dependent.
+
+t.vec.lindep.two
+A set of two vectors is linearly dependent if and only if neither is a scalar multiple of the other.
+
+t.vec.lindep.more.RnCn
+If a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.
+p.vec.lindep.more.RnCn
+Proof that if a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.
 
 d.vsp.basis.coord
 Definition of basis of a vector space, coordinate vector space
@@ -386,19 +481,19 @@ The set of all polynomials of degree at most n is a vector space
 Linear transformations, general terminology
 ===========================================
 
-d.lintrans.injective
+d.trans.injective
 Definition of injective function
 
-d.lintrans.onetoone
+d.trans.onetoone
 Definition of one-to-one function
 
-d.lintrans.surjective
+d.trans.surjective
 Definition of surjective function
 
-d.lintrans.onto
+d.trans.onto
 Definition of onto function
 
-d.lintrans.bijective
+d.trans.bijective
 Definition of bijective function
 
 ==========================================
@@ -408,8 +503,17 @@ Linear transformations, coordinate setting (matrices as linear transformations)
 d.lintrans.coord
 Definition of linear transformation, coordinate vector space
 
+d.lintrans.domain.coord
+Definition of domain of a linear transformation, coordinate vector space
+
+d.lintrans.codomain.coord
+Definition of codomain of a linear transformation, coordinate vector space
+
+d.lintrans.image.coord
+Definition of image (of a point) under a linear transformation, coordinate vector space
+
 d.lintrans.preimage.coord
-Definition of pre-image of linear transformation, coordinate vector space
+Definition of pre-image (of a point) under a linear transformation, coordinate vector space
 
 d.lintrans.onto.coord
 Definition of onto linear transformation, coordinate vector space
