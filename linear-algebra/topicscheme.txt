@@ -39,10 +39,12 @@ Available abbreviations are:
 
 abs  abstract setting
 add  addition
+assoc  associative
 canon  canonical (or normal) form
 charpoly  characteristic polynomial
 coeff  coefficient(s)
 col  column
+commut  commutative
 coord  coordinate setting
 det  determinant
 dim  dimension
@@ -51,6 +53,7 @@ eigvec  eigenvector(s)
 eigsp  eigenspace(s)
 eqn  equation
 equiv  equivalent
+exer  exercise
 homog  homogeneous
 inv  inverse
 lin  linear
@@ -84,6 +87,8 @@ mat.inv  not  inv.mat
 If an item can be expressed in either a coordinate setting or an abstract
 setting, then both versions are available, with "coord" or "abs",
 respectively, being the last entries in the identifiers.
+
+If a topic occurs in an exercise, put "exer" as the last entry in the identifier.
 
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should
