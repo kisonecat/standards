@@ -57,6 +57,33 @@ Definition of m by n matrix
 d.mat.square
 Definition of square matrix
 
+d.mat.thediagonal
+Definition of the diagonal of a matrix
+
+d.mat.diagonal
+Definition of diagonal matrix
+
+d.mat.identity
+Definition of identity matrix
+
+d.mat.zero
+Definition of zero matrix
+
+d.mat.equal
+Definition of equality of matrices
+
+d.mat.sum
+Definition of sum of matrices
+
+d.mat.scalar.mult
+Definition of matrix-scalar multiplication
+
+t.mat.add.commut_assoc
+Matrix addition is commutative and associative.
+
+t.mat.scalar.mult.commut_assoc
+Matrix-scalar multiplication is commutative, associative, and distributive.
+
 d.mat.row_op
 Definition of row operation on a matrix
 
@@ -120,11 +147,38 @@ Matrix-vector product is associative
 t.mat.scalar.prod.commut
 Matrix-scalar product is commutative
 
-d.mat.mult
-Definition of matrix multiplication, as a linear combination of column vectors
+d.mat.mult.col
+Definition of matrix multiplication in terms of column vectors
 
 d.mat.mult.coord
 Definition of matrix multiplication, each entry separately
+
+t.mat.mult.assoc
+Matrix multiplication is associative.
+
+t.mat.mult.distributive
+Matrix multiplication is distributive over matrix addition.
+
+t.mat.mult.identity
+The identity matrix is the identity for matrix multiplication.
+
+c.mat.mult.commut
+Matrix multiplication is not commutative in general.
+
+c.mat.mult.cancellation
+For matrices, AB=AC does not imply B=C in general.
+
+c.mat.mult.zero_divisor
+For matrices, AB=0 does not imply A=0 or B=0 in general.
+
+d.mat.transpose
+Definition of transpose of a matrix
+
+t.mat.transpose.involution
+Matrix transpose is an involution.
+
+t.mat.mult.transpose
+The transpose of a product of matrices is the product of the transposes in reverse order.
 
 d.mat.inv
 Definition of matrix inverse
@@ -132,9 +186,6 @@ Definition of matrix inverse
 ====================
 Matrices: canonical forms and factorizations
 ====================
-
-d.mat.diagonal
-Definition of diagonal matrix
 
 d.mat.diagonalization
 Definition of matrix diagonalization
