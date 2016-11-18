@@ -1,0 +1,31 @@
+
+==========================================
+Functions, general terminology
+==========================================
+
+math.functions.d.[function|mapping|transformation]
+Definition of [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].domain
+Definition of domain of a [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].codomain
+Definition of codomain of a [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].image
+Definition of image (of a point) under a [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].preimage
+Definition of pre-image (of a point) under [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].[[onto|surjective]]
+Definition of [[onto|surjective]] [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].[[onetoone|injective]]
+Definition of [[one-to-one|injective]] [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].range
+Definition of range of a [function|mapping|transformation]
+
+math.functions.d.[function|mapping|transformation].invertible
+Definition of invertible [function|mapping|transformation]
