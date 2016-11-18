@@ -374,15 +374,15 @@ d.vec.linindep.coord
 Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
 t.vec.linindep.coord
-Theorem: a set of vectors is linearly independent iff whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
 d.vec.lindep.coord
 Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
 
 t.vec.lindep.coord
-Theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
 p.vec.lindep.coord
-Proof of theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+Proof of theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
 
 t.vec.lindep.zero
 If a set of vectors contains the zero vector, then the set is linearly dependent.
@@ -438,13 +438,13 @@ d.vec.linindep.abs
 Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, abstract vector space.
 
 t.vec.linindep.abs
-Theorem: a set of vectors is linearly independent iff whenever a linear combination is zero, then every coefficient is zero, abstract vector space.
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, abstract vector space.
 
 d.vec.lindep.abs
 Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, abstract vector space.
 
 t.vec.lindep.abs
-Theorem: a set of vectors is linearly dependent iff one of the vectors can be written as a linear combination of the other vectors, abstract vector space.
+Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, abstract vector space.
 
 d.vsp.basis.abs
 Definition of basis of a vector space, abstract vector space
@@ -481,20 +481,14 @@ The set of all polynomials of degree at most n is a vector space
 Linear transformations, general terminology
 ===========================================
 
-d.trans.injective
-Definition of injective function
+d.trans.[injective|onetoone]
+Definition of [injective|one-to-one] linear transformation
 
-d.trans.onetoone
-Definition of one-to-one function
-
-d.trans.surjective
-Definition of surjective function
-
-d.trans.onto
-Definition of onto function
+d.trans.[surjective|onto]
+Definition of [surjective|onto] linear transformation
 
 d.trans.bijective
-Definition of bijective function
+Definition of bijective linear transformation
 
 ==========================================
 Linear transformations, coordinate setting (matrices as linear transformations)
@@ -515,11 +509,11 @@ Definition of image (of a point) under a linear transformation, coordinate vecto
 d.lintrans.preimage.coord
 Definition of pre-image (of a point) under a linear transformation, coordinate vector space
 
-d.lintrans.onto.coord
-Definition of onto linear transformation, coordinate vector space
+d.lintrans.[onto|surjective].coord
+Definition of [onto|surjective] linear transformation, coordinate vector space
 
-d.lintrans.onetoone.coord
-Definition of one-to-one linear transformation, coordinate vector space
+d.lintrans.[onetoone|injective].coord
+Definition of [one-to-one|injective] linear transformation, coordinate vector space
 
 d.lintrans.range.coord
 Definition of range of linear transformation, coordinate vector space
@@ -530,14 +524,26 @@ Definition of kernel of linear transformation, coordinate vector space
 d.lintrans.invertible.coord
 Definition of invertible linear transformation, coordinate vector space
 
+d.lintrans.shear
+Definition of shear transformation
+
+c.transformation.matrix
+Matrices act as a transformations by multiplying vectors
+
 t.mat.vec.mult.lintrans
 Matrix-vector multiplication is a linear transformation.
 
 c.lintrans.geometric
 Geometric properties of linear transformations
 
-t.lintrans.z_z
+c.lintrans.geometric.r2
+Geometric properties of linear transformations on R^2
+
+t.lintrans.z
 A linear transformation maps zero to zero.
+
+t.lintrans.lincomb
+A linear transformation of a linear combination is the linear combination of the linear transformation
 
 t.linsys.homog.soln_preimage
 The solutions of a homogeneous system are the pre-image (of 0) of a linear transformation.
@@ -566,8 +572,8 @@ Rank-nullity theorem
 t.mat.rotation
 Matrix describing a rotation of the plane
 
-t.lintrans.onto.col_span
-A linear transformation is onto iff the columns of its matrix span the codomain.
+t.lintrans.[onto|surjective].col_span
+A linear transformation is [onto|surjective] if and only if the columns of its matrix span the codomain.
 
 d.lintrans.rank
 Definition of rank of a linear transformation
@@ -575,14 +581,23 @@ Definition of rank of a linear transformation
 d.lintrans.nullity
 Definition of nullity of a linear transformation
 
-t.lintrans.onetoone.ker_z
-A linear transformation is one-to-one iff its kernel is 0.
+t.lintrans.[onetoone|injective].ker
+A linear transformation is [one-to-one|injective] if and only if only 0 is mapped to 0.
 
-t.lintrans.onetoone.linindep_col
-A linear transformation is one-to-one iff the columns of its matrix are linearly independent.
+t.lintrans.[onetoone|injective].linindep
+A linear transformation is [one-to-one|injective] if and only if the columns of its matrix are linearly independent.
 
-t.lintrans.mat
-A linear transformation is given by a matrix.
+t.lintrans.[onto|surjective].span
+A linear transformation is [onto|surjective] if and only if the columns of its matrix span the codomain.
+
+d.lintrans.mat.basis.standard.coord
+Definition of the standard matrix for a linear transformation, coordinate setting
+
+t.lintrans.mat.basis.standard.coord
+A linear transformation is given by a matrix whose columns are the images of the standard basis vectors, coordinate setting.
+
+t.lintrans.mat.basis
+A linear transformation is given by a matrix with respect to a given basis.
 
 d.lintrans.invariant_subspace
 Definition of invariant subspace under linear transformation
@@ -612,11 +627,11 @@ Definition of linear transformation, abstract vector space
 d.lintrans.preimage.abs
 Definition of pre-image of linear transformation, abstract vector space
 
-d.lintrans.onto.abs
-Definition of onto linear transformation, abstract vector space
+d.lintrans.[onto|surjective].abs
+Definition of [onto|surjective] linear transformation, abstract vector space
 
-d.lintrans.onetoone.abs
-Definition of one-to-one linear transformation, abstract vector space
+d.lintrans.[onetoone|injective].abs
+Definition of [one-to-one|injective] linear transformation, abstract vector space
 
 d.lintrans.range.abs
 Definition of range of linear transformation, abstract vector space
