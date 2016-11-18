@@ -461,53 +461,53 @@ d.vsp.vector_repn.coord
 Definition of vector representation of a vector space, coordinate vector space
 
 ===============================
-Vector spaces, abstract setting
+Vector spaces, arbitrary setting
 ===============================
 
-d.vec.abs
-Definition of vector, abstract vector space
+d.vec.arb
+Definition of vector, arbitrary vector space
 
-d.vec.add.abs
-Definition of vector addition, abstract vector space
+d.vec.add.arb
+Definition of vector addition, arbitrary vector space
 
-d.vec.scalar.mult.abs
-Definition of vector-scalar multiplication, abstract vector space
+d.vec.scalar.mult.arb
+Definition of vector-scalar multiplication, arbitrary vector space
 
-d.vsp.axioms.abs
-Definition of axioms of a vector space, abstract vector space
+d.vsp.axioms.arb
+Definition of axioms of a vector space, arbitrary vector space
 
-d.vsp.subspace.abs
-Definition of subspace, abstract vector space
+d.vsp.subspace.arb
+Definition of subspace, arbitrary vector space
 
-d.vec.lincomb.abs
-Definition of linear combination of vectors, abstract vector space
+d.vec.lincomb.arb
+Definition of linear combination of vectors, arbitrary vector space
 
-d.vec.span.abs
-Definition of span of a set of vectors, abstract vector space
+d.vec.span.arb
+Definition of span of a set of vectors, arbitrary vector space
 
-d.vec.linindep.abs
-Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, abstract vector space.
+d.vec.linindep.arb
+Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.
 
-t.vec.linindep.abs
-Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, abstract vector space.
+t.vec.linindep.arb
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, arbitrary vector space.
 
-d.vec.lindep.abs
-Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, abstract vector space.
+d.vec.lindep.arb
+Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
-t.vec.lindep.abs
-Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, abstract vector space.
+t.vec.lindep.arb
+Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
-d.vsp.basis.abs
-Definition of basis of a vector space, abstract vector space
+d.vsp.basis.arb
+Definition of basis of a vector space, arbitrary vector space
 
-d.vsp.dim.abs
-Definition of dimension of a vector space, abstract vector space
+d.vsp.dim.arb
+Definition of dimension of a vector space, arbitrary vector space
 
-d.vsp.coordinate.abs
-Definition of coordinate of a vector space, abstract vector space
+d.vsp.coordinate.arb
+Definition of coordinate of a vector space, arbitrary vector space
 
-d.vsp.vector_repn.abs
-Definition of vector representation of a vector space, abstract vector space
+d.vsp.vector_repn.arb
+Definition of vector representation of a vector space, arbitrary vector space
 
 =======================
 Vector spaces: examples
@@ -669,41 +669,41 @@ d.lintrans.eig.coord
 Definition of eigenvalue of a linear transformation, coordinate vector space
 
 ========================================
-Linear transformations, abstract setting
+Linear transformations, arbitrary setting
 ========================================
 
-d.lintrans.abs
-Definition of linear transformation, abstract vector space
+d.lintrans.arb
+Definition of linear transformation, arbitrary vector space
 
-d.lintrans.preimage.abs
-Definition of pre-image of linear transformation, abstract vector space
+d.lintrans.preimage.arb
+Definition of pre-image of linear transformation, arbitrary vector space
 
-d.lintrans.[onto|surjective].abs
-Definition of [onto|surjective] linear transformation, abstract vector space
+d.lintrans.[onto|surjective].arb
+Definition of [onto|surjective] linear transformation, arbitrary vector space
 
-d.lintrans.[onetoone|injective].abs
-Definition of [one-to-one|injective] linear transformation, abstract vector space
+d.lintrans.[onetoone|injective].arb
+Definition of [one-to-one|injective] linear transformation, arbitrary vector space
 
-d.lintrans.range.abs
-Definition of range of linear transformation, abstract vector space
+d.lintrans.range.arb
+Definition of range of linear transformation, arbitrary vector space
 
-d.lintrans.kernel.abs
-Definition of kernel of linear transformation, abstract vector space
+d.lintrans.kernel.arb
+Definition of kernel of linear transformation, arbitrary vector space
 
-d.lintrans.invertible.abs
-Definition of invertible linear transformation, abstract vector space
+d.lintrans.invertible.arb
+Definition of invertible linear transformation, arbitrary vector space
 
-d.lintrans.change_of_basis.abs
-Definition of change of basis, abstract vector space
+d.lintrans.change_of_basis.arb
+Definition of change of basis, arbitrary vector space
 
-d.lintrans.mat.repn.abs
-Definition of matrix representation of a linear transformation, abstract vector space
+d.lintrans.mat.repn.arb
+Definition of matrix representation of a linear transformation, arbitrary vector space
 
-d.lintrans.mat_repn.composition.abs
-Definition of matrix representation of a composition of linear transformations, abstract vector space
+d.lintrans.mat_repn.composition.arb
+Definition of matrix representation of a composition of linear transformations, arbitrary vector space
 
-d.lintrans.eig.abs
-Definition of eigenvalue of a linear transformation, abstract vector space
+d.lintrans.eig.arb
+Definition of eigenvalue of a linear transformation, arbitrary vector space
 
 ============================
 Eigenvalues and eigenvectors
@@ -777,26 +777,26 @@ d.mat.inv.generalized
 Definition of generalized inverse of a matrix
 
 ==============================================
-Orthogonality and projection, abstract setting
+Orthogonality and projection, arbitrary setting
 ==============================================
 
-d.innerproduct.abs
-Definition of inner product, abstract setting
+d.innerproduct.arb
+Definition of inner product, arbitrary setting
 
-d.vec.orthogonal.abs
-Definition of orthogonal vectors, abstract setting
+d.vec.orthogonal.arb
+Definition of orthogonal vectors, arbitrary setting
 
-d.vec.parallel.abs
-Definition of parallel vectors, abstract setting
+d.vec.parallel.arb
+Definition of parallel vectors, arbitrary setting
 
-d.vsp.orthogonal.abs
-Definition of orthogonal subspaces, abstract setting
+d.vsp.orthogonal.arb
+Definition of orthogonal subspaces, arbitrary setting
 
-d.norm.abs
-Definition of norm, length, distance, abstract setting
+d.norm.arb
+Definition of norm, length, distance, arbitrary setting
 
-t.vec.cauchyschwartz.coord
-The Cauchy-Schwartz inequality, abstract setting
+t.vec.cauchyschwartz.arb
+The Cauchy-Schwartz inequality, arbitrary setting
 
 
 # these need work, both on ids and descriptions
