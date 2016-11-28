@@ -223,11 +223,23 @@ Matrices: canonical forms and factorizations
 d.mat.diagonalization
 Definition of matrix diagonalization
 
+d.mat.[block|partitioned]
+Definition of [block|partitioned] matrix
+
+c.mat.mult.[block|partitioned]
+Multiplication of [block|partitioned] matrices
+
+t.mat.mult.row.col
+Matrix multiplication can be viewed as the dot product of a row vector of column vectors with a column vector of row vectors
+
 d.mat.block_diagonal
 Definition of block diagonal matrix
 
 d.mat.triangular.[upper|lower]
 Definition of a[n|] [upper|lower] triangular matrix
+
+d.mat.band
+Definition of band matrix
 
 d.mat.symmetric
 Definition of symmetric matrix
@@ -246,6 +258,15 @@ Definition of singular value decomposition (SVD)
 
 d.mat.lu
 Definition of LU decomposition
+
+t.mat.lu
+Algorithm for computing an LU decomposition
+
+d.mat.lu.reduced
+Definition of reduced LU decomposition
+
+d.mat.rank_factorization
+Definition of rank factorization of a matrix
 
 d.mat.cholesky
 Definition of Cholesky decomposition
@@ -301,6 +322,9 @@ Equivalence theorem: the rows of A are a basis for R^n (or C^n).
 t.equiv.col.basis
 Equivalence theorem: the columns of A are a basis for R^n (or C^n).
 
+t.equiv.col.dim
+Equivalence theorem: the dimension of the column space of A is n.
+
 t.equiv.row.pivot
 Equivalence theorem: there is a pivot position in every row of A.
 
@@ -332,7 +356,10 @@ t.equiv.det
 Equivalence theorem: the determinant of A is nonzero.
 
 t.equiv.rank
-Equivalence theorem: the n-by-n matrix A has rank n.
+Equivalence theorem: the matrix A has rank n.
+
+t.equiv.nullspace
+Equivalence theorem: the null space of the matrix A is {0}.
 
 t.equiv.nullity
 Equivalence theorem: the nullity of the matrix A is zero.
@@ -470,6 +497,12 @@ Definition of weights in a linear combination of vectors, coordinate vector spac
 d.vec.span.coord
 Definition of span of a set of vectors, coordinate vector space
 
+d.vec.span.subspace.coord
+Definition of subspace spanned by a set of a set of vectors, coordinate vector space
+
+d.vsp.subspace.z.coord
+Definition of the zero/trivial subspace
+
 c.vec.span.geometric.RnCn
 Geometric description of span of a set of vectors in R^n (or C^n)
 
@@ -504,13 +537,22 @@ p.vec.lindep.more.RnCn
 Proof that if a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.
 
 d.vsp.basis.coord
-Definition of basis of a vector space, coordinate vector space
+Definition of basis of a vector space (or subspace), coordinate vector space
+
+d.vsp.basis.standard.rncn
+Definition of the standard basis of of R^n (or C^n)
+
+d.vsp.basis.relative.coord
+Definition of coordinates relative to a given basis, coordinate vector space
 
 d.vsp.dim.coord
-Definition of dimension of a vector space, coordinate vector space
+Definition of dimension of a vector space (or subspace), coordinate vector space
 
-d.vsp.coordinate.coord
-Definition of coordinate of a vector space, coordinate vector space
+t.vsp.dim.span.coord
+If a vector space has dimension n, then any subset set of n vectors that spans the space must be a basis, coordinate vector space.
+
+t.vsp.dim.linindep.coord
+If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space.
 
 d.vsp.vector_repn.coord
 Definition of vector representation of a vector space, coordinate vector space
@@ -553,13 +595,10 @@ t.vec.lindep.arb
 Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
 d.vsp.basis.arb
-Definition of basis of a vector space, arbitrary vector space
+Definition of basis of a vector space (or subspace), arbitrary vector space
 
 d.vsp.dim.arb
-Definition of dimension of a vector space, arbitrary vector space
-
-d.vsp.coordinate.arb
-Definition of coordinate of a vector space, arbitrary vector space
+Definition of dimension of a vector space (or subspace), arbitrary vector space
 
 d.vsp.vector_repn.arb
 Definition of vector representation of a vector space, arbitrary vector space
@@ -660,11 +699,17 @@ Definition of matrix null space (right)
 d.mat.null_space.left
 Definition of matrix null space (left)
 
+t.mat.null_space
+The null space of a matrix is a subspace of R^n (or C^n).
+
 d.mat.row_space
 Definition of row space of a matrix
 
 d.mat.col_space
 Definition of column space of a matrix
+
+t.mat.col_space.pivot
+The pivot columns of a matrix are a basis for the column space.
 
 d.mat.rank
 Definition of rank of a matrix
@@ -673,7 +718,7 @@ d.mat.nullity
 Definition of nullity of a matrix
 
 t.mat.ranknullity
-Rank-nullity theorem
+If A is a matrix, then the rank of A plus the nullity of A equals the number of columns of A.
 
 t.mat.rotation
 Matrix describing a rotation of the plane
