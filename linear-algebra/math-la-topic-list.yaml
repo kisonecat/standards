@@ -85,7 +85,7 @@ t.mat.scalar.mult.commut_assoc
 Matrix-scalar multiplication is commutative, associative, and distributive.
 
 d.mat.row_op
-Definition of row operation on a matrix
+Definition of row operations on a matrix
 
 d.mat.elementary
 Definition of elementary matrix
@@ -240,6 +240,9 @@ Definition of a[n|] [upper|lower] triangular matrix
 
 d.mat.band
 Definition of band matrix
+
+d.mat.vandermonde
+Definition of Vandermonde matrix
 
 d.mat.symmetric
 Definition of symmetric matrix
@@ -466,17 +469,50 @@ A linear system is equivalent to a vector equation.
 Determinants
 ============
 
-d.mat.det
-Definition of determinant of a matrix
+d.mat.cofactor
+Definition of cofactor of a matrix
+
+d.mat.det.cofactor
+Definition of determinant of a matrix as a cofactor expansion across the first row
+
+t.mat.det.cofactor
+The determinant of a matrix can be computed as a cofactor expansion across any row or down any column.
 
 t.mat.det.2x2
 Formula for the determinant of a 2-by-2 matrix.
 
-e.mat.det
-Example of determinant of a matrix
+t.mat.det.3x3
+Formula for the determinant of a 3-by-3 matrix.
 
-t.mat.det.volume
-The relationship between determinants and volume
+t.mat.det.trianglar
+The determinant of a triangular matrix is the product of the entries on the diagonal.
+
+t.mat.det.elementaryoperations
+Theorem describing the effect of elementary row operations on the determinant of a matrix.
+
+t.mat.elementary.det
+Theorem describing the determinants of elementary matrices.
+
+t.mat.det.transpose
+A matrix and its transpose have the same determinant.
+
+t.mat.det.product
+If A and B are n-by-n matrices, then det(AB)=det(A)det(B).
+
+t.mat.det.col.[area|volume]
+The determinant of a matrix measures the [area|volume] of the [parallelogram|parallelipiped] determined by its columns.
+
+t.lintrans.det.volume
+The determinant of the matrix of a linear transformation is the factor by which the area/volume changes.
+
+t.cramer
+Cramer's rule
+
+d.mat.[adjugate|classicaladjoint]
+Definition of [adjugate|classical adjoint] of a matrix
+
+t.mat.inv.cofactors
+The inverse of a matrix can be expressed in terms of its matrix of cofactors.
 
 =================================
 Vector spaces, coordinate setting
