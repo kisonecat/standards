@@ -29,3 +29,17 @@ Definition of range of a [function|mapping|transformation]
 
 math.functions.d.[function|mapping|transformation].invertible
 Definition of invertible [function|mapping|transformation]
+
+===========
+Polynomials
+===========
+
+math.functions.d.polynomial.z
+Definition of the zero polynomial
+
+math.functions.d.polynomial.degree
+Definition of degree of a polynomial
+
+math.functions.d.polynomial.[root|zero]
+Definition of [root|zero] of a polynomial
+

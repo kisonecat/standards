@@ -607,16 +607,49 @@ d.vec.scalar.mult.arb
 Definition of vector-scalar multiplication, arbitrary vector space
 
 d.vsp.axioms.arb
-Definition of axioms of a vector space, arbitrary vector space
+Axioms of a vector space, arbitrary vector space
+
+d.vsp.vector.negative
+The additive inverse of a vector is called the negative of the vector.
+
+t.vsp.scalar.mult.z
+The zero scalar multiplied by any vector equals the zero vector.
+
+t.vsp.vector.mult.z
+The zero vector multiplied by any scalar equals the zero vector.
+
+t.vsp.vector.negative
+The negative of a vector equals the vector multiplied by -1.
 
 d.vsp.subspace.arb
 Definition of subspace, arbitrary vector space
+
+d.vsp.subspace.z
+Definition of zero subspace, arbitrary vector space
 
 d.vec.lincomb.arb
 Definition of linear combination of vectors, arbitrary vector space
 
 d.vec.span.arb
 Definition of span of a set of vectors, arbitrary vector space
+
+d.vec.span.subspace.arb
+Definition of subspace spaned by a set of vectors, arbitrary vector space
+
+d.vsp.span.set.arb
+Definition of spanning set for a subspace, arbitrary vector space
+
+d.vsp.subspace.intersection.arb
+Definition of intersection of subspaces, arbitrary vector space
+
+t.vsp.subspace.intersection.arb
+The intersection of subspaces is a subspace, arbitrary vector space.
+
+d.vsp.subspace.sum.arb
+Definition of sum of subspaces, arbitrary vector space
+
+t.vsp.subspace.sum.arb
+The sum of subspaces is a subspace, arbitrary vector space.
 
 d.vec.linindep.arb
 Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.
