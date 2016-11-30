@@ -73,6 +73,7 @@ mxn  m-by-n        # m and n can be digits
 nonhomog  nonhomogeneous
 op  operation
 prod  product
+rep  repeat  (when a topic appears formally a second time)
 repn  representation
 RnCn  R^n or C^n
 rref  reduced row-echelon form
@@ -93,6 +94,9 @@ setting, then both versions are available, with "coord" or "arb",
 respectively, being the last entries in the identifiers.
 
 If a topic occurs in an exercise, put "exer" as the last entry in the identifier.
+If a topic is repeated, put "rep" as the last entry in the identifier
+the second time it appears.  (For "equiv" theorems, do not repeat an item
+after it appears the first time.).
 
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should

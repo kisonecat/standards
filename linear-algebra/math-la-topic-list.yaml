@@ -768,7 +768,7 @@ Definition of matrix null space (right)
 d.mat.null_space.left
 Definition of matrix null space (left)
 
-t.mat.null_space
+t.mat.null_space.rncn
 The null space of a matrix is a subspace of R^n (or C^n).
 
 d.mat.row_space
@@ -776,6 +776,9 @@ Definition of row space of a matrix
 
 d.mat.col_space
 Definition of column space of a matrix
+
+t.mat.col_space.rncn
+The column space of an m-by-n matrix is a subspace of R^m (or C^m)
 
 t.mat.col_space.pivot
 The pivot columns of a matrix are a basis for the column space.
