@@ -548,16 +548,16 @@ Definition of linear dependence relation
 d.vec.linindep.coord
 Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
-t.vec.linindep.coord
-Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
-
-d.vec.lindep.coord
-Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
-
 t.vec.lindep.coord
 Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
 p.vec.lindep.coord
 Proof of theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+
+d.vec.lindep.coord
+Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+
+t.vec.linindep.coord
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
 t.vec.lindep.zero
 If a set of vectors contains the zero vector, then the set is linearly dependent.
@@ -576,7 +576,13 @@ d.vsp.basis.coord
 Definition of basis of a vector space (or subspace), coordinate vector space
 
 d.vsp.basis.standard.rncn
-Definition of the standard basis of of R^n (or C^n)
+Definition of the standard basis of R^n (or C^n)
+
+d.vsp.basis.coord.change.rncn
+Definition of change-of-coordinates matrix relative to a given basis of R^n (or C^n)
+
+d.vsp.basis.standard.leq_n
+Definition of the standard basis of the polynomials of degree at most n
 
 d.vsp.basis.relative.coord
 Definition of coordinates relative to a given basis, coordinate vector space
@@ -589,9 +595,6 @@ If a vector space has dimension n, then any subset set of n vectors that spans t
 
 t.vsp.dim.linindep.coord
 If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space.
-
-d.vsp.vector_repn.coord
-Definition of vector representation of a vector space, coordinate vector space
 
 ===============================
 Vector spaces, arbitrary setting
@@ -654,27 +657,74 @@ The sum of subspaces is a subspace, arbitrary vector space.
 d.vec.linindep.arb
 Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.
 
-t.vec.linindep.arb
-Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, arbitrary vector space.
+t.vec.lindep.arb
+Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
 d.vec.lindep.arb
 Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
-t.vec.lindep.arb
-Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
+t.vec.linindep.arb
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, arbitrary vector space.
 
 d.vsp.basis.arb
 Definition of basis of a vector space (or subspace), arbitrary vector space
 
+t.vsp.span.lindep
+Removing a linearly dependent vector from a set does not change the span of the set.
+
+t.vsp.span.basis
+A set of nonzero vectors contains (as a subset) a basis for its span.
+
+t.vsp.basis.coord.unique
+Each vector can be written uniquely as a linear combination of vectors from a given basis.
+
+d.vsp.basis.relative.arb
+Definition of coordinates relative to a given basis, arbitrary vector space
+
+d.vsp.basis.coord.[vector|mapping].arb
+Definition of coordinate [vector|mapping] relative to a given basis, arbitrary vector space
+
+t.vsp.basis.coord.[vector|mapping].arb
+The coordinate [vector|mapping] relative to a given basis is a bijective linear mapping to R^n (or C^n).
+
+d.vsp.isomorphism
+Definition of isomorphism between vector spaces
+
+t.vsp.dim.more.lindep.arb
+A set of vectors containing more elements than the dimension of the space must be linearly dependent, arbitrary vector space.
+
+t.vsp.dim.arb
+Every basis for a vector space contains the same number of elements, arbitrary vector space.
+
 d.vsp.dim.arb
 Definition of dimension of a vector space (or subspace), arbitrary vector space
 
-d.vsp.vector_repn.arb
-Definition of vector representation of a vector space, arbitrary vector space
+d.vsp.dim.finite_infinite.arb
+Definition of dimension of a vector space (or subspace) being finite or infinite, arbitrary vector space
+
+t.vsp.linindep.basis.arb
+Any linearly independent set can be expanded to a basis for the (sub)space, arbitrary vector space.
+
+t.vsp.subspace.dim.arb
+The dimension of a subspace is less than or equal to the dimension of the whole space, arbitrary vector space.
+
+t.vsp.dim.span.arb
+If a vector space has dimension n, then any subset set of n vectors that spans the space must be a basis, arbitrary vector space.
+
+t.vsp.dim.linindep.arb
+If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, arbitrary vector space.
+
+d.vsp.change_of_basis.arb
+Definition of change of corrdinates matrix between two bases, arbitrary vector space
+
+t.vsp.change_of_basis.arb
+The change of coordinates matrix between two bases exists and is unique, arbitrary vector space.
+
 
 =======================
 Vector spaces: examples
 =======================
+# In all examples, the provision "inder the usual operations" is assumed.
 
 e.vsp.rn
 R^n is a vector space
@@ -685,11 +735,14 @@ C^n is a vector space
 e.vsp.fn
 F^n is a vector space
 
+e.vsp.function
+The set of all functions on a set is a vector space.
+
 e.vsp.polynomial
-The set of all polynomials is a vector space
+The set of all polynomials is a vector space.
 
 e.vsp.polynomial.leq_n
-The set of all polynomials of degree at most n is a vector space
+The set of all polynomials of degree at most n is a vector space.
 
 ===========================================
 Linear transformations, general terminology
@@ -774,6 +827,9 @@ The null space of a matrix is a subspace of R^n (or C^n).
 d.mat.row_space
 Definition of row space of a matrix
 
+d.mat.row_space.row_equiv
+Row equivalent matrices have the same row space.
+
 d.mat.col_space
 Definition of column space of a matrix
 
@@ -788,6 +844,9 @@ Definition of rank of a matrix
 
 d.mat.nullity
 Definition of nullity of a matrix
+
+t.mat.row_space.col_space
+The row space and the column space of a matrix have the same dimension.
 
 t.mat.ranknullity
 If A is a matrix, then the rank of A plus the nullity of A equals the number of columns of A.
@@ -828,9 +887,6 @@ Definition of invariant subspace under linear transformation
 d.lintrans.nilpotent
 Definition of nilpotent linear transformation
 
-d.lintrans.change_of_basis.coord
-Definition of change of basis, coordinate vector space
-
 d.lintrans.mat.repn.coord
 Definition of matrix representation of a linear transformation, coordinate vector space
 
@@ -865,9 +921,6 @@ Definition of kernel of linear transformation, arbitrary vector space
 d.lintrans.invertible.arb
 Definition of invertible linear transformation, arbitrary vector space
 
-d.lintrans.change_of_basis.arb
-Definition of change of basis, arbitrary vector space
-
 d.lintrans.mat.repn.arb
 Definition of matrix representation of a linear transformation, arbitrary vector space
 
@@ -889,6 +942,12 @@ Definition of eigenvector(s) of a matrix
 
 d.mat.eigsp
 Definition of eigenspace(s) of a matrix
+
+t.mat.eig.triangular
+The eigenvalues of a triangular matrix are the entries on the main diagonal.
+
+t.mat.eigvec.linindep
+Eigenvectors with distinct eigenvalues are linearly independent.
 
 d.mat.charpoly
 Definition of characteristic polynomial of a matrix
