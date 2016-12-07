@@ -223,6 +223,27 @@ Matrices: canonical forms and factorizations
 d.mat.diagonalization
 Definition of matrix diagonalization
 
+d.mat.diagonalizable
+Definition of diagonalizable matrix
+
+t.mat.diagonalizable
+An n-by-n matrix is diagonalizable if and only if it has n linearly independent eigenvectors.
+
+t.mat.diagonalizable.eigenspace
+An n-by-n matrix is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals n.
+
+t.mat.diagonalizable.charpoly
+An n-by-n matrix is diagonalizable if and only if the characteristic polynomial factors completely, and the dimension of each eigenspace equals the multiplicity of the eigenvalue.
+
+t.mat.diagonalized_by
+A diagonalizable matrix is diagonalized by a matrix having the eigenvectors as columns.
+
+t.mat.diagonalizable.basis
+An n-by-n matrix is diagonalizable if and only if the union of the basis vectors for the eigenspaces is a basis for R^n (or C^n).
+
+t.mat.diagonalizable.distinct
+An n-by-n matrix with n distinct eigenvalues is diagonalizable.
+
 d.mat.[block|partitioned]
 Definition of [block|partitioned] matrix
 
@@ -478,6 +499,13 @@ Definition of determinant of a matrix as a cofactor expansion across the first r
 t.mat.det.cofactor
 The determinant of a matrix can be computed as a cofactor expansion across any row or down any column.
 
+d.mat.det.echelon
+Definition of determinant of a matrix as a product of the diagonal entries in a non-scaled echelon form.
+
+t.mat.det.echelon
+The determinant of a matrix can be expressed as a product of the diagonal entries in a non-scaled echelon form.
+
+t.mat.det.2x2
 t.mat.det.2x2
 Formula for the determinant of a 2-by-2 matrix.
 
@@ -595,6 +623,9 @@ If a vector space has dimension n, then any subset set of n vectors that spans t
 
 t.vsp.dim.linindep.coord
 If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space.
+
+d.vec.[real|imaginary].cn
+Definition of the [real|imaginary] part of a vector in C^n
 
 ===============================
 Vector spaces, arbitrary setting
@@ -922,7 +953,10 @@ d.lintrans.invertible.arb
 Definition of invertible linear transformation, arbitrary vector space
 
 d.lintrans.mat.repn.arb
-Definition of matrix representation of a linear transformation, arbitrary vector space
+Definition of matrix representation of a linear transformation with respect to bases of the spaces, arbitrary vector space
+
+d.lintrans.mat.repn.self.arb
+Definition of matrix representation of a linear transformation from a vector space to itself, with respect to basis of the space, arbitrary vector space
 
 d.lintrans.mat_repn.composition.arb
 Definition of matrix representation of a composition of linear transformations, arbitrary vector space
@@ -952,17 +986,35 @@ Eigenvectors with distinct eigenvalues are linearly independent.
 d.mat.charpoly
 Definition of characteristic polynomial of a matrix
 
+d.mat.charpoly.eqn
+Definition of characteristic equation of a matrix
+
+d.mat.eig.multiplicity
+Definition of multiplicity of an eigenvalue
+
 d.mat.minpoly
 Definition of minimal polynomial of a matrix
 
-t.mat.charpoly.eig
-The eigenvalues of a matrix are the roots of its characteristic polynomial.
+t.mat.charpoly[|.eqn].eig
+The eigenvalues of a matrix are the [roots|solutions] [of|to] its characteristic [polynomial|equation].
+
+t.mat.eig.multiplicity.eigenspace
+The dimension of a eigenspace is less than or equal to the multiplicity of the eigenvalue.
 
 d.mat.similar
 Definition of similar matrices
 
+d.mat.similar.transform
+Definition of similarity transform
+
+t.mat.similar.eig
+Similar matrices have the same eigenvalues and the same characteristic polynomials.
+
 d.mat.positive_definite
 Definition of positive-definite matrix
+
+t.mat.real.eig.cn
+A matrix with real entries has eigenvalues occurring in conjugate pairs.
 
 ==============================================
 Orthogonality and projection, coordinate setting
