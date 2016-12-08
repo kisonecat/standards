@@ -244,6 +244,9 @@ An n-by-n matrix is diagonalizable if and only if the union of the basis vectors
 t.mat.diagonalizable.distinct
 An n-by-n matrix with n distinct eigenvalues is diagonalizable.
 
+t.mat.real.diagonalize.complex.2x2
+Formula for diagonalizing a real 2-by-2 matrix with a complex eigenvalue.
+
 d.mat.[block|partitioned]
 Definition of [block|partitioned] matrix
 
@@ -1020,14 +1023,71 @@ A matrix with real entries has eigenvalues occurring in conjugate pairs.
 Orthogonality and projection, coordinate setting
 ==============================================
 
-d.innerproduct.real
-Definition of inner product, real entries
+d.innerproduct.real.coord
+Definition of inner product, real entries, coordinate setting
 
-d.innerproduct.complex
-Definition of inner product, complex entries
+d.innerproduct.complex.coord
+Definition of inner product, complex entries, coordinate setting
 
-d.norm.coord
-Definition of norm, length, distance, coordinate setting
+t.innerproduct.commutative.coord
+The standard inner product is commutative, coordinate setting.
+
+t.innerproduct.commutative.scalar.real.coord
+The standard inner product commutes with real scalar multiplication, coordinate setting.
+
+t.innerproduct.distributive.coord
+The standard inner product distributes over addition, coordinate setting.
+
+t.innerproduct.self.positive.coord
+The standard inner product of a vector with itself is non-negative, coordinate setting.
+
+t.innerproduct.self.z.coord
+The standard inner product of a vector with itself is zero only for the zero vector, coordinate setting.
+
+d.vec.[norm|length].coord
+Definition of [norm|length] of a vector, coordinate setting
+
+d.distance.coord
+Definition of distance, coordinate setting
+
+d.vec.unit.coord
+Definition of unit vector, coordinate setting
+
+d.vec.orthogonal
+Definition of two vectors being orthogonal
+
+t.vec.orthogonal
+Two vectors are orthogonal if and only if the Pythagorean Theorem holds.
+
+d.vec.subspace.orthogonal
+Definition of a vector being orthogonal to a subspace
+
+d.subspace.orthogonal_complement
+Definition of orthogonal complement of a subspace
+
+t.subspace.orthogonal_complement
+The orthogonal complement of a subspace is a subspace.
+
+t.subspace.orthogonal_complement.basis
+A vector is in the orthogonal complement of a subspace if and only if it is orthogonal to every vector in a basis of the subspace.
+
+t.mat.row.null.orthogonal_complement
+The null space of a matrix is the orthogonal complement of the column space.
+
+d.vec.orthogonal_set
+Definition of orthogonal set of vectors
+
+t.vec.orthogonal_set.linindep
+An orthogonal set of nonzero vectors is linearly independent.
+
+d.subspace.basis.orthogonal
+Definition of orthogonal basis of a (sub)space.
+
+t.subspace.basis.orthogonal
+Formula for the coordinates of a vector with respect to an orthogonal basis.
+
+d.vec.projection
+Definition of projection of one vector onto another vector
 
 d.projection.line
 Definition of projection onto a line
@@ -1037,12 +1097,6 @@ Definition of projection onto a plane
 
 d.projection.subspace
 Definition of projection onto a subspace
-
-d.vec.orthogonal
-Definition of two vectors being orthogonal
-
-d.vec.orthogonal_set
-Definition of orthogonal set of vectors
 
 d.orthogonalprojection
 Definition of orthogonal projection
