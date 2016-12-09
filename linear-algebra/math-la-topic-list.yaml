@@ -271,6 +271,21 @@ Definition of Vandermonde matrix
 d.mat.symmetric
 Definition of symmetric matrix
 
+t.mat.symmetric.eig.orthogonal
+Eigenvectors of a symmetric matrix with different eigenvalues are orthogonal.
+
+d.mat.diagonalizable.orthogonally
+Definition of orthogonally diagonalizable matrix
+
+t.mat.diagonalizable.orthogonally
+A matrix is orthogonally diagonalizable if and only if it is symmetric.
+
+t.mat.symmetric.spectral
+The spectral theorem for symmetric matrices
+
+t.mat.symmetric.spectraldecomposition
+Formula for the spectral decomposition for a symmetric matrix
+
 d.mat.hermitian
 Definition of Hermitian matrix
 
@@ -300,6 +315,9 @@ Definition of Cholesky decomposition
 
 d.mat.qr
 Definition of QR decomposition
+
+t.mat.qr
+The QR decomposition of a nonsingular matrix exists.
 
 d.mat.schur
 Definition of Schur triangulation
@@ -1077,38 +1095,80 @@ The null space of a matrix is the orthogonal complement of the column space.
 d.vec.orthogonal_set
 Definition of orthogonal set of vectors
 
+d.vec.orthonormal_set
+Definition of orthonormal set of vectors
+
 t.vec.orthogonal_set.linindep
 An orthogonal set of nonzero vectors is linearly independent.
 
 d.subspace.basis.orthogonal
-Definition of orthogonal basis of a (sub)space.
+Definition of orthogonal basis of a (sub)space
+
+d.subspace.basis.orthonormal
+Definition of orthonormal basis of a (sub)space
+
+t.mat.col.orthonormal.inv.rn
+A matrix A with real entries has orthonormal columns if and only if A inverse equals A transpose.
+
+t.mat.col.orthonormal.norm.rn
+A matrix with real entries and orthonormal columns preserves norms.
+
+t.mat.col.orthonormal.dot.rn
+A matrix with real entries and orthonormal columns preserves dot products.
 
 t.subspace.basis.orthogonal
 Formula for the coordinates of a vector with respect to an orthogonal basis.
 
 d.vec.projection
-Definition of projection of one vector onto another vector
+Definition of (orthogonal) projection of one vector onto another vector
 
-d.projection.line
-Definition of projection onto a line
-
-d.projection.plane
-Definition of projection onto a plane
+t.vec.projection
+Formula for the (orthogonal) projection of one vector onto another vector
 
 d.projection.subspace
-Definition of projection onto a subspace
+Definition of (orthogonal) projection onto a subspace
 
-d.orthogonalprojection
-Definition of orthogonal projection
+t.vec.projection.subspace
+A vector can be written uniquely as a sum of a vector in a subspace and a vector orthogonal to the subspace.
+
+d.vec.projection.subspace
+Definition of orthogonal projection onto a subspace
+
+t.vec.projection.element
+The projection of a vector which is in a subspace is the vector itself.
+
+t.vec.projection.closest
+The (orthogonal) projection of a vector onto a subspace is the point in the subspace closest to the vector.
+
+t.subspace.basis.orthonormal
+Formula for the coordinates of the projection of a vector onto a subspace, with respect to an orthonormal basis.
 
 d.gramschmidt
-Definition of the Gram-Schmidt process
+Description of the Gram-Schmidt process
 
-d.leastsquares
-Definition of least squares fit
+t.gramschmidt
+The Gram-Schmidt process converts a basis into an orthogonal basis.
 
-t.leastsquares
-Formula for computing the least squares fit
+d.linsys.leastsquares
+Definition of least-squares solution to a linear system
+
+d.linsys.leastsquares.error
+Definition of least-squares error of a linear system
+
+t.linsys.leastsquares
+Formula for computing the least squares solution to a linear system.
+
+t.linsys.leastsquares.qr
+Formula for computing the least squares solution to a linear system, in terms of the QR factorization of the coefficient matrix.
+
+t.linsys.leastsquares.unique
+The least squares solution to a linear system is unique if and only if the columns of the coefficient matrix are linearly independent.
+
+d.leastsquares.line
+Definition of the least-squares linear fit to 2-dimensional data
+
+t.leastsquares.line
+Formula for the least-squares linear fit to 2-dimensional data
 
 d.mat.inv.generalized
 Definition of generalized inverse of a matrix
@@ -1117,8 +1177,17 @@ Definition of generalized inverse of a matrix
 Orthogonality and projection, arbitrary setting
 ==============================================
 
-d.innerproduct.arb
+d.vec.innerproduct.arb
 Definition of inner product, arbitrary setting
+
+d.vsp.innerproduct.arb
+Definition of inner product space, arbitrary setting
+
+d.vec.[length|norm].arb
+Definition of [length|norm] of a vector, arbitrary setting
+
+d.vec.distance.arb
+Definition of orthogonal vectors, arbitrary setting
 
 d.vec.orthogonal.arb
 Definition of orthogonal vectors, arbitrary setting
@@ -1126,11 +1195,17 @@ Definition of orthogonal vectors, arbitrary setting
 d.vec.parallel.arb
 Definition of parallel vectors, arbitrary setting
 
+d.gramschmidt.arb
+Definition of Gram-Schmidt process, arbitrary setting
+
+t.vec.cauchyschwarz.arb
+The Cauchy-Schwarz inequality, arbitrary setting
+
+t.vec.triangle.arb
+The triangle inequality, arbitrary setting
+
 d.vsp.orthogonal.arb
 Definition of orthogonal subspaces, arbitrary setting
-
-d.norm.arb
-Definition of norm, length, distance, arbitrary setting
 
 t.vec.cauchyschwartz.arb
 The Cauchy-Schwartz inequality, arbitrary setting
