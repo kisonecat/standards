@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Lay TOC</title>
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="https://sagecell.sagemath.org/static/jquery.min.js"></script><script type="text/x-mathjax-config">
+// contrib directory for accessibility menu, moot after v2.6+?
+MathJax.Ajax.config.path["Contrib"] = "https://cdn.mathjax.org/mathjax/contrib";
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']],
+    },
+    TeX: {
+        // [Contrib]accessibility menu moot after v2.6+?
+        extensions: ["AMSmath.js", "AMSsymbols.js", "extpfeil.js", "autobold.js", "https://aimath.org/mathbook/mathjaxknowl.js", "[Contrib]/a11y/accessibility-menu.js", ],
+        equationNumbers: { autoNumber: "none",
+                           useLabelIds: true,
+                           // JS comment, XML CDATA protect XHTML quality of file
+                           // if removed in XSL, use entities
+                           //<![CDATA[
+                           formatID: function (n) {return String(n).replace(/[:'"<>&]/g,"")},
+                           //]]>
+                         },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    "HTML-CSS": {
+        scale: 88,
+    },
+});
+    </script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML-full"></script><link href="https://aimath.org/knowlstyle.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://aimath.org/knowl.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.sticky.js"></script><script src="https://aimath.org/mathbook/js/lib/jquery.espy.min.js"></script><script src="https://aimath.org/mathbook/js/Mathbook.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/stylesheets/mathbook-3.css" rel="stylesheet" type="text/css">
+<link href="https://aimath.org/mathbook/mathbook-add-on.css" rel="stylesheet" type="text/css">
+<style>
+
+#content {
+    max-width: 700px;
+}
+
+.mathbook-content .tocchap .numtitle {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.mathbook-content .tocsec .numtitle {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.mathbook-content .tocsec {
+    margin-left: 2em;
+}
+.mathbook-content .secchaptitle {
+    margin-left: 0.5em;
+}
+
+.mathbook-content .perspective {
+    font-size: 80%;
+}
+.mathbook-content .asset {
+    font-size: 80%;
+}
+
+.mathbook-content .latopic {
+    font-weight: normal;
+    margin-top: 0.5em;
+}
+.mathbook-content .latopic + .latopic {
+    margin-top: 0;
+}
+.mathbook-content .latopic:last-child {
+    margin-bottom: 0.5em;
+}
+.mathbook-content .latopic .id{
+    font-size: 70%;
+    margin-left: 1em;
+}
+
+.mathbook-content .latopic .description{
+    font-style: italic;
+    margin-left: 0.2em;
+}
+
+.mathbook-content .description:before {
+    content: "-";
+}
+
+.mathbook-content .latopic {
+/*    background: #eeeeff;
+*/
+    margin-left: 1em;
+}
+
+.mathbook-content .iconmarker {
+    font-size: 150%;
+    margin-left: 3em;
+}
+
+.mathbook-content .latopic + p {
+    margin-top: 0.5em;
+}
+
+</style>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<div style="display:none;">\(
+\newcommand{\lt}{ &lt; }
+\newcommand{\gt}{ &gt; }
+\newcommand{\amp}{ &amp; }
+\)</div>
+<div class="page">
+
+
+
+<main class="xmain"><div id="content" class="mathbook-content">
+<section>
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="codenumber"></span><span class="title">Lay, Lay, and McDonald, 5</span>
+</h1>
+
+<p>
+Table of Contents
+</p>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">1.</span><span class="secchaptitle">Linear Equations in Linear Algebra</span></div>
+
+<div class="tocsec">
+
+<!--
+<dt class=wide>Introductory Example:</span><span class="secchaptitle">Linear Models in Economics and Engineering</span></div>
+-->
+
+<div class="numtitle"><span class="secchapnum">1.1</span><span class="secchaptitle">Systems of Linear Equations</span></div>
+
+<div class="latopic"><span class="id">math.la.d.lineqn</span><span class="description">Definition of linear equation</span></div>
+<div class="latopic"><span class="id">math.la.d.lineqn.coeff</span><span class="description">Definition of coefficients of a linear equation</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys</span><span class="description">Definition of system of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.soln</span><span class="description">Definition of solution to a system of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.soln_set</span><span class="description">Definition of solution set of a system of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.equiv</span><span class="description">Definition of equivalent systems of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.zoi</span><span class="description">Linear systems have 0, 1, or infinitely many solutions</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.consistent</span><span class="description">Definition of consistent linear system</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.inconsistent</span><span class="description">Definition of inconsistent linear system</span></div>
+<div class="latopic"><span class="id">math.la.d.mat</span><span class="description">Definition of matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.coeff</span><span class="description">Definition of coefficient matrix of a linear system</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.augmented</span><span class="description">Definition of augmented matrix of a linear system</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.size</span><span class="description">Definition of size of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.m_by_n</span><span class="description">Definition of m by n matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_op</span><span class="description">Definition of row operation on a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_equiv</span><span class="description">Definition of row equivalent matrices</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.row_equiv.linsys</span><span class="description">Row equivalent matrices represent equivalent linear systems</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.2</span><span class="secchaptitle">Row Reduction and Echelon Forms</span></div>
+
+<div class="latopic"><span class="id">math.la.d.mat.row.leading</span><span class="description">Definition of leading entry in a row of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_echelon_form</span><span class="description">Definition of row echelon form of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rref</span><span class="description">Definition of reduced row echelon form of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.echelon</span><span class="description">Definition of echelon matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.reduced_echelon</span><span class="description">Definition of reduced echelon matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_reduce</span><span class="description">Definition of row reduce a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.rref.exists_and_is_unique</span><span class="description">Every matrix is row-equivalent to exactly one matrix in reduced row echelon form.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.echelon_of</span><span class="description">Definition of echelon form of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rref_of</span><span class="description">Definition of reduced row echelon form of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.pivot_position</span><span class="description">Definition of pivot position</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.pivot_col</span><span class="description">Definition of pivot column</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.pivot</span><span class="description">Definition of pivot</span></div>
+<div class="latopic"><span class="id">math.la.d.insys.variable.basic</span><span class="description">Definition of basic variable in a linear system</span></div>
+<div class="latopic"><span class="id">math.la.d.insys.variable.free</span><span class="description">Definition of free variable in a linear system</span></div>
+<div class="latopic"><span class="id">math.la.t.rref.consistent</span><span class="description">The reduced row echelon form can be used to determine if a linear system is consistent.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.3</span><span class="secchaptitle">Vector Equations</span></div>
+
+<div class="latopic"><span class="id">math.la.d.vec.col.coord</span><span class="description">Definition of column vector, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.coord</span><span class="description">Definition of vector, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.equal.coord</span><span class="description">Definition of equality of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.sum.coord</span><span class="description">Definition of sum of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.scalar.mult.coord</span><span class="description">Definition of vector-scalar multiplication, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.scalar</span><span class="description">Definition of scalar, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.sum.geometric.RnCn</span><span class="description">Vector sum interpreted geometrically in R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.axioms.rncn</span><span class="description">The vector space properties of R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.lincomb.coord</span><span class="description">Definition of linear combination of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.lincomb.weight.coord</span><span class="description">Definition of weights in a linear combination of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.vec</span><span class="description">A linear system is equivalent to a vector equation.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.span.coord</span><span class="description">Definition of span of a set of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.c.vec.span.geometric.RnCn</span><span class="description">Geometric description of span of a set of vectors in R^n (or C^n)</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.4</span><span class="secchaptitle">The Matrix Equation Ax = b</span></div>
+
+<div class="latopic"><span class="id">math.la.d.mat.vec.prod</span><span class="description">Definition of matrix-vector product, as a linear combination of column vectors</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.eqn</span><span class="description">Definition of matrix equation</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eqn.linsys</span><span class="description">A matrix equation is equivalent to a linear system.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eqn.lincomb</span><span class="description">The matrix equation Ax=b has a solution if and only if b is a linear conbination of the columns of A.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.mat.eqn</span><span class="description">Equivalence theorem: the equation Ax=b has a solution for all b.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.col.span</span><span class="description">Equivalence theorem: the columns of A span R^n (or C^n).</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.row.pivot</span><span class="description">Equivalence theorem: there is a pivot position in every row of A.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.vec.prod.coord</span><span class="description">Definition of matrix-vector product, each entry separately</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.vec.prod.assoc</span><span class="description">Matrix-vector product is associative.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.scalar.prod.commut</span><span class="description">Matrix-scalar product is commutative</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.5</span><span class="secchaptitle">Solution Sets of Linear Systems</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.homog</span><span class="description">Definition of homogeneous linear system of equations</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.homog.trivial</span><span class="description">Definition of trivial solution to a homogeneous linear system of equations</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.homog.nontrivial</span><span class="description">Definition of nontrivial solution to a homogeneous linear system of equations</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.homog.nontrivial</span><span class="description">A homogeneous system has a nontrivial solution if and only if it has a free variable.</span></div>
+<div class="latopic"><span class="id">math.la.c.linsys.soln_set.vec</span><span class="description">Parametric vector form of the solution set of a system of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.t.nonhomog.particular_plus_homog</span><span class="description">The solutions to a nonhomogeneous system are given by a particular solution plus the solutions to the homogeneous system.</span></div>
+</div>
+
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.6</span><span class="secchaptitle">Applications of Linear Systems</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.7</span><span class="secchaptitle">Linear Independence</span></div>
+  <div class="latopic"><span class="id">math.la.d.vec.linindep.coord</span><span class="description">Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.</span></div>
+  <div class="latopic"><span class="id">math.la.d.vec.lindep.relation</span><span class="description">Definition of linear dependence relation</span></div>
+  <div class="latopic"><span class="id">math.la.t.equiv.mat.eqn.homog</span><span class="description">Equivalence theorem: the equation Ax=0 has only the trivial solution.</span></div>
+  <div class="latopic"><span class="id">math.la.t.equiv.col.linindep</span><span class="description">Equivalence theorem: the columns of A are linearly independent.</span></div>
+  <div class="latopic"><span class="id">math.la.t.vec.lindep.two</span><span class="description">A set of two vectors is linearly dependent if and only if neither is a scalar multiple of the other.</span></div>
+  <div class="latopic"><span class="id">math.la.t.vec.lindep.coord</span><span class="description">Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.</span></div>
+  <div class="latopic"><span class="id">math.la.t.vec.lindep.more.RnCn</span><span class="description">If a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.</span></div>
+  <div class="latopic"><span class="id">math.la.p.vec.lindep.more.RnCn</span><span class="description">Proof that if a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.</span></div>
+  <div class="latopic"><span class="id">math.la.t.vec.lindep.zero</span><span class="description">If a set of vectors contains the zero vector, then the set is linearly dependent.</span></div>
+  <div class="latopic"><span class="id">math.la.p.vec.lindep.zero</span><span class="description">Proof that if a set of vectors contains the zero vector, then the set is linearly dependent.</span></div>
+  <div class="latopic"><span class="id">math.la.p.vec.lindep.coord</span><span class="description">Proof of theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.8</span><span class="secchaptitle">Introduction to Linear Transformations</span></div>
+  <div class="latopic"><span class="id">math.functions.d.transformation</span><span class="description">Definition of transformation</span></div>
+  <div class="latopic"><span class="id">math.functions.d.transformation.domain</span><span class="description">Definition domain of a transformation</span></div>
+  <div class="latopic"><span class="id">math.functions.d.transformation.codomain</span><span class="description">Definition codomain of a transformation</span></div>
+  <div class="latopic"><span class="id">math.functions.d.transformation.image</span><span class="description">Definition image (of a point) under a transformation</span></div>
+  <div class="latopic"><span class="id">math.functions.d.transformation.range</span><span class="description">Definition range of a transformation</span></div>
+  <div class="latopic"><span class="id">math.la.c.transformation.matrix</span><span class="description">Matrices act as a transformations by multiplying vectors</span></div>
+  <div class="latopic"><span class="id">math.la.d.lintrans.coord</span><span class="description">Definition of linear transformation, coordinate vector space</span></div>
+  <div class="latopic"><span class="id">math.la.t.mat.vec.mult.lintrans</span><span class="description">Matrix-vector multiplication is a linear transformation.</span></div>
+  <div class="latopic"><span class="id">math.la.t.lintrans.z</span><span class="description">A linear transformation maps zero to zero.</span></div>
+  <div class="latopic"><span class="id">math.la.t.lintrans.lincomb</span><span class="description">A linear transformation of a linear combination is the linear combination of the linear transformation</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.9</span><span class="secchaptitle">The Matrix of a Linear Transformation</span></div>
+<div class="latopic"><span class="id">math.la.t.lintrans.mat.basis.standard.coord</span><span class="description">A linear transformation is given by a matrix whose columns are the images of the standard basis vectors, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.d.lintrans.mat.basis.standard.coord</span><span class="description">Definition of the standard matrix for a linear transformation, coordinate setting</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.rotation</span><span class="description">Matrix describing a rotation of the plane</span></div>
+<div class="latopic"><span class="id">math.la.c.lintrans.geometric.r2</span><span class="description">Geometric properties of linear transformations on R^2</span></div>
+<div class="latopic"><span class="id">math.la.math.functions.d.mapping.onto</span><span class="description">Definition of onto mapping</span></div>
+<div class="latopic"><span class="id">math.la.math.functions.d.mapping.onetoone</span><span class="description">Definition of one-to-one mapping</span></div>
+<div class="latopic"><span class="id">math.la.t.lintrans.onetoone.ker</span><span class="description">A linear transformation is one-to-one if and only if only 0 is mapped to 0.</span></div>
+<div class="latopic"><span class="id">math.la.t.lintrans.onto.span</span><span class="description">A linear transformation is onto if and only if the columns of its matrix span the codomain.</span></div>
+<div class="latopic"><span class="id">math.la.t.lintrans.onetoone.linindep</span><span class="description">A linear transformation is one-to-one if and only if the columns of its matrix are linearly independent.</span></div>
+
+
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">1.10</span><span class="secchaptitle">Linear Models in Business, Science, and Engineering</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+
+</div>
+
+</div>
+
+<div class="tocchap">
+
+<div class="numtitle"><span class="secchapnum">2.</span><span class="secchaptitle">Matrix Algebra</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: Computer Models in Aircraft Design
+-->
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.1</span><span class="secchaptitle">Matrix Operations</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.thediagonal</span><span class="description">Definition of the diagonal of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.diagonal</span><span class="description">Definition of diagonal matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.identity</span><span class="description">Definition of identity matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.zero</span><span class="description">Definition of zero matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.equal</span><span class="description">Definition of equality of matrices</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.sum</span><span class="description">Definition of sum of matrices</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.scalar.mult</span><span class="description">Definition of matrix-scalar multiplication</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.add.commut_assoc</span><span class="description">Matrix addition is commutative and associative.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.scalar.mult.commut_assoc</span><span class="description">Matrix-scalar multiplication is commutative, associative, and distributive.</span></div>
+
+<div class="latopic"><span class="id">math.la.d.mat.mult.col</span><span class="description">Definition of matrix multiplication in terms of column vectors</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.mult.coord</span><span class="description">Definition of matrix multiplication, each entry separately</span></div>
+
+
+<div class="latopic"><span class="id">math.la.t.mat.mult.assoc</span><span class="description">Matrix multiplication is associative.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.mult.distributive</span><span class="description">Matrix multiplication is distributive over matrix addition.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.mult.identity</span><span class="description">The identity matrix is the identity for matrix multiplication.</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.mult.commut</span><span class="description">Matrix multiplication is not commutative in general.</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.mult.cancellation</span><span class="description">For matrices, AB=AC does not imply B=C in general.</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.mult.zero_divisor</span><span class="description">For matrices, AB=0 does not imply A=0 or B=0 in general.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.transpose</span><span class="description">Definition of transpose of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.transpose.involution</span><span class="description">Matrix transpose is an involution.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.mult.transpose</span><span class="description">The transpose of a product of matrices is the product of the transposes in reverse order.</span></div>
+
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.2</span><span class="secchaptitle">The Inverse of a Matrix</span></div>
+
+<div class="latopic"><span class="id">math.la.d.mat.inv</span><span class="description">Definition of matrix inverse</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.singular.inv</span><span class="description">Definition of singular matrix: matrix is invertible</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.2by2</span><span class="description">Formula for the inverse of a 2-by-2 matrix.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.2x2</span><span class="description">Formula for the determinant of a 2-by-2 matrix.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.inverse</span><span class="description">The matrix A has an inverse.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.involution</span><span class="description">Matrix inverse is an involution.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.shoesandsocks</span><span class="description">For n-by-n invertible matrices A and B, the product AB is invertible, and (AB)^-1=B^-1 A^-1.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.transpose</span><span class="description">Matrix transpose commutes with matrix inverse.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.elementary</span><span class="description">Definition of elementary matrix.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.mult.elementary</span><span class="description">Row operations are given by multiplication by elementary matrices.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.elementary.inv</span><span class="description">Elementary matrices are invertible.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.identity</span><span class="description">Equivalence theorem: the matrix A row-reduces to the identity matrix.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.augmented</span><span class="description">The inverse of a matrix (if it exists) can be found by row reducing the matrix augmented by the identity matrix.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.3</span><span class="secchaptitle">Characterizations of Invertible Matrices</span></div>
+
+<div class="latopic"><span class="id">math.la.t.equiv.lintrans.onetoone</span><span class="description">Equivalence theorem: the linear transformation given by T(x)=Ax is one-to-one.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.lintrans.onto</span><span class="description">Equivalence theorem: the linear transformation given by T(x)=Ax is onto.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.inv.left</span><span class="description">Equivalence theorem: the matrix A has a left inverse.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.inv.right</span><span class="description">Equivalence theorem: the matrix A has a right inverse.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.transpose.inv</span><span class="description">Equivalence theorem: the transpose of the matrix A has an inverse.</span></div>
+
+<div class="latopic"><span class="id">math.la.t.mat.inv.unique</span><span class="description">Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1..</span></div>
+<div class="latopic"><span class="id">math.la.d.lintrans.invertible.coord</span><span class="description">Definition of invertible linear transformation, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.lintrans.inv</span><span class="description">Equivalence theorem: the linear transformation given by T(x)=Ax has an inverse.</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.illconditioned</span><span class="description">A matrix is called ill-conditioned if it is nearly singular</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.conditionnumber</span><span class="description">The condition number of matrix measures how close it is to being singular</span></div>
+
+<div class="latopic"><span class="id">math.la.d.mat.triangular.upper.exer</span><span class="description">Definition of an upper triangular matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.triangular.lower.exer</span><span class="description">Definition of a lower triangular matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.4</span><span class="secchaptitle">Partitioned Matrices</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.[block|partitioned]</span><span class="description">Definition of [block|partitioned] matrix</span></div>
+<div class="latopic"><span class="id">math.la.c.mat.mult.[block|partitioned]</span><span class="description">Multiplication of [block|partitioned] matrices</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.mult.row.col</span><span class="description">Matrix multiplication can be viewed as the dot product of a row vector of column vectors with a column vector of row vectors</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.block_diagonal</span><span class="description">Definition of block diagonal matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.5</span><span class="secchaptitle">Matrix Factorizations</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.lu</span><span class="description">Definition of LU decomposition</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.lu</span><span class="description">Algorithm for computing an LU decomposition</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.lu.reduced.exer</span><span class="description">Definition of reduced LU decomposition</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rank_factorization.exer</span><span class="description">Definition of rank factorization of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.qr.exer</span><span class="description">Definition of QR decomposition</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.svd.exer</span><span class="description">Definition of singular value decomposition (SVD)</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.band.exer</span><span class="description">Definition of band matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.6</span><span class="secchaptitle">The Leontief Input-Output Model</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.7</span><span class="secchaptitle">Applications to Computer Graphics</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.8</span><span class="secchaptitle">Subspaces of Rn</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.subspace.coord</span><span class="description">Definition of subspace, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.span.subspace.coord</span><span class="description">Definition of subspace spanned by a set of a set of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.col_space</span><span class="description">Definition of column space of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col_space.rncn</span><span class="description">The column space of an m-by-n matrix is a subspace of R^m (or C^m).</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.null_space.right</span><span class="description">Definition of matrix null space (right)</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.null_space.rncn</span><span class="description">The null space of a matrix is a subspace of R^n (or C^n).</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.coord</span><span class="description">Definition of basis of a vector space (or subspace), coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.standard.rncn</span><span class="description">Definition of the standard basis of R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col_space.pivot</span><span class="description">The pivot columns of a matrix are a basis for the column space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">2.9</span><span class="secchaptitle">Dimension and Rank</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.relative.coord</span><span class="description">Definition of coordinates relative to a given basis, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.dim.coord</span><span class="description">Definition of dimension of a vector space (or subspace), arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rank</span><span class="description">Definition of rank of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.ranknullity</span><span class="description">If A is a matrix, then the rank of A plus the nullity of A equals the number of columns of A.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.span.coord</span><span class="description">If a vector space has dimension n, then any subset set of n vectors that spans the space must be a basis, coordinate vector space.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.linindep.coord</span><span class="description">If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.col.dim</span><span class="description">Equivalence theorem: the dimension of the column space of A is n.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.rank</span><span class="description">Equivalence theorem: the matrix A has rank n.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.nullspace</span><span class="description">Equivalence theorem: the null space of the matrix A is {0}.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.nullity</span><span class="description">Equivalence theorem: the nullity of the matrix A is zero.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">3.</span><span class="secchaptitle">Determinants</span></div>
+
+
+<div class="tocsec">
+<!--
+Introductory Example: Random Paths and Distortion
+-->
+
+<div class="numtitle"><span class="secchapnum">3.1</span><span class="secchaptitle">Introduction to Determinants</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.3x3</span><span class="description">Formula for the determinant of a 3-by-3 matrix.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.det.cofactor</span><span class="description">Definition of determinant of a matrix as a cofactor expansion across the first row</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.cofactor</span><span class="description">The determinant of a matrix can be computed as a cofactor expansion across any row or do
+wn any column.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.trianglar</span><span class="description">The determinant of a triangular matrix is the product of the entries on the diagonal.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">3.2</span><span class="secchaptitle">Properties of Determinants</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.elementaryoperations</span><span class="description">Theorem describing the effect of elementary row operations on the determinant of a matrix.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.echelon</span><span class="description">The determinant of a matrix can be expressed as a product of the diagonal entries in a non-scaled echelon form.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.det</span><span class="description">Equivalence theorem: the determinant of A is nonzero.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.transpose</span><span class="description">A matrix and its transpose have the same determinant.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.det.product</span><span class="description">If A and B are n-by-n matrices, then det(AB)=det(A)det(B).</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.elementary.det</span><span class="description">Theorem describing the determinants of elementary matrices.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">3.3</span><span class="secchaptitle">Cramer's Rule, Volume, and Linear Transformations</span></div>
+<div class="latopic"><span class="id">math.la.t.cramer</span><span class="description">Cramer's rule</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.[adjugate|classicaladjoint]</span><span class="description">Definition of [adjugate|classical adjoint] of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.inv.cofactor</span><span class="description">The inverse of a matrix can be expressed in terms of its matrix of cofactors.</span></div>
+
+<div class="latopic"><span class="id">math.la.t.mat.det.col.[area|volume]</span><span class="description">The determinant of a matrix measures the [area|volume] of the [parallelogram|parallelipiped] determined by its columns.</span></div>
+<div class="latopic"><span class="id">math.la.t.lintrans.det.volume</span><span class="description">The determinant of the matrix of a linear transformation is the factor by which the area/volume changes.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.vandermonde.exer</span><span class="description">Definition of Vandermonde matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">4.</span><span class="secchaptitle">Vector Spaces</span></div>
+
+
+<div class="tocsec">
+<!--
+Introductory Example: Space Flight and Control Systems
+-->
+
+<div class="numtitle"><span class="secchapnum">4.1</span><span class="secchaptitle">Vector Spaces and Subspaces</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.arb</span><span class="description">Definition of vector, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.add.arb</span><span class="description">Definition of vector addition, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.scalar.mult.arb</span><span class="description">Definition of vector-scalar multiplication, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.axioms.arb</span><span class="description">Axioms of a vector space, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.vector.negative</span><span class="description">The additive inverse of a vector is called the negative of the vector.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.scalar.mult.z</span><span class="description">The zero scalar multiplied by any vector equals the zero vector.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.vector.mult.z</span><span class="description">The zero vector multiplied by any scalar equals the zero vector.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.vector.negative</span><span class="description">The negative of a vector equals the vector multiplied by -1.</span></div>
+<div class="latopic"><span class="id">math.la.math.functions.d.polynomial.degree</span><span class="description">Definition of degree of a polynomial</span></div>
+<div class="latopic"><span class="id">math.la.math.functions.d.polynomial.z</span><span class="description">Definition of the zero polynomial</span></div>
+<div class="latopic"><span class="id">math.la.e.vsp.polynomial.leq_n</span><span class="description">The set of all polynomials of degree at most n is a vector space.</span></div>
+<div class="latopic"><span class="id">math.la.e.vsp.function</span><span class="description">The set of all functions on a set is a vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.subspace.arb</span><span class="description">Definition of subspace, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.subspace.z</span><span class="description">Definition of zero subspace, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.e.vsp.polynomial</span><span class="description">The set of all polynomials is a vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.lincomb.arb</span><span class="description">Definition of linear combination of vectors, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.span.arb</span><span class="description">Definition of span of a set of vectors, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.span.arb</span><span class="description">The span of a set of vectors is a subspace, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.span.subspace.arb</span><span class="description">Definition of subspace spaned by a set of vectors, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.span.set.arb</span><span class="description">Definition of spanning set for a subspace, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.subspace.intersection.arb.exer</span><span class="description">Definition of intersection of subspaces, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.subspace.intersection.arb.exer</span><span class="description">The intersection of subspaces is a subspace, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.subspace.sum.arb.exer</span><span class="description">Definition of sum of subspaces, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.subspace.sum.arb.exer</span><span class="description">The sum of subspaces is a subspace, arbitrary vector space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.2</span><span class="secchaptitle">Null Spaces, Column Spaces, and Linear Transformations</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.null_space.right.rep</span><span class="description">Definition of matrix null space (right)</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.null_space.rncn.rep</span><span class="description">The null space of a matrix is a subspace of R^n (or C^n).</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.col_space.rep</span><span class="description">Definition of column space of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col_space.rncn.rep</span><span class="description">The column space of an m-by-n matrix is a subspace of R^m (or C^m)</span></div>
+<div class="latopic"><span class="id">math.la.d.lintrans.arb</span><span class="description">Definition of linear transformation, arbitrary vector space</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.3</span><span class="secchaptitle">Linearly Independent Sets; Bases</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.linindep.arb</span><span class="description">Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.lindep.relation.rep</span><span class="description">Definition of linear dependence relation</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.lindep.arb</span><span class="description">Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.arb</span><span class="description">Definition of basis of a vector space (or subspace), arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.standard.rncn.rep</span><span class="description">Definition of the standard basis of R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.standard.leq_n</span><span class="description">Definition of the standard basis of the polynomials of degree at most n</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.span.lindep</span><span class="description">Removing a linearly dependent vector from a set does not change the span of the set.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.span.basis</span><span class="description">A set of nonzero vectors contains (as a subset) a basis for its span.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col_space.pivot.rep</span><span class="description">The pivot columns of a matrix are a basis for the column space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.4</span><span class="secchaptitle">Coordinate Systems</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.basis.coord.unique</span><span class="description">Each vector can be written uniquely as a linear combination of vectors from a given basis.</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.relative.arb</span><span class="description">Definition of coordinates relative to a given basis, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.coord.[vector|mapping].arb</span><span class="description">Definition of coordinate [vector|mapping] relative to a given basis</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.basis.coord.change.rncn</span><span class="description">Definition of change-of-coordinates matrix relative to a given basis of R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.basis.coord.mapping.arb</span><span class="description">The coordinate mapping relative to a given basis is a bijective linear mapping to R^n (or C^n).</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.isomorphism</span><span class="description">Definition of isomorphism between vector spaces</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.5</span><span class="secchaptitle">The Dimension of a Vector Space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.more.lindep.arb</span><span class="description">A set of vectors containing more elements than the dimension of the space must be linearly dependent, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.arb</span><span class="description">Every basis for a vector space contains the same number of elements, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.dim.arb</span><span class="description">Definition of dimension of a vector space (or subspace), arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.dim.finite_infinite.arb</span><span class="description">Definition of dimension of a vector space (or subspace) being finite or infinite, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.linindep.basis.arb</span><span class="description">Any linearly independent set can be expanded to a basis for the (sub)space, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.subspace.dim.arb</span><span class="description">The dimension of a subspace is less than or equal to the dimension of the whole space, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.linindep.arb</span><span class="description">If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, arbitrary vector space.</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.dim.span.arb</span><span class="description">If a vector space has dimension n, then any subset set of n vectors that spans the space must be a basis, arbitrary vector space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.6</span><span class="secchaptitle">Rank</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_space</span><span class="description">Definition of row space of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.row_space.row_equiv</span><span class="description">Row equivalent matrices have the same row space.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rank.rep</span><span class="description">Definition of rank of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.nullity</span><span class="description">Definition of nullity of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.row_space.col_space</span><span class="description">The row space and the column space of a matrix have the same dimension.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.ranknullity.rep</span><span class="description">If A is a matrix, then the rank of A plus the nullity of A equals the number of columns of A.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.7</span><span class="secchaptitle">Change of Basis</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.change_of_basis.arb</span><span class="description">Definition of change of corrdinates matrix between two bases, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.t.vsp.change_of_basis.arb</span><span class="description">The change of coordinates matrix between two bases exists and is unique, arbitrary vector space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.8</span><span class="secchaptitle">Applications to Difference Equations</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">4.9</span><span class="secchaptitle">Applications to Markov Chains</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+
+<div class="numtitle"><span class="secchapnum">5.</span><span class="secchaptitle">Eigenvalues and Eigenvectors</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: Dynamical Systems and Spotted Owls
+-->
+
+<div class="numtitle"><span class="secchapnum">5.1</span><span class="secchaptitle">Eigenvectors and Eigenvalues</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.eigvec</span><span class="description">Definition of eigenvector(s) of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.eig</span><span class="description">Definition of eigenvalue(s) of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.eigsp</span><span class="description">Definition of eigenspace(s) of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eig.triangular</span><span class="description">The eigenvalues of a triangular matrix are the entries on the main diagonal.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eigvec.linindep</span><span class="description">Eigenvectors with distinct eigenvalues are linearly independent.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.2</span><span class="secchaptitle">The Characteristic Equation</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.det.echelon</span><span class="description">Definition of determinant of a matrix as a product of the diagonal entries in a non-scaled echelon form.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.det.rep</span><span class="description">Equivalence theorem: the determinant of A is nonzero.</span></div>
+<div class="latopic"><span class="id">math.la.t.equiv.eig</span><span class="description">Equivalence theorem: the matrix A does not have zero as an eigenvalue.</span></div>
+
+<div class="latopic"><span class="id">math.la.t.mat.det.product.rep</span><span class="description">If A and B are n-by-n matrices, then det(AB)=det(A)det(B).</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.charpoly.eqn</span><span class="description">Definition of characteristic equation of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.charpoly.eqn.eig</span><span class="description">The eigenvalues of a matrix are the solutions to its characteristic equation.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.charpoly</span><span class="description">Definition of characteristic polynomial of a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.eig.multiplicity</span><span class="description">Definition of multiplicity of an eigenvalue</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.similar</span><span class="description">Definition of similar matrices</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.similar.transform</span><span class="description">Definition of similarity transform</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.similar.eig</span><span class="description">Similar matrices have the same eigenvalues and the same characteristic polynomials.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.3</span><span class="secchaptitle">Diagonalization</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.diagonalizable</span><span class="description">Definition of diagonalizable matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable</span><span class="description">An n-by-n matrix is diagonalizable if and only if it has n linearly independent eigenvectors.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalized_by</span><span class="description">A diagonalizable matrix is diagonalized by a matrix having the eigenvectors as columns.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable.distinct</span><span class="description">An n-by-n matrix with n distinct eigenvalues is diagonalizable</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eig.multiplicity.eigenspace</span><span class="description">The dimension of a eigenspace is less than or equal to the multiplicity of the eigenvalue.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable.eigenspace</span><span class="description">An n-by-n matrix is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals n.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable.charpoly</span><span class="description">An n-by-n matrix is diagonalizable if and only if the characteristic polynomial factors comple
+tely, and the dimension of each eigenspace equals the multiplicity of the eigenvalue.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable.basis</span><span class="description">An n-by-n matrix is diagonalizable if and only if the union of the basis vectors for the eigenspaces is a basis for R^n (or C^n).</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.4</span><span class="secchaptitle">Eigenvectors and Linear Transformations</span></div>
+<div class="latopic"><span class="id">math.la.d.lintrans.mat.repn.arb</span><span class="description">Definition of matrix representation of a linear transformation with respect to bases of the spaces, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.d.lintrans.mat.repn.self.arb</span><span class="description">Definition of matrix representation of a linear transformation from a vector space to itself, with respect to basis of the space, arbitrary vector space</span></div>
+<div class="latopic"><span class="id">math.la.UNKNOWN</span><span class="description">Not sure how to describe Theorem 8.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.5</span><span class="secchaptitle">Complex Eigenvalues</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.[real|imaginary].cn</span><span class="description">Definition of the [real|imaginary] part of a vector in C^n</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.real.eig.cn</span><span class="description">A matrix with real entries has eigenvalues occurring in conjugate pairs.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.real.diagonalize.complex.2x2</span><span class="description">Formula for diagonalizing a real 2-by-2 matrix with a complex eigenvalue.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.6</span><span class="secchaptitle">Discrete Dynamical Systems</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.7</span><span class="secchaptitle">Applications to Differential Equations</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">5.8</span><span class="secchaptitle">Iterative Estimates for Eigenvalues</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">6.</span><span class="secchaptitle">Orthogonality and Least Squares</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: The North American Datum and GPS Navigation
+-->
+
+<div class="numtitle"><span class="secchapnum">6.1</span><span class="secchaptitle">Inner Product, Length, and Orthogonality</span></div>
+<div class="latopic"><span class="id">math.la.d.innerproduct.real.coord</span><span class="description">Definition of inner product, real entries</span></div>
+<div class="latopic"><span class="id">math.la.t.innerproduct.commutative.coord</span><span class="description">The standard inner product is commutative, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.t.innerproduct.distributive.coord</span><span class="description">The standard inner product distributes over addition, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.t.innerproduct.commutative.scalar.real.coord</span><span class="description">The standard inner product commutes with real scalar multiplication, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.t.innerproduct.self.nonnegative.coord</span><span class="description">The standard inner product of a vector with itself is non-negative, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.t.innerproduct.self.z.coord</span><span class="description">The standard inner product of a vector with itself is zero only for the zero vector, coordinate setting.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.[norm|length].coord</span><span class="description">Definition of [norm|length] of a vector, coordinate setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.unit.coord</span><span class="description">Definition of unit vector, coordinate setting</span></div>
+<div class="latopic"><span class="id">math.la.d.distance.coord</span><span class="description">Definition of distance, coordinate setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.orthogonal</span><span class="description">Definition of two vectors being orthogonal</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.orthogonal</span><span class="description">Two vectors are orthogonal if and only if the Pythagorean Theorem holds.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.subspace.orthogonal</span><span class="description">Definition of a vector being orthogonal to a subspace</span></div>
+<div class="latopic"><span class="id">math.la.d.subspace.orthogonal_complement</span><span class="description">Definition of orthogonal complement of a subspace</span></div>
+<div class="latopic"><span class="id">math.la.t.subspace.orthogonal_complement.basis</span><span class="description">A vector is in the orthogonal complement of a subspace if and only if it is orthogonal to ever
+y vector in a basis of the subspace.</span></div>
+<div class="latopic"><span class="id">math.la.t.subspace.orthogonal_complement</span><span class="description">The orthogonal complement of a subspace is a subspace.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.row.null.orthogonal_complement</span><span class="description">The null space of a matrix is the orthogonal complement of the column space.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.2</span><span class="secchaptitle">Orthogonal Sets</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.orthogonal_set</span><span class="description">Definition of orthogonal set of vectors</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.orthogonal_set.linindep</span><span class="description">An orthogonal set of nonzero vectors is linearly independent.</span></div>
+<div class="latopic"><span class="id">math.la.d.subspace.basis.orthogonal</span><span class="description">Definition of orthogonal basis of a (sub)space</span></div>
+<div class="latopic"><span class="id">math.la.t.subspace.basis.orthogonal</span><span class="description">Formula for the coordinates of a vector with respect to an orthogonal basis.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.projection</span><span class="description">Definition of (orthogonal) projection of one vector onto another vector
+</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.projection</span><span class="description">Formula for the (orthogonal) projection of one vector onto another vector</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.orthonormal_set</span><span class="description">Definition of orthonormal set of vectors</span></div>
+<div class="latopic"><span class="id">math.la.d.subspace.basis.orthonormal</span><span class="description">Definition of orthonormal basis of a (sub)space</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col.orthonormal.inv.rn</span><span class="description">A matrix A with real entries has orthonormal columns if and only if A inverse equals A transpose</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col.orthonormal.norm.rn</span><span class="description">A matrix with real entries and orthonormal columns preserves norms.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.col.orthonormal.dot.rn</span><span class="description">A matrix with real entries and orthonormal columns preserves dot products.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.orthogonal</span><span class="description">Definition of orthogonal matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.3</span><span class="secchaptitle">Orthogonal Projections</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.projection.subspace</span><span class="description">A vector can be written uniquely as a sum of a vector in a subspace and a vector orthogonal to the subspace.</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.projection.subspace</span><span class="description">Definition of orthogonal projection onto a subspace</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.projection.element</span><span class="description">The projection of a vector which is in a subspace is the vector itself.</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.projection.closest</span><span class="description">The (orthogonal) projection of a vector onto a subspace is the point in the subspace closest to the vector.</span></div>
+<div class="latopic"><span class="id">math.la.t.subspace.basis.orthonormal</span><span class="description">Formula for the coordinates of the projection of a vector onto a subspace, with respect to an orthonormal basis.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.4</span><span class="secchaptitle">The Gram-Schmidt Process</span></div>
+<div class="latopic"><span class="id">math.la.d.gramschmidt</span><span class="description">Description of the Gram-Schmidt process</span></div>
+<div class="latopic"><span class="id">math.la.t.gramschmidt</span><span class="description">The Gram-Schmidt process converts a basis into an orthogonal basis.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.qr</span><span class="description">Definition of QR decomposition</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.qr</span><span class="description">The QR decomposition of a nonsingular matrix exists.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.5</span><span class="secchaptitle">Least-Squares Problems</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.leastsquares</span><span class="description">Definition of least-squares solution to a linear system</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.leastsquares</span><span class="description">Formula for computing the least squares solution to a linear system.</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.leastsquares.unique</span><span class="description">The least squares solution to a linear system is unique if and only if the columns of the coefficient matrix are linearly independent.</span></div>
+<div class="latopic"><span class="id">math.la.d.linsys.leastsquares.error</span><span class="description">Definition of least-squares error of a linear system</span></div>
+<div class="latopic"><span class="id">math.la.t.linsys.leastsquares.qr</span><span class="description">Formula for computing the least squares solution to a linear system, in terms of the QR factorization of the coefficient matrix.</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.6</span><span class="secchaptitle">Applications to Linear Models</span></div>
+<div class="latopic"><span class="id">math.la.d.leastsquares.line</span><span class="description">Definition of the least-squares linear fit to 2-dimensional data</span></div>
+<div class="latopic"><span class="id">math.la.t.leastsquares.line</span><span class="description">Formula for the least-squares linear fit to 2-dimensional data</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.7</span><span class="secchaptitle">Inner Product Spaces</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.innerproduct.arb</span><span class="description">Definition of inner product, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vsp.innerproduct.arb</span><span class="description">Definition of inner product space, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.[length|norm].arb</span><span class="description">Definition of [length|norm] of a vector, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.distance.arb</span><span class="description">Definition of orthogonal vectors, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.d.vec.orthogonal.arb</span><span class="description">Definition of orthogonal vectors, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.d.gramschmidt.arb</span><span class="description">Definition of Gram-Schmidt process, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.cauchyschwarz.arb</span><span class="description">The Cauchy-Schwarz inequality, arbitrary setting</span></div>
+<div class="latopic"><span class="id">math.la.t.vec.triangle.arb</span><span class="description">The triangle inequality, arbitrary setting</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">6.8</span><span class="secchaptitle">Applications of Inner Product Spaces</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">7.</span><span class="secchaptitle">Symmetric Matrices and Quadratic Forms</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: Multichannel Image Processing
+-->
+
+<div class="numtitle"><span class="secchapnum">7.1</span><span class="secchaptitle">Diagonalization of Symmetric Matrices</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.symmetric</span><span class="description">d.mat.symmetric</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.symmetric.eig.orthogonal</span><span class="description">Eigenvectors of a symmetric matrix with different eigenvalues are orthogonal.</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.diagonalizable.orthogonally</span><span class="description">Definition of orthogonally diagonalizable matrix</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.diagonalizable.orthogonally</span><span class="description">A matrix is orthogonally diagonalizable if and only if it is symmetric.</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.symmetric.spectral</span><span class="description">The spectral theorem for symmetric matrices</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.symmetric.spectraldecomposition</span><span class="description">Formula for the spectral decomposition for a symmetric matrix</span></div>
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">7.2</span><span class="secchaptitle">Quadratic Forms</span></div>
+<div class="latopic"><span class="id">math.la.X</span><span class="description">X</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">7.3</span><span class="secchaptitle">Constrained Optimization</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">7.4</span><span class="secchaptitle">The Singular Value Decomposition</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">7.5</span><span class="secchaptitle">Applications to Image Processing and Statistics</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum"></span><span class="secchaptitle">Supplementary Exercises</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">8.</span><span class="secchaptitle">The Geometry of Vector Spaces</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: The Platonic Solids
+-->
+
+<div class="numtitle"><span class="secchapnum">8.1</span><span class="secchaptitle">Affine Combinations</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">8.2</span><span class="secchaptitle">Affine Independence</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">8.3</span><span class="secchaptitle">Convex Combinations</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">8.4</span><span class="secchaptitle">Hyperplanes</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">8.5</span><span class="secchaptitle">Polytopes</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">8.6</span><span class="secchaptitle">Curves and Surfaces</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">9.</span><span class="secchaptitle">Optimization (Online Only)</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: The Berlin Airlift
+-->
+
+<div class="numtitle"><span class="secchapnum">9.1</span><span class="secchaptitle">Matrix Games</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">9.2</span><span class="secchaptitle">Linear Programming---Geometric Method</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">9.3</span><span class="secchaptitle">Linear Programming---Simplex Method</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">9.4</span><span class="secchaptitle">Duality</span></div>
+</div>
+
+</div>
+
+<div class="tocchap">
+<div class="numtitle"><span class="secchapnum">10.</span><span class="secchaptitle">Finite-State Markov Chains (Online Only)</span></div>
+
+<div class="tocsec">
+<!--
+Introductory Example: Googling Markov Chains
+-->
+
+<div class="numtitle"><span class="secchapnum">10.1</span><span class="secchaptitle">Introduction and Examples</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">10.2</span><span class="secchaptitle">The Steady-State Vector and Google's PageRank</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">10.3</span><span class="secchaptitle">Finite-State Markov Chains</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">10.4</span><span class="secchaptitle">Classification of States and Periodicity</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">10.5</span><span class="secchaptitle">The Fundamental Matrix</span></div>
+
+</div>
+
+<div class="tocsec">
+<div class="numtitle"><span class="secchapnum">10.6</span><span class="secchaptitle">Markov Chains and Baseball Statistics</span></div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+Appendices
+
+A. Uniqueness of the Reduced Echelon Form
+
+B. Complex Numbers
+
+</section>
+
+</main>
+</div>
+</body>
+</html>
+
