@@ -85,7 +85,7 @@ t.mat.scalar.mult.commut_assoc
 Matrix-scalar multiplication is commutative, associative, and distributive.
 
 d.mat.row_op
-Definition of row operation on a matrix
+Definition of row operations on a matrix
 
 d.mat.elementary
 Definition of elementary matrix
@@ -223,6 +223,30 @@ Matrices: canonical forms and factorizations
 d.mat.diagonalization
 Definition of matrix diagonalization
 
+d.mat.diagonalizable
+Definition of diagonalizable matrix
+
+t.mat.diagonalizable
+An n-by-n matrix is diagonalizable if and only if it has n linearly independent eigenvectors.
+
+t.mat.diagonalizable.eigenspace
+An n-by-n matrix is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals n.
+
+t.mat.diagonalizable.charpoly
+An n-by-n matrix is diagonalizable if and only if the characteristic polynomial factors completely, and the dimension of each eigenspace equals the multiplicity of the eigenvalue.
+
+t.mat.diagonalized_by
+A diagonalizable matrix is diagonalized by a matrix having the eigenvectors as columns.
+
+t.mat.diagonalizable.basis
+An n-by-n matrix is diagonalizable if and only if the union of the basis vectors for the eigenspaces is a basis for R^n (or C^n).
+
+t.mat.diagonalizable.distinct
+An n-by-n matrix with n distinct eigenvalues is diagonalizable.
+
+t.mat.real.diagonalize.complex.2x2
+Formula for diagonalizing a real 2-by-2 matrix with a complex eigenvalue.
+
 d.mat.[block|partitioned]
 Definition of [block|partitioned] matrix
 
@@ -241,8 +265,26 @@ Definition of a[n|] [upper|lower] triangular matrix
 d.mat.band
 Definition of band matrix
 
+d.mat.vandermonde
+Definition of Vandermonde matrix
+
 d.mat.symmetric
 Definition of symmetric matrix
+
+t.mat.symmetric.eig.orthogonal
+Eigenvectors of a symmetric matrix with different eigenvalues are orthogonal.
+
+d.mat.diagonalizable.orthogonally
+Definition of orthogonally diagonalizable matrix
+
+t.mat.diagonalizable.orthogonally
+A matrix is orthogonally diagonalizable if and only if it is symmetric.
+
+t.mat.symmetric.spectral
+The spectral theorem for symmetric matrices
+
+t.mat.symmetric.spectraldecomposition
+Formula for the spectral decomposition for a symmetric matrix
 
 d.mat.hermitian
 Definition of Hermitian matrix
@@ -273,6 +315,9 @@ Definition of Cholesky decomposition
 
 d.mat.qr
 Definition of QR decomposition
+
+t.mat.qr
+The QR decomposition of a nonsingular matrix exists.
 
 d.mat.schur
 Definition of Schur triangulation
@@ -466,17 +511,57 @@ A linear system is equivalent to a vector equation.
 Determinants
 ============
 
-d.mat.det
-Definition of determinant of a matrix
+d.mat.cofactor
+Definition of cofactor of a matrix
 
+d.mat.det.cofactor
+Definition of determinant of a matrix as a cofactor expansion across the first row
+
+t.mat.det.cofactor
+The determinant of a matrix can be computed as a cofactor expansion across any row or down any column.
+
+d.mat.det.echelon
+Definition of determinant of a matrix as a product of the diagonal entries in a non-scaled echelon form.
+
+t.mat.det.echelon
+The determinant of a matrix can be expressed as a product of the diagonal entries in a non-scaled echelon form.
+
+t.mat.det.2x2
 t.mat.det.2x2
 Formula for the determinant of a 2-by-2 matrix.
 
-e.mat.det
-Example of determinant of a matrix
+t.mat.det.3x3
+Formula for the determinant of a 3-by-3 matrix.
 
-t.mat.det.volume
-The relationship between determinants and volume
+t.mat.det.trianglar
+The determinant of a triangular matrix is the product of the entries on the diagonal.
+
+t.mat.det.elementaryoperations
+Theorem describing the effect of elementary row operations on the determinant of a matrix.
+
+t.mat.elementary.det
+Theorem describing the determinants of elementary matrices.
+
+t.mat.det.transpose
+A matrix and its transpose have the same determinant.
+
+t.mat.det.product
+If A and B are n-by-n matrices, then det(AB)=det(A)det(B).
+
+t.mat.det.col.[area|volume]
+The determinant of a matrix measures the [area|volume] of the [parallelogram|parallelipiped] determined by its columns.
+
+t.lintrans.det.volume
+The determinant of the matrix of a linear transformation is the factor by which the area/volume changes.
+
+t.cramer
+Cramer's rule
+
+d.mat.[adjugate|classicaladjoint]
+Definition of [adjugate|classical adjoint] of a matrix
+
+t.mat.inv.cofactors
+The inverse of a matrix can be expressed in terms of its matrix of cofactors.
 
 =================================
 Vector spaces, coordinate setting
@@ -512,16 +597,16 @@ Definition of linear dependence relation
 d.vec.linindep.coord
 Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
-t.vec.linindep.coord
-Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
-
-d.vec.lindep.coord
-Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
-
 t.vec.lindep.coord
 Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
 p.vec.lindep.coord
 Proof of theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+
+d.vec.lindep.coord
+Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
+
+t.vec.linindep.coord
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, coordinate vector space.
 
 t.vec.lindep.zero
 If a set of vectors contains the zero vector, then the set is linearly dependent.
@@ -540,7 +625,13 @@ d.vsp.basis.coord
 Definition of basis of a vector space (or subspace), coordinate vector space
 
 d.vsp.basis.standard.rncn
-Definition of the standard basis of of R^n (or C^n)
+Definition of the standard basis of R^n (or C^n)
+
+d.vsp.basis.coord.change.rncn
+Definition of change-of-coordinates matrix relative to a given basis of R^n (or C^n)
+
+d.vsp.basis.standard.leq_n
+Definition of the standard basis of the polynomials of degree at most n
 
 d.vsp.basis.relative.coord
 Definition of coordinates relative to a given basis, coordinate vector space
@@ -554,8 +645,8 @@ If a vector space has dimension n, then any subset set of n vectors that spans t
 t.vsp.dim.linindep.coord
 If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space.
 
-d.vsp.vector_repn.coord
-Definition of vector representation of a vector space, coordinate vector space
+d.vec.[real|imaginary].cn
+Definition of the [real|imaginary] part of a vector in C^n
 
 ===============================
 Vector spaces, arbitrary setting
@@ -571,10 +662,25 @@ d.vec.scalar.mult.arb
 Definition of vector-scalar multiplication, arbitrary vector space
 
 d.vsp.axioms.arb
-Definition of axioms of a vector space, arbitrary vector space
+Axioms of a vector space, arbitrary vector space
+
+d.vsp.vector.negative
+The additive inverse of a vector is called the negative of the vector.
+
+t.vsp.scalar.mult.z
+The zero scalar multiplied by any vector equals the zero vector.
+
+t.vsp.vector.mult.z
+The zero vector multiplied by any scalar equals the zero vector.
+
+t.vsp.vector.negative
+The negative of a vector equals the vector multiplied by -1.
 
 d.vsp.subspace.arb
 Definition of subspace, arbitrary vector space
+
+d.vsp.subspace.z
+Definition of zero subspace, arbitrary vector space
 
 d.vec.lincomb.arb
 Definition of linear combination of vectors, arbitrary vector space
@@ -582,30 +688,95 @@ Definition of linear combination of vectors, arbitrary vector space
 d.vec.span.arb
 Definition of span of a set of vectors, arbitrary vector space
 
+d.vec.span.subspace.arb
+Definition of subspace spaned by a set of vectors, arbitrary vector space
+
+d.vsp.span.set.arb
+Definition of spanning set for a subspace, arbitrary vector space
+
+d.vsp.subspace.intersection.arb
+Definition of intersection of subspaces, arbitrary vector space
+
+t.vsp.subspace.intersection.arb
+The intersection of subspaces is a subspace, arbitrary vector space.
+
+d.vsp.subspace.sum.arb
+Definition of sum of subspaces, arbitrary vector space
+
+t.vsp.subspace.sum.arb
+The sum of subspaces is a subspace, arbitrary vector space.
+
 d.vec.linindep.arb
 Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.
-
-t.vec.linindep.arb
-Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, arbitrary vector space.
-
-d.vec.lindep.arb
-Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
 t.vec.lindep.arb
 Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
 
+d.vec.lindep.arb
+Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.
+
+t.vec.linindep.arb
+Theorem: a set of vectors is linearly independent if and only if whenever a linear combination is zero, then every coefficient is zero, arbitrary vector space.
+
 d.vsp.basis.arb
 Definition of basis of a vector space (or subspace), arbitrary vector space
+
+t.vsp.span.lindep
+Removing a linearly dependent vector from a set does not change the span of the set.
+
+t.vsp.span.basis
+A set of nonzero vectors contains (as a subset) a basis for its span.
+
+t.vsp.basis.coord.unique
+Each vector can be written uniquely as a linear combination of vectors from a given basis.
+
+d.vsp.basis.relative.arb
+Definition of coordinates relative to a given basis, arbitrary vector space
+
+d.vsp.basis.coord.[vector|mapping].arb
+Definition of coordinate [vector|mapping] relative to a given basis, arbitrary vector space
+
+t.vsp.basis.coord.[vector|mapping].arb
+The coordinate [vector|mapping] relative to a given basis is a bijective linear mapping to R^n (or C^n).
+
+d.vsp.isomorphism
+Definition of isomorphism between vector spaces
+
+t.vsp.dim.more.lindep.arb
+A set of vectors containing more elements than the dimension of the space must be linearly dependent, arbitrary vector space.
+
+t.vsp.dim.arb
+Every basis for a vector space contains the same number of elements, arbitrary vector space.
 
 d.vsp.dim.arb
 Definition of dimension of a vector space (or subspace), arbitrary vector space
 
-d.vsp.vector_repn.arb
-Definition of vector representation of a vector space, arbitrary vector space
+d.vsp.dim.finite_infinite.arb
+Definition of dimension of a vector space (or subspace) being finite or infinite, arbitrary vector space
+
+t.vsp.linindep.basis.arb
+Any linearly independent set can be expanded to a basis for the (sub)space, arbitrary vector space.
+
+t.vsp.subspace.dim.arb
+The dimension of a subspace is less than or equal to the dimension of the whole space, arbitrary vector space.
+
+t.vsp.dim.span.arb
+If a vector space has dimension n, then any subset set of n vectors that spans the space must be a basis, arbitrary vector space.
+
+t.vsp.dim.linindep.arb
+If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, arbitrary vector space.
+
+d.vsp.change_of_basis.arb
+Definition of change of corrdinates matrix between two bases, arbitrary vector space
+
+t.vsp.change_of_basis.arb
+The change of coordinates matrix between two bases exists and is unique, arbitrary vector space.
+
 
 =======================
 Vector spaces: examples
 =======================
+# In all examples, the provision "inder the usual operations" is assumed.
 
 e.vsp.rn
 R^n is a vector space
@@ -616,11 +787,14 @@ C^n is a vector space
 e.vsp.fn
 F^n is a vector space
 
+e.vsp.function
+The set of all functions on a set is a vector space.
+
 e.vsp.polynomial
-The set of all polynomials is a vector space
+The set of all polynomials is a vector space.
 
 e.vsp.polynomial.leq_n
-The set of all polynomials of degree at most n is a vector space
+The set of all polynomials of degree at most n is a vector space.
 
 ===========================================
 Linear transformations, general terminology
@@ -699,14 +873,20 @@ Definition of matrix null space (right)
 d.mat.null_space.left
 Definition of matrix null space (left)
 
-t.mat.null_space
+t.mat.null_space.rncn
 The null space of a matrix is a subspace of R^n (or C^n).
 
 d.mat.row_space
 Definition of row space of a matrix
 
+d.mat.row_space.row_equiv
+Row equivalent matrices have the same row space.
+
 d.mat.col_space
 Definition of column space of a matrix
+
+t.mat.col_space.rncn
+The column space of an m-by-n matrix is a subspace of R^m (or C^m)
 
 t.mat.col_space.pivot
 The pivot columns of a matrix are a basis for the column space.
@@ -716,6 +896,9 @@ Definition of rank of a matrix
 
 d.mat.nullity
 Definition of nullity of a matrix
+
+t.mat.row_space.col_space
+The row space and the column space of a matrix have the same dimension.
 
 t.mat.ranknullity
 If A is a matrix, then the rank of A plus the nullity of A equals the number of columns of A.
@@ -756,9 +939,6 @@ Definition of invariant subspace under linear transformation
 d.lintrans.nilpotent
 Definition of nilpotent linear transformation
 
-d.lintrans.change_of_basis.coord
-Definition of change of basis, coordinate vector space
-
 d.lintrans.mat.repn.coord
 Definition of matrix representation of a linear transformation, coordinate vector space
 
@@ -793,11 +973,11 @@ Definition of kernel of linear transformation, arbitrary vector space
 d.lintrans.invertible.arb
 Definition of invertible linear transformation, arbitrary vector space
 
-d.lintrans.change_of_basis.arb
-Definition of change of basis, arbitrary vector space
-
 d.lintrans.mat.repn.arb
-Definition of matrix representation of a linear transformation, arbitrary vector space
+Definition of matrix representation of a linear transformation with respect to bases of the spaces, arbitrary vector space
+
+d.lintrans.mat.repn.self.arb
+Definition of matrix representation of a linear transformation from a vector space to itself, with respect to basis of the space, arbitrary vector space
 
 d.lintrans.mat_repn.composition.arb
 Definition of matrix representation of a composition of linear transformations, arbitrary vector space
@@ -818,60 +998,177 @@ Definition of eigenvector(s) of a matrix
 d.mat.eigsp
 Definition of eigenspace(s) of a matrix
 
+t.mat.eig.triangular
+The eigenvalues of a triangular matrix are the entries on the main diagonal.
+
+t.mat.eigvec.linindep
+Eigenvectors with distinct eigenvalues are linearly independent.
+
 d.mat.charpoly
 Definition of characteristic polynomial of a matrix
+
+d.mat.charpoly.eqn
+Definition of characteristic equation of a matrix
+
+d.mat.eig.multiplicity
+Definition of multiplicity of an eigenvalue
 
 d.mat.minpoly
 Definition of minimal polynomial of a matrix
 
-t.mat.charpoly.eig
-The eigenvalues of a matrix are the roots of its characteristic polynomial.
+t.mat.charpoly[|.eqn].eig
+The eigenvalues of a matrix are the [roots|solutions] [of|to] its characteristic [polynomial|equation].
+
+t.mat.eig.multiplicity.eigenspace
+The dimension of a eigenspace is less than or equal to the multiplicity of the eigenvalue.
 
 d.mat.similar
 Definition of similar matrices
 
+d.mat.similar.transform
+Definition of similarity transform
+
+t.mat.similar.eig
+Similar matrices have the same eigenvalues and the same characteristic polynomials.
+
 d.mat.positive_definite
 Definition of positive-definite matrix
+
+t.mat.real.eig.cn
+A matrix with real entries has eigenvalues occurring in conjugate pairs.
 
 ==============================================
 Orthogonality and projection, coordinate setting
 ==============================================
 
-d.innerproduct.real
-Definition of inner product, real entries
+d.innerproduct.real.coord
+Definition of inner product, real entries, coordinate setting
 
-d.innerproduct.complex
-Definition of inner product, complex entries
+d.innerproduct.complex.coord
+Definition of inner product, complex entries, coordinate setting
 
-d.norm.coord
-Definition of norm, length, distance, coordinate setting
+t.innerproduct.commutative.coord
+The standard inner product is commutative, coordinate setting.
 
-d.projection.line
-Definition of projection onto a line
+t.innerproduct.commutative.scalar.real.coord
+The standard inner product commutes with real scalar multiplication, coordinate setting.
 
-d.projection.plane
-Definition of projection onto a plane
+t.innerproduct.distributive.coord
+The standard inner product distributes over addition, coordinate setting.
 
-d.projection.subspace
-Definition of projection onto a subspace
+t.innerproduct.self.positive.coord
+The standard inner product of a vector with itself is non-negative, coordinate setting.
+
+t.innerproduct.self.z.coord
+The standard inner product of a vector with itself is zero only for the zero vector, coordinate setting.
+
+d.vec.[norm|length].coord
+Definition of [norm|length] of a vector, coordinate setting
+
+d.distance.coord
+Definition of distance, coordinate setting
+
+d.vec.unit.coord
+Definition of unit vector, coordinate setting
 
 d.vec.orthogonal
 Definition of two vectors being orthogonal
 
+t.vec.orthogonal
+Two vectors are orthogonal if and only if the Pythagorean Theorem holds.
+
+d.vec.subspace.orthogonal
+Definition of a vector being orthogonal to a subspace
+
+d.subspace.orthogonal_complement
+Definition of orthogonal complement of a subspace
+
+t.subspace.orthogonal_complement
+The orthogonal complement of a subspace is a subspace.
+
+t.subspace.orthogonal_complement.basis
+A vector is in the orthogonal complement of a subspace if and only if it is orthogonal to every vector in a basis of the subspace.
+
+t.mat.row.null.orthogonal_complement
+The null space of a matrix is the orthogonal complement of the column space.
+
 d.vec.orthogonal_set
 Definition of orthogonal set of vectors
 
-d.orthogonalprojection
-Definition of orthogonal projection
+d.vec.orthonormal_set
+Definition of orthonormal set of vectors
+
+t.vec.orthogonal_set.linindep
+An orthogonal set of nonzero vectors is linearly independent.
+
+d.subspace.basis.orthogonal
+Definition of orthogonal basis of a (sub)space
+
+d.subspace.basis.orthonormal
+Definition of orthonormal basis of a (sub)space
+
+t.mat.col.orthonormal.inv.rn
+A matrix A with real entries has orthonormal columns if and only if A inverse equals A transpose.
+
+t.mat.col.orthonormal.norm.rn
+A matrix with real entries and orthonormal columns preserves norms.
+
+t.mat.col.orthonormal.dot.rn
+A matrix with real entries and orthonormal columns preserves dot products.
+
+t.subspace.basis.orthogonal
+Formula for the coordinates of a vector with respect to an orthogonal basis.
+
+d.vec.projection
+Definition of (orthogonal) projection of one vector onto another vector
+
+t.vec.projection
+Formula for the (orthogonal) projection of one vector onto another vector
+
+d.projection.subspace
+Definition of (orthogonal) projection onto a subspace
+
+t.vec.projection.subspace
+A vector can be written uniquely as a sum of a vector in a subspace and a vector orthogonal to the subspace.
+
+d.vec.projection.subspace
+Definition of orthogonal projection onto a subspace
+
+t.vec.projection.element
+The projection of a vector which is in a subspace is the vector itself.
+
+t.vec.projection.closest
+The (orthogonal) projection of a vector onto a subspace is the point in the subspace closest to the vector.
+
+t.subspace.basis.orthonormal
+Formula for the coordinates of the projection of a vector onto a subspace, with respect to an orthonormal basis.
 
 d.gramschmidt
-Definition of the Gram-Schmidt process
+Description of the Gram-Schmidt process
 
-d.leastsquares
-Definition of least squares fit
+t.gramschmidt
+The Gram-Schmidt process converts a basis into an orthogonal basis.
 
-t.leastsquares
-Formula for computing the least squares fit
+d.linsys.leastsquares
+Definition of least-squares solution to a linear system
+
+d.linsys.leastsquares.error
+Definition of least-squares error of a linear system
+
+t.linsys.leastsquares
+Formula for computing the least squares solution to a linear system.
+
+t.linsys.leastsquares.qr
+Formula for computing the least squares solution to a linear system, in terms of the QR factorization of the coefficient matrix.
+
+t.linsys.leastsquares.unique
+The least squares solution to a linear system is unique if and only if the columns of the coefficient matrix are linearly independent.
+
+d.leastsquares.line
+Definition of the least-squares linear fit to 2-dimensional data
+
+t.leastsquares.line
+Formula for the least-squares linear fit to 2-dimensional data
 
 d.mat.inv.generalized
 Definition of generalized inverse of a matrix
@@ -880,8 +1177,17 @@ Definition of generalized inverse of a matrix
 Orthogonality and projection, arbitrary setting
 ==============================================
 
-d.innerproduct.arb
+d.vec.innerproduct.arb
 Definition of inner product, arbitrary setting
+
+d.vsp.innerproduct.arb
+Definition of inner product space, arbitrary setting
+
+d.vec.[length|norm].arb
+Definition of [length|norm] of a vector, arbitrary setting
+
+d.vec.distance.arb
+Definition of orthogonal vectors, arbitrary setting
 
 d.vec.orthogonal.arb
 Definition of orthogonal vectors, arbitrary setting
@@ -889,11 +1195,17 @@ Definition of orthogonal vectors, arbitrary setting
 d.vec.parallel.arb
 Definition of parallel vectors, arbitrary setting
 
+d.gramschmidt.arb
+Definition of Gram-Schmidt process, arbitrary setting
+
+t.vec.cauchyschwarz.arb
+The Cauchy-Schwarz inequality, arbitrary setting
+
+t.vec.triangle.arb
+The triangle inequality, arbitrary setting
+
 d.vsp.orthogonal.arb
 Definition of orthogonal subspaces, arbitrary setting
-
-d.norm.arb
-Definition of norm, length, distance, arbitrary setting
 
 t.vec.cauchyschwartz.arb
 The Cauchy-Schwartz inequality, arbitrary setting
