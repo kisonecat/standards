@@ -1,0 +1,7 @@
+{
+  "description": "The zero scalar multiplied by any vector equals the zero vector.",
+  "id": "math.la.t.vsp.scalar.mult.z",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

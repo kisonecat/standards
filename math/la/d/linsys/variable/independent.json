@@ -1,0 +1,7 @@
+{
+  "description": "Definition of independent variable in a linear system",
+  "id": "math.la.d.linsys.variable.independent",
+  "kind": "definition",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

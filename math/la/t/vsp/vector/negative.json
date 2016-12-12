@@ -1,0 +1,7 @@
+{
+  "description": "The negative of a vector equals the vector multiplied by -1.",
+  "id": "math.la.t.vsp.vector.negative",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

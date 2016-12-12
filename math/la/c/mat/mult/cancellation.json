@@ -1,0 +1,7 @@
+{
+  "description": "For matrices, AB=AC does not imply B=C in general.",
+  "id": "math.la.c.mat.mult.cancellation",
+  "kind": "concept",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

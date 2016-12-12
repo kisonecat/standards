@@ -1,0 +1,7 @@
+{
+  "description": "The determinant of a triangular matrix is the product of the entries on the diagonal.",
+  "id": "math.la.t.mat.det.trianglar",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

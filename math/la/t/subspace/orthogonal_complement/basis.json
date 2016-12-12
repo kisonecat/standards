@@ -1,0 +1,7 @@
+{
+  "description": "A vector is in the orthogonal complement of a subspace if and only if it is orthogonal to every vector in a basis of the subspace.",
+  "id": "math.la.t.subspace.orthogonal_complement.basis",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

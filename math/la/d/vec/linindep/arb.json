@@ -1,0 +1,7 @@
+{
+  "description": "Definition of linearly indepentent set of vectors: if a linear combination is zero, then every coefficient is zero, arbitrary vector space.",
+  "id": "math.la.d.vec.linindep.arb",
+  "kind": "definition",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

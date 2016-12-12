@@ -1,0 +1,7 @@
+{
+  "description": "Row equivalent matrices in reduced row echelon form are equal.",
+  "id": "math.la.t.mat.rref.unique",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

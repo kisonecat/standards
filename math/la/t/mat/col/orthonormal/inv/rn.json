@@ -1,0 +1,7 @@
+{
+  "description": "A matrix A with real entries has orthonormal columns if and only if A inverse equals A transpose.",
+  "id": "math.la.t.mat.col.orthonormal.inv.rn",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

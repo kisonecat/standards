@@ -1,0 +1,7 @@
+{
+  "description": "The (orthogonal) projection of a vector onto a subspace is the point in the subspace closest to the vector.",
+  "id": "math.la.t.vec.projection.closest",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

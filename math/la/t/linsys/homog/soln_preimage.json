@@ -1,0 +1,7 @@
+{
+  "description": "The solutions of a homogeneous system are the pre-image (of 0) of a linear transformation.",
+  "id": "math.la.t.linsys.homog.soln_preimage",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

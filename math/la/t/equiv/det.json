@@ -1,0 +1,7 @@
+{
+  "description": "Equivalence theorem: the determinant of A is nonzero.",
+  "id": "math.la.t.equiv.det",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

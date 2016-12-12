@@ -1,0 +1,7 @@
+{
+  "description": "Similar matrices have the same eigenvalues and the same characteristic polynomials.",
+  "id": "math.la.t.mat.similar.eig",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

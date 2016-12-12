@@ -1,0 +1,7 @@
+{
+  "description": "Each vector can be written uniquely as a linear combination of vectors from a given basis.",
+  "id": "math.la.t.vsp.basis.coord.unique",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

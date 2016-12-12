@@ -1,0 +1,7 @@
+{
+  "description": "The set of all functions on a set is a vector space.",
+  "id": "math.la.e.vsp.function",
+  "kind": "example",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

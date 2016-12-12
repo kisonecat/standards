@@ -1,0 +1,7 @@
+{
+  "description": "An n-by-n matrix is diagonalizable if and only if the sum of the dimensions of the eigenspaces equals n.",
+  "id": "math.la.t.mat.diagonalizable.eigenspace",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

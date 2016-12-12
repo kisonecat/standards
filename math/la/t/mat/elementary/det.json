@@ -1,0 +1,7 @@
+{
+  "description": "Theorem describing the determinants of elementary matrices.",
+  "id": "math.la.t.mat.elementary.det",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

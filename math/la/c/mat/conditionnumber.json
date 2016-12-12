@@ -1,0 +1,7 @@
+{
+  "description": "The condition number of matrix measures how close it is to being singular",
+  "id": "math.la.c.mat.conditionnumber",
+  "kind": "concept",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

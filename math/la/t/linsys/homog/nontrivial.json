@@ -1,0 +1,7 @@
+{
+  "description": "A homogeneous system has a nontrivial solution if and only if it has a free variable.",
+  "id": "math.la.t.linsys.homog.nontrivial",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

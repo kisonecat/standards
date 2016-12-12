@@ -1,0 +1,7 @@
+{
+  "description": "A set of nonzero vectors contains (as a subset) a basis for its span.",
+  "id": "math.la.t.vsp.span.basis",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

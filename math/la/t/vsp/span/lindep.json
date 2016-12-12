@@ -1,0 +1,7 @@
+{
+  "description": "Removing a linearly dependent vector from a set does not change the span of the set.",
+  "id": "math.la.t.vsp.span.lindep",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

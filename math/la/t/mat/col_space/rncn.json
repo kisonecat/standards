@@ -1,0 +1,7 @@
+{
+  "description": "The column space of an m-by-n matrix is a subspace of R^m (or C^m)",
+  "id": "math.la.t.mat.col_space.rncn",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

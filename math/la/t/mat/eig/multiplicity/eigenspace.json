@@ -1,0 +1,7 @@
+{
+  "description": "The dimension of a eigenspace is less than or equal to the multiplicity of the eigenvalue.",
+  "id": "math.la.t.mat.eig.multiplicity.eigenspace",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

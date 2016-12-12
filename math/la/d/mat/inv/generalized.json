@@ -1,0 +1,7 @@
+{
+  "description": "Definition of generalized inverse of a matrix",
+  "id": "math.la.d.mat.inv.generalized",
+  "kind": "definition",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Equivalence theorem: the linear transformation given by T(x)=Ax is surjective.",
+  "id": "math.la.t.equiv.lintrans.surjective",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

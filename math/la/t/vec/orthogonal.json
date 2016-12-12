@@ -1,0 +1,7 @@
+{
+  "description": "Two vectors are orthogonal if and only if the Pythagorean Theorem holds.",
+  "id": "math.la.t.vec.orthogonal",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

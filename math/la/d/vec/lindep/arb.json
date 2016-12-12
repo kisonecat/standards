@@ -1,0 +1,7 @@
+{
+  "description": "Definition of linearly dependent set of vectors:  one of the vectors can be written as a linear combination of the other vectors, arbitrary vector space.",
+  "id": "math.la.d.vec.lindep.arb",
+  "kind": "definition",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

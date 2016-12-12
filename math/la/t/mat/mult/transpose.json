@@ -1,0 +1,7 @@
+{
+  "description": "The transpose of a product of matrices is the product of the transposes in reverse order.",
+  "id": "math.la.t.mat.mult.transpose",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

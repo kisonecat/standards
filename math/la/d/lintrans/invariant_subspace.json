@@ -1,0 +1,7 @@
+{
+  "description": "Definition of invariant subspace under linear transformation",
+  "id": "math.la.d.lintrans.invariant_subspace",
+  "kind": "definition",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

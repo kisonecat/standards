@@ -1,0 +1,7 @@
+{
+  "description": "The inverse of a matrix (if it exists) can be found by row reducing the matrix augmented by the identity matrix.",
+  "id": "math.la.t.mat.inv.augmented",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

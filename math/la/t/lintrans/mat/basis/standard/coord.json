@@ -1,0 +1,7 @@
+{
+  "description": "A linear transformation is given by a matrix whose columns are the images of the standard basis vectors, coordinate setting.",
+  "id": "math.la.t.lintrans.mat.basis.standard.coord",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

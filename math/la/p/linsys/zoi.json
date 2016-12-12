@@ -1,0 +1,7 @@
+{
+  "description": "Proof that linear systems have zero, one, or infinitely many solutions.",
+  "id": "math.la.p.linsys.zoi",
+  "kind": "proof",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}
