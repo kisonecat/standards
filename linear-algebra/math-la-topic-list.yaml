@@ -26,6 +26,15 @@ Definition of vector, coordinate vector space
 math.la.d.vec.col.coord
 Definition of column vector, coordinate vector space
 
+math.la.d.vec.size.coord
+Definition of size of a vector, coordinate vector space
+
+math.la.d.vec.[entry|component].coord
+Definition of [entry|component] of a vector, coordinate vector space
+
+math.la.d.vec.z.coord
+Definition of zero vector, coordinate vector space
+
 math.la.d.vec.equal.coord
 Definition of equality of vectors, coordinate vector space
 
@@ -47,6 +56,9 @@ Matrices: basics and algebra
 
 math.la.d.mat
 Definition of matrix
+
+math.la.c.mat.entry
+Notation for entry of matrix
 
 math.la.d.mat.size
 Definition of size of a matrix
@@ -123,17 +135,11 @@ Definition of reduced echelon matrix
 math.la.d.mat.row_reduce
 Definition of row reduce a matrix
 
-math.la.t.mat.rref
-The reduced row echelon form of a matrix exists.
-
 math.la.t.mat.rref.exists
 Every matrix is row-equivalent to a matrix in reduced row echelon form.
 
 math.la.t.mat.rref.unique
-Row equivalent matrices in reduced row echelon form are equal.
-
-math.la.t.mat.rref.exists_and_is_unique
-Every matrix is row-equivalent to exactly one matrix in reduced row echelon form.
+Every matrix is row-equivalent to only one matrix in reduced row echelon form.
 
 math.la.d.mat.pivot
 Definition of pivot
@@ -335,15 +341,25 @@ Definition of rational form
 Matrices: nonsingular matrices and the equivalence theorems
 ===========================
 
-math.la.d.mat.singular.inv
+math.la.d.mat.nonsingular.inv
 Definition of singular matrix: matrix is invertible
+
+math.la.d.mat.nonsingular.z
+Definition of singular matrix: the associated homogeneous linear system has only the trivial solution
+
+math.la.d.mat.singular
+Definition of singular matrix
 
 # A is an n_by_n matrix.  Each of the equivalences to  
 # "A is nonsingular" is a separate topic.  Attach that 
 # topic to the first (and only the first) appearance of
-# that equivalence in a theorem.
+# that equivalence in a theorem.  Repetitions of that statement
+# can be included by appending ".rep"
 
-math.la.t.equiv.mat.eqn
+math.la.t.equiv.mat.eqn[|.unique]
+Equivalence theorem: the equation Ax=b has a [|unique] solution for all b.
+
+math.la.t.equiv.mat.eqn.unique
 Equivalence theorem: the equation Ax=b has a solution for all b.
 
 math.la.t.equiv.mat.eqn.homog
@@ -440,6 +456,9 @@ Parametric vector form of the solution set of a system of linear equations
 math.la.d.linsys.op
 Definition of equation operations on a linear system
 
+math.la.t.linsys.op
+Equation operations on a linear system give an equivalent system.
+
 math.la.d.linsys.equiv
 Definition of equivalent systems of linear equations
 
@@ -451,6 +470,9 @@ Definition of inconsistent linear system
 
 math.la.d.linsys.homog
 Definition of homogeneous linear system of equations
+
+math.la.d.linsys.homog.consistent
+Homogeneous linear systems are consistent.
 
 math.la.d.linsys.homog.[trivial|nontrivial]
 Definition of [trivial|nontrivial] solution to a homogeneous linear system of equations
@@ -480,6 +502,12 @@ Definition of augmented matrix of a linear system
 math.la.d.mat.coeff
 Definition of coefficient matrix of a linear system
 
+math.la.d.vec.constant
+Definition of constant vector of a linear system
+
+math.la.d.vec.solution
+Definition of solution vector of a linear system
+
 math.la.d.linsys.mat.repn
 Definition of matrix representation of a linear system
 
@@ -490,13 +518,25 @@ math.la.t.mat.eqn.linsys
 A matrix equation is equivalent to a linear system
 
 math.la.t.mat.eqn.lincomb
-The matrix equation Ax=b has a solution if and only if b is a linear conbination of the columns of A.
+The matrix equation Ax=b has a solution if and only if b is a linear combination of the columns of A.
 
 math.la.t.mat.row_equiv.linsys
 Row equivalent matrices represent equivalent linear systems
 
 math.la.t.rref.consistent
 The reduced row echelon form can be used to determine if a linear system is consistent.
+
+math.la.t.rref.pivot.oi
+The number of pivots in the reduced row echelon form of a consistent system determines whether there is one or infinitely many solutions.
+
+math.la.t.rref.pivot.free
+The number of pivots in the reduced row echelon form of a consistent system determines the number of free variables in the solution set.
+
+math.la.t.linsys.consistent.i
+A consistent system with more variables than equations has infinitely many solutions.
+
+math.la.t.linsys.homog.i
+A homog system with more variables than equations has infinitely many solutions.
 
 math.la.t.linsys.vec
 A linear system is equivalent to a vector equation.
@@ -764,7 +804,7 @@ The change of coordinates matrix between two bases exists and is unique, arbitra
 =======================
 Vector spaces: examples
 =======================
-# In all examples, the provision "inder the usual operations" is assumed.
+# In all examples, the provision "under the usual operations" is assumed.
 
 e.vsp.rn
 R^n is a vector space
