@@ -342,10 +342,10 @@ Matrices: nonsingular matrices and the equivalence theorems
 ===========================
 
 math.la.d.mat.nonsingular.inv
-Definition of singular matrix: matrix is invertible
+Definition of nonsingular matrix: matrix is invertible
 
 math.la.d.mat.nonsingular.z
-Definition of singular matrix: the associated homogeneous linear system has only the trivial solution
+Definition of nonsingular matrix: the associated homogeneous linear system has only the trivial solution
 
 math.la.d.mat.singular
 Definition of singular matrix
