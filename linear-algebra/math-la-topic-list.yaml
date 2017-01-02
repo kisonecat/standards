@@ -214,7 +214,7 @@ math.la.t.mat.inv.augmented
 The inverse of a matrix (if it exists) can be found by row reducing the matrix augmented by the identity matrix.
 
 math.la.t.mat.inv.unique
-Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1..
+Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1.
 
 math.la.c.mat.illconditioned
 A matrix is called ill-conditioned if it is nearly singular
