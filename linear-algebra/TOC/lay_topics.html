@@ -149,6 +149,9 @@ Table of Contents
 <div class="latopic"><span class="id">math.la.d.mat.augmented</span><span class="description">Definition of augmented matrix of a linear system</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.size</span><span class="description">Definition of size of a matrix</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.m_by_n</span><span class="description">Definition of m by n matrix</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x3.soln.row_reduce.o</span><span class="description">Solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of one solution</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x3.soln.row_reduce.z</span><span class="description">Solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of no solutions</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x3.soln.row_reduce.i</span><span class="description">Solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.row_op</span><span class="description">Definition of row operation on a matrix</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.row_equiv</span><span class="description">Definition of row equivalent matrices</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.row_equiv.linsys</span><span class="description">Row equivalent matrices represent equivalent linear systems</span></div>
@@ -159,21 +162,24 @@ Table of Contents
 <div class="numtitle"><span class="secchapnum">1.2</span><span class="secchaptitle">Row Reduction and Echelon Forms</span></div>
 
 <div class="latopic"><span class="id">math.la.d.mat.row.leading</span><span class="description">Definition of leading entry in a row of a matrix</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.row_echelon_form</span><span class="description">Definition of row echelon form of a matrix</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.rref</span><span class="description">Definition of reduced row echelon form of a matrix</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.echelon</span><span class="description">Definition of echelon matrix</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.reduced_echelon</span><span class="description">Definition of reduced echelon matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.echelon</span><span class="description">Definition of matrix in row echelon form</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.echelon</span><span class="description">Example of matrix in row echelon form</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rref</span><span class="description">Definition of matrix in reduced row echelon form</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.echelon.of</span><span class="description">Definition of echelon form of a matrix</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.row_reduce</span><span class="description">Definition of row reduce a matrix</span></div>
+<div class="latopic"><span class="id">math.la.d.mat.rref.of</span><span class="description">Definition of reduced row echelon form of a matrix</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.rref.exists</span><span class="description">Every matrix is row-equivalent to a matrix in reduced row echelon form.</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.rref.unique</span><span class="description">Every matrix is row-equivalent to ony one matrix in reduced row echelon form.</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.echelon_of</span><span class="description">Definition of echelon form of a matrix</span></div>
-<div class="latopic"><span class="id">math.la.d.mat.rref_of</span><span class="description">Definition of reduced row echelon form of a matrix</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.pivot_position</span><span class="description">Definition of pivot position</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.pivot_col</span><span class="description">Definition of pivot column</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.echelon.of.pivot</span><span class="description">Example of putting a matrix in echelon form and identifying the pivot columns</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.echelon.of</span><span class="description">Example of putting a matrix in echelon form</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.pivot</span><span class="description">Definition of pivot</span></div>
 <div class="latopic"><span class="id">math.la.d.insys.variable.basic</span><span class="description">Definition of basic variable in a linear system</span></div>
 <div class="latopic"><span class="id">math.la.d.insys.variable.free</span><span class="description">Definition of free variable in a linear system</span></div>
-<div class="latopic"><span class="id">math.la.t.rref.consistent</span><span class="description">The reduced row echelon form can be used to determine if a linear system is consistent.</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x5.soln.row_reduce.i</span><span class="description">Example of solving a 3-by-5 system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions</span></div>
+<div class="latopic"><span class="id">math.la.t.echelon.consistent</span><span class="description">The echelon form can be used to determine if a linear system is consistent.</span></div>
+<div class="latopic"><span class="id">math.la.e.echelon.consistent</span><span class="description">Example of using the echelon form to determine if a linear system is consistent.</span></div>
 </div>
 
 <div class="tocsec">
@@ -186,9 +192,13 @@ Table of Contents
 <div class="latopic"><span class="id">math.la.d.vec.scalar.mult.coord</span><span class="description">Definition of vector-scalar multiplication, coordinate vector space</span></div>
 <div class="latopic"><span class="id">math.la.d.scalar</span><span class="description">Definition of scalar, coordinate vector space</span></div>
 <div class="latopic"><span class="id">math.la.t.vec.sum.geometric.RnCn</span><span class="description">Vector sum interpreted geometrically in R^n (or C^n)</span></div>
+<div class="latopic"><span class="id">math.la.e.vec.sum.geometric.r2</span><span class="description">Example of a sum of vectors interpreted geometrically in R^2</span></div>
+<div class="latopic"><span class="id">math.la.e.vec.scalar.mult.r2</span><span class="description">Example of vector-scalar multiplication in R^2</span></div>
 <div class="latopic"><span class="id">math.la.t.vec.axioms.rncn</span><span class="description">The vector space properties of R^n (or C^n)</span></div>
 <div class="latopic"><span class="id">math.la.d.vec.lincomb.coord</span><span class="description">Definition of linear combination of vectors, coordinate vector space</span></div>
 <div class="latopic"><span class="id">math.la.d.vec.lincomb.weight.coord</span><span class="description">Definition of weights in a linear combination of vectors, coordinate vector space</span></div>
+<div class="latopic"><span class="id">math.la.e.vec.lincomb.r2</span><span class="description">Example of linear combination of vectors in R^2</span></div>
+<div class="latopic"><span class="id">math.la.e.vec.lincomb.weight.solve.r3</span><span class="description">Example of writing a given vector in R^3 as a linear combination of given vectors</span></div>
 <div class="latopic"><span class="id">math.la.t.linsys.vec</span><span class="description">A linear system is equivalent to a vector equation.</span></div>
 <div class="latopic"><span class="id">math.la.d.vec.span.coord</span><span class="description">Definition of span of a set of vectors, coordinate vector space</span></div>
 <div class="latopic"><span class="id">math.la.c.vec.span.geometric.RnCn</span><span class="description">Geometric description of span of a set of vectors in R^n (or C^n)</span></div>
@@ -198,24 +208,32 @@ Table of Contents
 <div class="numtitle"><span class="secchapnum">1.4</span><span class="secchaptitle">The Matrix Equation Ax = b</span></div>
 
 <div class="latopic"><span class="id">math.la.d.mat.vec.prod</span><span class="description">Definition of matrix-vector product, as a linear combination of column vectors</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.vec.prod</span><span class="description">Example of matrix-vector product, as a linear combination of column vectors</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.eqn</span><span class="description">Definition of matrix equation</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.eqn.linsys</span><span class="description">A matrix equation is equivalent to a linear system.</span></div>
-<div class="latopic"><span class="id">math.la.t.mat.eqn.lincomb</span><span class="description">The matrix equation Ax=b has a solution if and only if b is a linear conbination of the columns of A.</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.eqn.3x3.solve</span><span class="description">Example of solving a 3-by-3 matrix equation</span></div>
+<div class="latopic"><span class="id">math.la.t.mat.eqn.lincomb</span><span class="description">The matrix equation Ax=b has a solution if and only if b is a linear combination of the columns of A.</span></div>
 <div class="latopic"><span class="id">math.la.t.equiv.mat.eqn</span><span class="description">Equivalence theorem: the equation Ax=b has a solution for all b.</span></div>
 <div class="latopic"><span class="id">math.la.t.equiv.col.span</span><span class="description">Equivalence theorem: the columns of A span R^n (or C^n).</span></div>
 <div class="latopic"><span class="id">math.la.t.equiv.row.pivot</span><span class="description">Equivalence theorem: there is a pivot position in every row of A.</span></div>
 <div class="latopic"><span class="id">math.la.d.mat.vec.prod.coord</span><span class="description">Definition of matrix-vector product, each entry separately</span></div>
+<div class="latopic"><span class="id">math.la.e.mat.vec.prod.coord</span><span class="description">Example of matrix-vector product, each entry separately</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.vec.prod.assoc</span><span class="description">Matrix-vector product is associative.</span></div>
 <div class="latopic"><span class="id">math.la.t.mat.scalar.prod.commut</span><span class="description">Matrix-scalar product is commutative</span></div>
 </div>
 
+<div class="latopic"><span class="id">XXXX</span><span class="description">XXXX</span></div>
+
 <div class="tocsec">
 <div class="numtitle"><span class="secchapnum">1.5</span><span class="secchaptitle">Solution Sets of Linear Systems</span></div>
 <div class="latopic"><span class="id">math.la.d.linsys.homog</span><span class="description">Definition of homogeneous linear system of equations</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x3.soln.homog.row_reduce.i</span><span class="description">Example of solving a 3-by-3 homogeneous system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x1.soln.homog.row_reduce.i</span><span class="description">Example of solving a 3-by-1 homogeneous system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions</span></div>
 <div class="latopic"><span class="id">math.la.d.linsys.homog.trivial</span><span class="description">Definition of trivial solution to a homogeneous linear system of equations</span></div>
 <div class="latopic"><span class="id">math.la.d.linsys.homog.nontrivial</span><span class="description">Definition of nontrivial solution to a homogeneous linear system of equations</span></div>
 <div class="latopic"><span class="id">math.la.t.linsys.homog.nontrivial</span><span class="description">A homogeneous system has a nontrivial solution if and only if it has a free variable.</span></div>
 <div class="latopic"><span class="id">math.la.c.linsys.soln_set.vec</span><span class="description">Parametric vector form of the solution set of a system of linear equations</span></div>
+<div class="latopic"><span class="id">math.la.e.linsys.3x3.soln.row_reduce.i.parametric</span><span class="description">Example of solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions, expressing the answer in parametric form</span></div>
 <div class="latopic"><span class="id">math.la.t.nonhomog.particular_plus_homog</span><span class="description">The solutions to a nonhomogeneous system are given by a particular solution plus the solutions to the homogeneous system.</span></div>
 </div>
 

@@ -8,6 +8,7 @@ a  application
 c  concept (usually an informal statement)
 d  definition
 e  example
+h  exercise  # as in 'homework'
 p  proof
 t  theorem
 
@@ -95,8 +96,8 @@ respectively, being the last entries in the identifiers.
 
 If a topic occurs in an exercise, put "exer" as the last entry in the identifier.
 If a topic is repeated, put "rep" as the last entry in the identifier
-the second time it appears.  (For "equiv" theorems, do not repeat an item
-after it appears the first time.).
+the second time it appears.  (For "equiv" theorems, it is optional to repeat
+an item after it appears the first time.).
 
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should

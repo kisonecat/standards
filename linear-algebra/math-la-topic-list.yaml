@@ -41,8 +41,14 @@ Definition of equality of vectors, coordinate vector space
 math.la.d.vec.[sum,add].coord
 Definition of vector [sum,addition], coordinate vector space
 
+math.la.e.vec.sum.geometric.r2
+Example of a sum of vectors interpreted geometrically in R^2
+
 math.la.d.vec.scalar.mult.coord
 Definition of vector-scalar multiplication, coordinate vector space
+
+math.la.e.vec.scalar.mult.r2
+Example of vector-scalar multiplication in R^2
 
 math.la.t.vec.[sum,add].geometric.RnCn
 Vector [sum,addition] interpreted geometrically in R^n (or C^n)
@@ -114,23 +120,20 @@ Definition of row equivalent matrices
 math.la.d.mat.row.leading
 Definition of leading entry in a row of a matrix
 
-math.la.d.mat.row_echelon_form
-Definition of row echelon form of a matrix
-
 math.la.d.mat.echelon
-Definition of echelon matrix
+Definition of (echelon matrix/matrix in (row) echelon form)
 
-math.la.d.mat.echelon_of
-Definition of echelon form of a matrix
+math.la.e.mat.echelon
+Example of (echelon matrix/matrix in (row) echelon form)
+
+math.la.d.mat.echelon.of
+Definition of (row) echelon form of a matrix
 
 math.la.d.mat.rref
 Definition of matrix in reduced row echelon form
 
-math.la.d.mat.rref_of
+math.la.d.mat.rref.of
 Definition of reduced row echelon form of a matrix
-
-math.la.d.mat.reduced_echelon
-Definition of reduced echelon matrix
 
 math.la.d.mat.row_reduce
 Definition of row reduce a matrix
@@ -150,11 +153,23 @@ Definition of pivot column
 math.la.d.mat.pivot_position
 Definition of pivot position
 
+math.la.e.mat.echelon.of
+Example of putting a matrix in echelon form
+
+math.la.e.mat.echelon.of.pivot
+Example of putting a matrix in echelon form and identifying the pivot columns
+
 math.la.d.mat.vec.prod
 Definition of matrix-vector product, as a linear combination of column vectors
 
+math.la.e.mat.vec.prod
+Example of matrix-vector product, as a linear combination of column vectors
+
 math.la.d.mat.vec.prod.coord
 Definition of matrix-vector product, each entry separately
+
+math.la.e.mat.vec.prod.coord
+Example of matrix-vector product, each entry separately
 
 math.la.t.mat.vec.prod.assoc
 Matrix-vector product is associative
@@ -511,8 +526,20 @@ Definition of solution vector of a linear system
 math.la.d.linsys.mat.repn
 Definition of matrix representation of a linear system
 
+math.la.e.linsys.[[n]]x[[m]].soln[|.homog].row_reduce[|.sage].o
+Example of solving a [[n]]-by-[[m]] [|homogeneous] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of one solution
+
+math.la.e.linsys.[[n]]x[[m]].soln.row_reduce[|.sage].z
+Example of solving a [[n]]-by-[[m]] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of no solutions
+
+math.la.e.linsys.[[n]]x[[m]].soln[|.homog].row_reduce[|.sage].i[|.parametric]
+Example of solving a [[n]]-by-[[m]] [|homogeneous] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of infinitely many solutions[|, expressing the answer in parametric form]
+
 math.la.d.mat.eqn
 Definition of matrix equation
+
+math.la.e.mat.eqn.3x3.solve
+Example of solving a 3-by-3 matrix equation
 
 math.la.t.mat.eqn.linsys
 A matrix equation is equivalent to a linear system
@@ -523,8 +550,11 @@ The matrix equation Ax=b has a solution if and only if b is a linear combination
 math.la.t.mat.row_equiv.linsys
 Row equivalent matrices represent equivalent linear systems
 
-math.la.t.rref.consistent
-The reduced row echelon form can be used to determine if a linear system is consistent.
+math.la.t.echelon.consistent
+The echelon form can be used to determine if a linear system is consistent.
+
+math.la.e.echelon.consistent
+Example of using the echelon form to determine if a linear system is consistent.
 
 math.la.t.rref.pivot.oi
 The number of pivots in the reduced row echelon form of a consistent system determines whether there is one or infinitely many solutions.
@@ -610,8 +640,14 @@ Definition of subspace, coordinate vector space
 math.la.d.vec.lincomb.coord
 Definition of linear combination of vectors, coordinate vector space
 
+math.la.e.vec.lincomb.r2
+Example of linear combination of vectors in R^2
+
 math.la.d.vec.lincomb.weight.coord
 Definition of weights in a linear combination of vectors, coordinate vector space
+
+math.la.e.vec.lincomb.weight.solve.r3
+Example of writing a given vector in R^3 as a linear combination of given vectors
 
 math.la.d.vec.span.coord
 Definition of span of a set of vectors, coordinate vector space
@@ -1044,7 +1080,7 @@ Definition of multiplicity of an eigenvalue
 math.la.d.mat.minpoly
 Definition of minimal polynomial of a matrix
 
-math.la.t.mat.charpoly[|.eqn].eig
+math.la.t.mat.charpoly.[|eqn.]eig
 The eigenvalues of a matrix are the [roots|solutions] [of|to] its characteristic [polynomial|equation].
 
 math.la.t.mat.eig.multiplicity.eigenspace
