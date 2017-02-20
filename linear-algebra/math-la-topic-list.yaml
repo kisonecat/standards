@@ -29,8 +29,8 @@ Definition of column vector, coordinate vector space
 math.la.d.vec.size.coord
 Definition of size of a vector, coordinate vector space
 
-math.la.d.vec.[entry|component].coord
-Definition of [entry|component] of a vector, coordinate vector space
+math.la.d.vec.component.coord
+Definition of entry/component of a vector, coordinate vector space
 
 math.la.d.vec.z.coord
 Definition of zero vector, coordinate vector space
@@ -38,8 +38,8 @@ Definition of zero vector, coordinate vector space
 math.la.d.vec.equal.coord
 Definition of equality of vectors, coordinate vector space
 
-math.la.d.vec.[sum,add].coord
-Definition of vector [sum,addition], coordinate vector space
+math.la.d.vec.sum.coord
+Definition of vector sum/addition, coordinate vector space
 
 math.la.e.vec.sum.geometric.r2
 Example of a sum of vectors interpreted geometrically in R^2
@@ -50,10 +50,10 @@ Definition of vector-scalar multiplication, coordinate vector space
 math.la.e.vec.scalar.mult.r2
 Example of vector-scalar multiplication in R^2
 
-math.la.t.vec.[sum,add].geometric.RnCn
-Vector [sum,addition] interpreted geometrically in R^n (or C^n)
+math.la.t.vec.sum.geometric.rncn
+Vector sum/addition interpreted geometrically in R^n (or C^n)
 
-math.la.t.vec.axioms.RnCn
+math.la.t.vec.axioms.rncn
 The vector space properties of R^n (or C^n)
 
 ========
@@ -63,7 +63,7 @@ Matrices: basics and algebra
 math.la.d.mat
 Definition of matrix
 
-math.la.c.mat.entry
+math.la.d.mat.entry
 Notation for entry of matrix
 
 math.la.d.mat.size
@@ -183,6 +183,18 @@ Definition of matrix multiplication in terms of column vectors
 math.la.d.mat.mult.coord
 Definition of matrix multiplication, each entry separately
 
+math.la.e.mat.mult.2x2
+Example of multiplying 2x2 matrices
+
+math.la.e.mat.mult.3x3
+Example of multiplying 3x3 matrices
+
+math.la.e.mat.mult.nonsquare
+Example of multiplying nonsquare matrices
+
+math.la.e.mat.mult
+Example of multiplying matrices
+
 math.la.t.mat.mult.assoc
 Matrix multiplication is associative.
 
@@ -228,6 +240,9 @@ Matrix transpose commutes with matrix inverse.
 math.la.t.mat.inv.augmented
 The inverse of a matrix (if it exists) can be found by row reducing the matrix augmented by the identity matrix.
 
+math.la.t.eqn.mat.inv
+The inverse of a matrix can be used to solve a linear system.
+
 math.la.t.mat.inv.unique
 Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1.
 
@@ -268,11 +283,11 @@ An n-by-n matrix with n distinct eigenvalues is diagonalizable.
 math.la.t.mat.real.diagonalize.complex.2x2
 Formula for diagonalizing a real 2-by-2 matrix with a complex eigenvalue.
 
-math.la.d.mat.[block|partitioned]
-Definition of [block|partitioned] matrix
+math.la.d.mat.block
+Definition of block/partitioned matrix
 
-math.la.c.mat.mult.[block|partitioned]
-Multiplication of [block|partitioned] matrices
+math.la.c.mat.mult.block
+Multiplication of block/partitioned matrices
 
 math.la.t.mat.mult.row.col
 Matrix multiplication can be viewed as the dot product of a row vector of column vectors with a column vector of row vectors
@@ -280,8 +295,11 @@ Matrix multiplication can be viewed as the dot product of a row vector of column
 math.la.d.mat.block_diagonal
 Definition of block diagonal matrix
 
-math.la.d.mat.triangular.[upper|lower]
-Definition of a[n|] [upper|lower] triangular matrix
+math.la.d.mat.triangular.upper
+Definition of an upper triangular matrix
+
+math.la.d.mat.triangular.lower
+Definition of a lower triangular matrix
 
 math.la.d.mat.band
 Definition of band matrix
@@ -371,8 +389,11 @@ Definition of singular matrix
 # that equivalence in a theorem.  Repetitions of that statement
 # can be included by appending ".rep"
 
-math.la.t.equiv.mat.eqn[|.unique]
-Equivalence theorem: the equation Ax=b has a [|unique] solution for all b.
+math.la.t.equiv.mat.eqn.unique
+Equivalence theorem: the equation Ax=b has a unique solution for all b.
+
+math.la.t.equiv.mat.eqn
+Equivalence theorem: the equation Ax=b has a solution for all b.
 
 math.la.t.equiv.mat.eqn.unique
 Equivalence theorem: the equation Ax=b has a solution for all b.
@@ -419,11 +440,11 @@ Equivalence theorem: the matrix A has a right inverse.
 math.la.t.equiv.transpose.inv
 Equivalence theorem: the transpose of the matrix A has an inverse.
 
-math.la.t.equiv.lintrans.[onetoone|injective]
-Equivalence theorem: the linear transformation given by T(x)=Ax is [one-to-one|injective].
+math.la.t.equiv.lintrans.injective
+Equivalence theorem: the linear transformation given by T(x)=Ax is one-to-one/injective.
 
-math.la.t.equiv.lintrans.[onto|surjective]
-Equivalence theorem: the linear transformation given by T(x)=Ax is [onto|surjective].
+math.la.t.equiv.lintrans.surjective
+Equivalence theorem: the linear transformation given by T(x)=Ax is onto/surjective.
 
 math.la.t.equiv.lintrans.inv
 Equivalence theorem: the linear transformation given by T(x)=Ax has an inverse.
@@ -489,8 +510,11 @@ Definition of homogeneous linear system of equations
 math.la.d.linsys.homog.consistent
 Homogeneous linear systems are consistent.
 
-math.la.d.linsys.homog.[trivial|nontrivial]
-Definition of [trivial|nontrivial] solution to a homogeneous linear system of equations
+math.la.d.linsys.homog.nontrivial
+Definition of nontrivial solution to a homogeneous linear system of equations
+
+math.la.d.linsys.homog.trivial
+Definition of trivial solution to a homogeneous linear system of equations
 
 math.la.t.linsys.homog.nontrivial
 A homogeneous system has a nontrivial solution if and only if it has a free variable.
@@ -498,11 +522,11 @@ A homogeneous system has a nontrivial solution if and only if it has a free vari
 math.la.t.linsys.zoi
 Linear systems have zero, one, or infinitely many solutions.
 
-math.la.d.linsys.variable.[basic,dependent,leading]
-Definition of [basic,dependent,leading] variable in a linear system
+math.la.d.linsys.variable.dependent
+Definition of basic/dependent/leading variable in a linear system
 
-math.la.d.linsys.variable.[free,independent]
-Definition of [free,independent] variable in a linear system
+math.la.d.linsys.variable.independent
+Definition of free/independent variable in a linear system
 
 math.la.t.linsys.nonhomog.particular_plus_homog
 The solutions to a nonhomogeneous system are given by a particular solution plus the solutions to the homogeneous system.
@@ -526,20 +550,29 @@ Definition of solution vector of a linear system
 math.la.d.linsys.mat.repn
 Definition of matrix representation of a linear system
 
-math.la.e.linsys.[[n]]x[[m]].soln[|.homog].row_reduce[|.sage].o
-Example of solving a [[n]]-by-[[m]] [|homogeneous] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of one solution
+math.la.e.linsys.3x3.soln.row_reduce.o
+Example of solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of one solution
 
-math.la.e.linsys.[[n]]x[[m]].soln.row_reduce[|.sage].z
-Example of solving a [[n]]-by-[[m]] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of no solutions
+math.la.e.linsys.3x3.soln.row_reduce.z
+Example of solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of no solutions
 
-math.la.e.linsys.[[n]]x[[m]].soln[|.homog].row_reduce[|.sage].i[|.parametric]
-Example of solving a [[n]]-by-[[m]] [|homogeneous] system of linear equations by row-reducing the augmented matrix[| using SageMath], in the case of infinitely many solutions[|, expressing the answer in parametric form]
+math.la.e.linsys.3x3.soln.row_reduce.i
+Example of solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions
+
+math.la.e.linsys.3x3.soln.homog.row_reduce.o
+Example of solving a 3-by-3 homogeneous system of linear equations by row-reducing the augmented matrix, in the case of one solution
+
+math.la.e.linsys.3x3.soln.homog.row_reduce.i
+Example of solving a 3-by-3 homogeneous system of linear equations by row-reducing the augmented matrix, in the case of infinitely many solutions
 
 math.la.d.mat.eqn
 Definition of matrix equation
 
 math.la.e.mat.eqn.3x3.solve
 Example of solving a 3-by-3 matrix equation
+math.la.e.mat.eqn.3x3.homog.solve
+Example of solving a 3-by-3 homogeneous matrix equation
+
 
 math.la.t.mat.eqn.linsys
 A matrix equation is equivalent to a linear system
@@ -612,8 +645,8 @@ A matrix and its transpose have the same determinant.
 math.la.t.mat.det.product
 If A and B are n-by-n matrices, then det(AB)=det(A)det(B).
 
-math.la.t.mat.det.col.[area|volume]
-The determinant of a matrix measures the [area|volume] of the [parallelogram|parallelipiped] determined by its columns.
+math.la.t.mat.det.col.volume
+The determinant of a matrix measures the area/volume of the parallelogram/parallelipiped determined by its columns.
 
 math.la.t.lintrans.det.volume
 The determinant of the matrix of a linear transformation is the factor by which the area/volume changes.
@@ -621,8 +654,8 @@ The determinant of the matrix of a linear transformation is the factor by which 
 math.la.t.cramer
 Cramer's rule
 
-math.la.d.mat.[adjugate|classicaladjoint]
-Definition of [adjugate|classical adjoint] of a matrix
+math.la.d.mat.classicaladjoint
+Definition of adjugate/classical adjoint of a matrix
 
 math.la.t.mat.inv.cofactors
 The inverse of a matrix can be expressed in terms of its matrix of cofactors.
@@ -658,7 +691,7 @@ Definition of subspace spanned by a set of a set of vectors, coordinate vector s
 math.la.d.vsp.subspace.z.coord
 Definition of the zero/trivial subspace
 
-math.la.c.vec.span.geometric.RnCn
+math.la.c.vec.span.geometric.rncn
 Geometric description of span of a set of vectors in R^n (or C^n)
 
 math.la.d.vec.lindep.relation
@@ -666,6 +699,18 @@ Definition of linear dependence relation
 
 math.la.d.vec.linindep.coord
 Definition of linearly independent set of vectors: if a linear combination is zero, then every coefficient is zero, coordinate vector space.
+
+math.la.e.vec.linindep.r3
+Determine if a particular set of vectors in R^3 in linearly independent
+
+math.la.e.vec.span.r3
+Determine if a particular set of vectors spans R^3
+
+math.la.e.vec.span.of
+Determine if a particular vector is in the span of a set of vectors
+
+math.la.e.vec.span.of.r3
+Determine if a particular vector is in the span of a set of vectors in R^3
 
 math.la.t.vec.lindep.coord
 Theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.
@@ -682,7 +727,7 @@ If a set of vectors contains the zero vector, then the set is linearly dependent
 math.la.t.vec.lindep.two
 A set of two vectors is linearly dependent if and only if neither is a scalar multiple of the other.
 
-math.la.t.vec.lindep.more.RnCn
+math.la.t.vec.lindep.more.rncn
 If a set of vectors in R^n (or C^n) contains more than n elements, then the set is linearly dependent.
 
 math.la.d.vsp.basis.coord
@@ -709,8 +754,11 @@ If a vector space has dimension n, then any subset set of n vectors that spans t
 math.la.t.vsp.dim.linindep.coord
 If a vector space has dimension n, then any subset of n vectors that is linearly independent must be a basis, coordinate vector space.
 
-math.la.d.vec.[real|imaginary].cn
-Definition of the [real|imaginary] part of a vector in C^n
+math.la.d.vec.real.cn
+Definition of the real part of a vector in C^n
+
+math.la.d.vec.imaginary.cn
+Definition of the imaginary part of a vector in C^n
 
 ===============================
 Vector spaces, arbitrary setting
@@ -797,11 +845,11 @@ Each vector can be written uniquely as a linear combination of vectors from a gi
 math.la.d.vsp.basis.relative.arb
 Definition of coordinates relative to a given basis, arbitrary vector space
 
-math.la.d.vsp.basis.coord.[vector|mapping].arb
-Definition of coordinate [vector|mapping] relative to a given basis, arbitrary vector space
+math.la.d.vsp.basis.coord.vector.arb
+Definition of coordinate vector/mapping relative to a given basis, arbitrary vector space
 
-math.la.t.vsp.basis.coord.[vector|mapping].arb
-The coordinate [vector|mapping] relative to a given basis is a bijective linear mapping to R^n (or C^n).
+math.la.t.vsp.basis.coord.vector.arb
+The coordinate vector/mapping relative to a given basis is a bijective linear mapping to R^n (or C^n).
 
 math.la.d.vsp.isomorphism
 Definition of isomorphism between vector spaces
@@ -864,11 +912,11 @@ The set of all polynomials of degree at most n is a vector space.
 Linear transformations, general terminology
 ===========================================
 
-math.la.d.trans.[injective|onetoone]
-Definition of [injective|one-to-one] linear transformation
+math.la.d.trans.injective
+Definition of injective/one-to-one linear transformation
 
-math.la.d.trans.[surjective|onto]
-Definition of [surjective|onto] linear transformation
+math.la.d.trans.surjective
+Definition of surjective/onto linear transformation
 
 math.la.d.trans.bijective
 Definition of bijective linear transformation
@@ -892,11 +940,11 @@ Definition of image (of a point) under a linear transformation, coordinate vecto
 math.la.d.lintrans.preimage.coord
 Definition of pre-image (of a point) under a linear transformation, coordinate vector space
 
-math.la.d.lintrans.[onto|surjective].coord
-Definition of [onto|surjective] linear transformation, coordinate vector space
+math.la.d.lintrans.surjective.coord
+Definition of onto/surjective linear transformation, coordinate vector space
 
-math.la.d.lintrans.[onetoone|injective].coord
-Definition of [one-to-one|injective] linear transformation, coordinate vector space
+math.la.d.lintrans.injective.coord
+Definition of one-to-one/injective linear transformation, coordinate vector space
 
 math.la.d.lintrans.range.coord
 Definition of range of linear transformation, coordinate vector space
@@ -907,8 +955,20 @@ Definition of kernel of linear transformation, coordinate vector space
 math.la.d.lintrans.invertible.coord
 Definition of invertible linear transformation, coordinate vector space
 
-math.la.d.lintrans.shear
-Definition of shear transformation
+math.la.e.lintrans.shear.r2
+Example of a linear transformation on R^2: shear
+
+math.la.e.lintrans.rotation.r2
+Example of a linear transformation on R^2: rotation
+
+math.la.e.lintrans.projection.r2
+Example of a linear transformation on R^2: projection
+
+math.la.e.lintrans.rotation.r3
+Example of a linear transformation on R^3: rotation
+
+math.la.e.lintrans.not
+Non-example of a linear transformation
 
 math.la.c.transformation.matrix
 Matrices act as a transformations by multiplying vectors
@@ -970,8 +1030,8 @@ If A is a matrix, then the rank of A plus the nullity of A equals the number of 
 math.la.t.mat.rotation
 Matrix describing a rotation of the plane
 
-math.la.t.lintrans.[onto|surjective].col_span
-A linear transformation is [onto|surjective] if and only if the columns of its matrix span the codomain.
+math.la.t.lintrans.surjective.col_span
+A linear transformation is onto/surjective if and only if the columns of its matrix span the codomain.
 
 math.la.d.lintrans.rank
 Definition of rank of a linear transformation
@@ -979,14 +1039,14 @@ Definition of rank of a linear transformation
 math.la.d.lintrans.nullity
 Definition of nullity of a linear transformation
 
-math.la.t.lintrans.[onetoone|injective].ker
-A linear transformation is [one-to-one|injective] if and only if only 0 is mapped to 0.
+math.la.t.lintrans.injective.ker
+A linear transformation is one-to-one/injective if and only if only 0 is mapped to 0.
 
-math.la.t.lintrans.[onetoone|injective].linindep
-A linear transformation is [one-to-one|injective] if and only if the columns of its matrix are linearly independent.
+math.la.t.lintrans.injective.linindep
+A linear transformation is one-to-one/injective if and only if the columns of its matrix are linearly independent.
 
-math.la.t.lintrans.[onto|surjective].span
-A linear transformation is [onto|surjective] if and only if the columns of its matrix span the codomain.
+math.la.t.lintrans.surjective.span
+A linear transformation is onto/surjective if and only if the columns of its matrix span the codomain.
 
 math.la.d.lintrans.mat.basis.standard.coord
 Definition of the standard matrix for a linear transformation, coordinate setting
@@ -1022,11 +1082,11 @@ Definition of linear transformation, arbitrary vector space
 math.la.d.lintrans.preimage.arb
 Definition of pre-image of linear transformation, arbitrary vector space
 
-math.la.d.lintrans.[onto|surjective].arb
-Definition of [onto|surjective] linear transformation, arbitrary vector space
+math.la.d.lintrans.surjective.arb
+Definition of onto/surjective linear transformation, arbitrary vector space
 
-math.la.d.lintrans.[onetoone|injective].arb
-Definition of [one-to-one|injective] linear transformation, arbitrary vector space
+math.la.d.lintrans.injective.arb
+Definition of one-to-one/injective linear transformation, arbitrary vector space
 
 math.la.d.lintrans.range.arb
 Definition of range of linear transformation, arbitrary vector space
@@ -1080,8 +1140,8 @@ Definition of multiplicity of an eigenvalue
 math.la.d.mat.minpoly
 Definition of minimal polynomial of a matrix
 
-math.la.t.mat.charpoly.[|eqn.]eig
-The eigenvalues of a matrix are the [roots|solutions] [of|to] its characteristic [polynomial|equation].
+math.la.t.mat.charpoly.eig
+The eigenvalues of a matrix are the roots/solutions of its characteristic polynomial/equation.
 
 math.la.t.mat.eig.multiplicity.eigenspace
 The dimension of a eigenspace is less than or equal to the multiplicity of the eigenvalue.
@@ -1126,8 +1186,8 @@ The standard inner product of a vector with itself is non-negative, coordinate s
 math.la.t.innerproduct.self.z.coord
 The standard inner product of a vector with itself is zero only for the zero vector, coordinate setting.
 
-math.la.d.vec.[norm|length].coord
-Definition of [norm|length] of a vector, coordinate setting
+math.la.d.vec.norm.coord
+Definition of norm/length of a vector, coordinate setting
 
 math.la.d.distance.coord
 Definition of distance, coordinate setting
@@ -1247,8 +1307,8 @@ Definition of inner product, arbitrary setting
 math.la.d.vsp.innerproduct.arb
 Definition of inner product space, arbitrary setting
 
-math.la.d.vec.[length|norm].arb
-Definition of [length|norm] of a vector, arbitrary setting
+math.la.d.vec.norm.arb
+Definition of length/norm of a vector, arbitrary setting
 
 math.la.d.vec.distance.arb
 Definition of orthogonal vectors, arbitrary setting

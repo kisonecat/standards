@@ -47,6 +47,7 @@ add  addition
 assoc  associative
 canon  canonical (or normal) form
 charpoly  characteristic polynomial
+cn  C^n        # n can be a digit
 coeff  coefficient(s)
 col  column
 commut  commutative
@@ -60,6 +61,7 @@ eqn  equation
 equiv  equivalent
 exer  exercise
 homog  homogeneous
+i  infinitely many
 inv  inverse
 lin  linear
 lincomb  linear combination
@@ -72,11 +74,13 @@ mat  matrix
 mult  multiplication
 mxn  m-by-n        # m and n can be digits
 nonhomog  nonhomogeneous
+o  one
 op  operation
 prod  product
 rep  repeat  (when a topic appears formally a second time)
 repn  representation
-RnCn  R^n or C^n
+rn  R^n        # n can be a digit
+rncn  R^n or C^n      # n can be a digit
 rref  reduced row-echelon form
 soln  solution
 subsp  subspace
