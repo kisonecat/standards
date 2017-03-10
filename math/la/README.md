@@ -8,6 +8,7 @@ a  application
 c  concept (usually an informal statement)
 d  definition
 e  example
+h  exercise  # as in 'homework'
 p  proof
 t  theorem
 
@@ -46,6 +47,7 @@ add  addition
 assoc  associative
 canon  canonical (or normal) form
 charpoly  characteristic polynomial
+cn  C^n        # n can be a digit
 coeff  coefficient(s)
 col  column
 commut  commutative
@@ -59,6 +61,7 @@ eqn  equation
 equiv  equivalent
 exer  exercise
 homog  homogeneous
+i  infinitely many
 inv  inverse
 lin  linear
 lincomb  linear combination
@@ -71,11 +74,13 @@ mat  matrix
 mult  multiplication
 mxn  m-by-n        # m and n can be digits
 nonhomog  nonhomogeneous
+o  one
 op  operation
 prod  product
 rep  repeat  (when a topic appears formally a second time)
 repn  representation
-RnCn  R^n or C^n
+rn  R^n        # n can be a digit
+rncn  R^n or C^n      # n can be a digit
 rref  reduced row-echelon form
 soln  solution
 subsp  subspace
@@ -95,8 +100,8 @@ respectively, being the last entries in the identifiers.
 
 If a topic occurs in an exercise, put "exer" as the last entry in the identifier.
 If a topic is repeated, put "rep" as the last entry in the identifier
-the second time it appears.  (For "equiv" theorems, do not repeat an item
-after it appears the first time.).
+the second time it appears.  (For "equiv" theorems, it is optional to repeat
+an item after it appears the first time.).
 
 Topic descriptions should start with a capital letter and end with a period
 (even if the description is not technically a sentence).  The description should
