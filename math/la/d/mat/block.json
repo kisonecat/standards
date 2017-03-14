@@ -1,5 +1,5 @@
 {
-  "description": "Definition of block matrix",
+  "description": "Definition of block/partitioned matrix",
   "id": "math.la.d.mat.block",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

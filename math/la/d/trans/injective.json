@@ -1,5 +1,5 @@
 {
-  "description": "Definition of injective linear transformation",
+  "description": "Definition of injective/one-to-one linear transformation",
   "id": "math.la.d.trans.injective",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

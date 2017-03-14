@@ -1,5 +1,5 @@
 {
-  "description": "Definition of dependent variable in a linear system",
+  "description": "Definition of basic/dependent/leading variable in a linear system",
   "id": "math.la.d.linsys.variable.dependent",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

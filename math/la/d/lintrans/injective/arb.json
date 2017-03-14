@@ -1,5 +1,5 @@
 {
-  "description": "Definition of injective linear transformation, arbitrary vector space",
+  "description": "Definition of one-to-one/injective linear transformation, arbitrary vector space",
   "id": "math.la.d.lintrans.injective.arb",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

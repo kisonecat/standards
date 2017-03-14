@@ -1,7 +1,0 @@
-{
-  "description": "A linear transformation is one-to-one if and only if the columns of its matrix are linearly independent.",
-  "id": "math.la.t.lintrans.onetoone.linindep",
-  "kind": "theorem",
-  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
-  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
-}

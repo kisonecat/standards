@@ -1,5 +1,5 @@
 {
-  "description": "Definition of vector sum, coordinate vector space",
+  "description": "Definition of vector sum/addition, coordinate vector space",
   "id": "math.la.d.vec.sum.coord",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

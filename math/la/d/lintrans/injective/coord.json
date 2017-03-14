@@ -1,5 +1,5 @@
 {
-  "description": "Definition of injective linear transformation, coordinate vector space",
+  "description": "Definition of one-to-one/injective linear transformation, coordinate vector space",
   "id": "math.la.d.lintrans.injective.coord",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

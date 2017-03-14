@@ -1,5 +1,5 @@
 {
-  "description": "The coordinate vector relative to a given basis is a bijective linear mapping to R^n (or C^n).",
+  "description": "The coordinate vector/mapping relative to a given basis is a bijective linear mapping to R^n (or C^n).",
   "id": "math.la.t.vsp.basis.coord.vector.arb",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

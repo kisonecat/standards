@@ -1,5 +1,5 @@
 {
-  "description": "Definition of equation operation on a linear system",
+  "description": "Definition of equation operations on a linear system",
   "id": "math.la.d.linsys.op",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

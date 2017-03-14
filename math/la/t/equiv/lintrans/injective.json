@@ -1,5 +1,5 @@
 {
-  "description": "Equivalence theorem: the linear transformation given by T(x)=Ax is injective.",
+  "description": "Equivalence theorem: the linear transformation given by T(x)=Ax is one-to-one/injective.",
   "id": "math.la.t.equiv.lintrans.injective",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

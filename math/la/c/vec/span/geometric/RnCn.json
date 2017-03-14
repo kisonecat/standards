@@ -1,7 +1,0 @@
-{
-  "description": "Geometric description of span of a set of vectors in R^n (or C^n)",
-  "id": "math.la.c.vec.span.geometric.RnCn",
-  "kind": "concept",
-  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
-  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
-}

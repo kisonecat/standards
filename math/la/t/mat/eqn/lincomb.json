@@ -1,5 +1,5 @@
 {
-  "description": "The matrix equation Ax=b has a solution if and only if b is a linear conbination of the columns of A.",
+  "description": "The matrix equation Ax=b has a solution if and only if b is a linear combination of the columns of A.",
   "id": "math.la.t.mat.eqn.lincomb",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

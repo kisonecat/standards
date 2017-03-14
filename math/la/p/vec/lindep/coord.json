@@ -1,7 +1,0 @@
-{
-  "description": "Proof of theorem: a set of vectors is linearly dependent if and only if one of the vectors can be written as a linear combination of the other vectors, coordinate vector space.",
-  "id": "math.la.p.vec.lindep.coord",
-  "kind": "proof",
-  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
-  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
-}

@@ -1,0 +1,7 @@
+{
+  "description": "Determine if a particular set of vectors in R^3 in linearly independent",
+  "id": "math.la.e.vec.linindep.r3",
+  "kind": "example",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

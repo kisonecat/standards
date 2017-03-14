@@ -1,0 +1,7 @@
+{
+  "description": "Example of a linear transformation on R^2: rotation",
+  "id": "math.la.e.lintrans.rotation.r2",
+  "kind": "example",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

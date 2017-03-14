@@ -1,5 +1,5 @@
 {
-  "description": "The determinant of a matrix measures the volume of the volume determined by its columns.",
+  "description": "The determinant of a matrix measures the area/volume of the parallelogram/parallelipiped determined by its columns.",
   "id": "math.la.t.mat.det.col.volume",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

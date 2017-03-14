@@ -1,0 +1,7 @@
+{
+  "description": "Example of writing a given vector in R^3 as a linear combination of given vectors",
+  "id": "math.la.e.vec.lincomb.weight.solve.r3",
+  "kind": "example",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

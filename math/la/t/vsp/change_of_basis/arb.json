@@ -1,7 +1,9 @@
 {
-  "description": "The change of coordinates matrix between two bases exists and is unique, arbitrary vector space.",
+  "description": "The set of all polynomials of degree at most n is a vector space.",
   "id": "math.la.t.vsp.change_of_basis.arb",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
   "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}
+avid W. Farmer, Jim Fowler."
 }

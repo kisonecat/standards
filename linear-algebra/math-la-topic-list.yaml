@@ -1354,24 +1354,24 @@ Definition of ill-conditioned linear system
 Applications
 ============
 
-math.la.adifferentialequation
+math.la.a.differentialequation
 Applications to differential equations
 
-math.la.amarkovchain
+math.la.a.markovchain
 Applications to Markov chains
 
-math.la.abandmatrix
+math.la.a.bandmatrix
 Applications of band matrices
 
-math.la.aerrorcorrectingcode
+math.la.a.errorcorrectingcode
 Applications to error-correcting code
 
-math.la.ainputoutput
+math.la.a.inputoutput
 Application Leontief input-output analysis
 
-math.la.avoting
+math.la.a.voting
 Applications to voting and social choice
 
-math.la.acubicspline
+math.la.a.cubicspline
 Applications to cubic spline
 

@@ -1,5 +1,5 @@
 {
-  "description": "Multiplication of block matrices",
+  "description": "Multiplication of block/partitioned matrices",
   "id": "math.la.c.mat.mult.block",
   "kind": "concept",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

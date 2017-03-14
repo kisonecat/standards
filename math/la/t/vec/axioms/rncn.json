@@ -1,0 +1,7 @@
+{
+  "description": "The vector space properties of R^n (or C^n)",
+  "id": "math.la.t.vec.axioms.rncn",
+  "kind": "theorem",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}

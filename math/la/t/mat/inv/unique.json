@@ -1,5 +1,5 @@
 {
-  "description": "Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1..",
+  "description": "Matrix inverses are unique: if A and B are square matrices, then AB=I implies that A=B^-1 and B=A^-1.",
   "id": "math.la.t.mat.inv.unique",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

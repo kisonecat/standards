@@ -1,5 +1,5 @@
 {
-  "description": "Definition of an n triangular matrix",
+  "description": "Definition of an upper triangular matrix",
   "id": "math.la.d.mat.triangular.upper",
   "kind": "definition",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

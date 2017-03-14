@@ -1,5 +1,5 @@
 {
-  "description": "A linear transformation is injective if and only if the columns of its matrix are linearly independent.",
+  "description": "A linear transformation is one-to-one/injective if and only if the columns of its matrix are linearly independent.",
   "id": "math.la.t.lintrans.injective.linindep",
   "kind": "theorem",
   "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",

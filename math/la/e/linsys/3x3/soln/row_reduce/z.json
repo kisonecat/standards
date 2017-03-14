@@ -1,0 +1,7 @@
+{
+  "description": "Example of solving a 3-by-3 system of linear equations by row-reducing the augmented matrix, in the case of no solutions",
+  "id": "math.la.e.linsys.3x3.soln.row_reduce.z",
+  "kind": "example",
+  "license": "(CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0)",
+  "copyright": "(c) Copyright 2016, Robert A. Beezer, David W. Farmer, Jim Fowler."
+}
